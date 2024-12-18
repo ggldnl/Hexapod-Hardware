@@ -35,4 +35,6 @@ Make sure to follow the recommended print settings for optimal strength and fitm
 - [ ] Update the MakerWorld link with the correct URL.
 - [ ] Verify and finalize the BOM.
 
+## Contribution
+
 Feel free to raise issues or contribute improvements to this repository. For further information about the project, check out the [main Hexapod repository](https://github.com/ggldnl/Hexapod).
