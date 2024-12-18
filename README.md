@@ -1,4 +1,4 @@
-# Hexapod-Hardware
+# Hexapod Hardware
 
 This repository contains the 3D-printed parts, BOM and assembly guide to replicate my hexapod robot. 
 
