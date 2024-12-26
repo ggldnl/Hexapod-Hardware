@@ -4,7 +4,7 @@ This repository contains the 3D-printed parts, BOM and assembly guide to replica
 
 For a complete overview of the project, refer to the [main Hexapod repository](https://github.com/ggldnl/Hexapod). Additionally, you may want to check out the repositories containing the [Controller](https://github.com/ggldnl/Hexapod-Controller) and [Operator](https://github.com/ggldnl/Hexapod-Operator) code.
 
-## Bill of Materials (BOM)
+## 📋 Bill of Materials (BOM)
 
 Below is a summary of the components required to build the hexapod:
 
@@ -19,15 +19,19 @@ Below is a summary of the components required to build the hexapod:
 |                        | Raspberry pi 5                          | 1            | Other versions can be used instead (2/3/4) | |
 |                        | 7.4V 2S LiPo Battery                    | 1            | | |
 
-## Assembly Instructions
+## 🔨 Assembly Instructions
 
 To be provided in a detailed PDF. [: Link to the assembly instructions PDF]
 
-## 3D Printing Profile and Parts
+## 3D Printing Profile
 
 Print profiles and STL files for the robot parts are [hosted on MakerWorld](https://makerworld.com/en/models/).
 
 Make sure to follow the recommended print settings for optimal strength and fitment.
+
+## 📝 Notes
+
+The `MG996.stl` is there only for simulation purposes (it is used to build the URDF), we won't need it to build the robot. Check out the [simulation repository](https://github.com/ggldnl/Hexapod-Simulation).
 
 ## TODO
 
