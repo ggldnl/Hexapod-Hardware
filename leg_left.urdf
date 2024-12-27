@@ -22,14 +22,14 @@
         <visual name="base_link_visual">
             <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
             <geometry>
-                <mesh filename="Hexapod-Hardware/CAD/MG996.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="black" />
         </visual>
         <collision name="base_link_collision">
             <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
             <geometry>
-                <mesh filename="Hexapod-Hardware/CAD/MG996.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -42,14 +42,14 @@
         <visual name="coxa_visual">
             <origin xyz="0.053000000000000005 -8.881784197001253e-18 0.001000000000000003" rpy="3.141592653589793 -0.0 -1.5707963267948968" />
             <geometry>
-                <mesh filename="Hexapod-Hardware/CAD/coxa_left.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/coxa_left.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="black" />
         </visual>
         <collision name="coxa_collision">
             <origin xyz="0.053000000000000005 -8.881784197001253e-18 0.001000000000000003" rpy="3.141592653589793 -0.0 -1.5707963267948968" />
             <geometry>
-                <mesh filename="Hexapod-Hardware/CAD/coxa_left.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/coxa_left.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -62,14 +62,14 @@
         <visual name="MG996t_visual">
             <origin xyz="0.030249998321848822 -0.011049999999999978 -0.009749995092565538" rpy="1.5707963267948966 3.7141449244047545e-16 -3.141592653589793" />
             <geometry>
-                <mesh filename="Hexapod-Hardware/CAD/MG996.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="black" />
         </visual>
         <collision name="MG996t_collision">
             <origin xyz="0.030249998321848822 -0.011049999999999978 -0.009749995092565538" rpy="1.5707963267948966 3.7141449244047545e-16 -3.141592653589793" />
             <geometry>
-                <mesh filename="Hexapod-Hardware/CAD/MG996.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -82,14 +82,14 @@
         <visual name="femur_visual">
             <origin xyz="-1.7763568394002505e-17 0.04299999999999999 -2.7755575615628914e-19" rpy="1.5707963267948966 -0.6108652381980157 -1.8369701987210292e-16" />
             <geometry>
-                <mesh filename="Hexapod-Hardware/CAD/femur_left.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/femur_left.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="black" />
         </visual>
         <collision name="femur_collision">
             <origin xyz="-1.7763568394002505e-17 0.04299999999999999 -2.7755575615628914e-19" rpy="1.5707963267948966 -0.6108652381980157 -1.8369701987210292e-16" />
             <geometry>
-                <mesh filename="Hexapod-Hardware/CAD/femur_left.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/femur_left.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -102,14 +102,14 @@
         <visual name="MG996f_visual">
             <origin xyz="-0.04470000000000001 1.7208456881689926e-17 0.01500000000000001" rpy="-1.5707963267948968 1.2246467991473532e-16 -3.374459510989179e-32" />
             <geometry>
-                <mesh filename="Hexapod-Hardware/CAD/MG996.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="black" />
         </visual>
         <collision name="MG996f_collision">
             <origin xyz="-0.04470000000000001 1.7208456881689926e-17 0.01500000000000001" rpy="-1.5707963267948968 1.2246467991473532e-16 -3.374459510989179e-32" />
             <geometry>
-                <mesh filename="Hexapod-Hardware/CAD/MG996.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -122,14 +122,14 @@
         <visual name="tibia_visual">
             <origin xyz="0.0442999983218488 0.007299999999999977 -0.004750004907434491" rpy="1.5707963267948963 -1.5707963267948963 0" />
             <geometry>
-                <mesh filename="Hexapod-Hardware/CAD/tibia_left.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/tibia_left.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="black" />
         </visual>
         <collision name="tibia_collision">
             <origin xyz="0.0442999983218488 0.007299999999999977 -0.004750004907434491" rpy="1.5707963267948963 -1.5707963267948963 0" />
             <geometry>
-                <mesh filename="Hexapod-Hardware/CAD/tibia_left.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/tibia_left.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -142,14 +142,14 @@
         <visual name="shield_visual">
             <origin xyz="-4.907434512091414e-09 0.020000000000000018 0.01800000080575984" rpy="-9.638285641715587e-32 1.570796326794896 0" />
             <geometry>
-                <mesh filename="Hexapod-Hardware/CAD/shield.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/shield.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="orange" />
         </visual>
         <collision name="shield_collision">
             <origin xyz="-4.907434512091414e-09 0.020000000000000018 0.01800000080575984" rpy="-9.638285641715587e-32 1.570796326794896 0" />
             <geometry>
-                <mesh filename="Hexapod-Hardware/CAD/shield.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/shield.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
