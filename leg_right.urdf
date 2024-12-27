@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="leg_right">
+
+    <material name="black">
+        <color rgba="0 0 0 1" />
+    </material>
+
+    <material name="white">
+        <color rgba="1 1 1 1" />
+    </material>
+
+    <material name="orange">
+        <color rgba="0.902 0.345 0 1" />
+    </material>
+
+    <link name="base_link">
+        <inertial>
+            <origin xyz="0.020178447972789563 0.009750002219071822 -0.008216241413562224" rpy="0.0 0.0 0.0" />
+            <mass value="0.20641808912389753" />
+            <inertia ixx="2.7773631636875534e-05" iyy="5.0476740936021815e-05" izz="3.601102430698472e-05" ixy="3.0326974858794174e-12" iyz="-6.6531359313112565e-12" ixz="-7.930775065286786e-07" />
+        </inertial>
+        <visual name="base_link_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="Hexapod-Hardware/CAD/MG996.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="black" />
+        </visual>
+        <collision name="base_link_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="Hexapod-Hardware/CAD/MG996.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="coxa">
+        <inertial>
+            <origin xyz="0.025372840494156005 -0.0001517412308491717 -0.02487963924889388" rpy="0.0 -0.0 0.0" />
+            <mass value="0.07898637744159479" />
+            <inertia ixx="4.963139741329647e-05" iyy="7.128210636066343e-05" izz="2.4265877776945353e-05" ixy="2.1127014631552984e-07" iyz="3.990735838610307e-08" ixz="-5.949787137622525e-06" />
+        </inertial>
+        <visual name="coxa_visual">
+            <origin xyz="0.053000000000000005 -2.220446049250313e-18 0.001000000000000003" rpy="0.0 -0.0 1.5707963267948966" />
+            <geometry>
+                <mesh filename="Hexapod-Hardware/CAD/coxa_right.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="black" />
+        </visual>
+        <collision name="coxa_collision">
+            <origin xyz="0.053000000000000005 -2.220446049250313e-18 0.001000000000000003" rpy="0.0 -0.0 1.5707963267948966" />
+            <geometry>
+                <mesh filename="Hexapod-Hardware/CAD/coxa_right.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="MG996f">
+        <inertial>
+            <origin xyz="-0.024521552027210437 -0.008216241413562218 0.005249997780928162" rpy="0.0 -0.0 0.0" />
+            <mass value="0.20641808912389753" />
+            <inertia ixx="2.7773631636875433e-05" iyy="3.6011024306984666e-05" izz="5.047674093602177e-05" ixy="-7.930775065286955e-07" iyz="6.6531359143705976e-12" ixz="-3.0326975197607353e-12" />
+        </inertial>
+        <visual name="MG996f_visual">
+            <origin xyz="-0.04470000000000001 6.661338147750939e-18 0.014999999999999982" rpy="-1.5707963267948968 -0.0 -3.749399456654644e-33" />
+            <geometry>
+                <mesh filename="Hexapod-Hardware/CAD/MG996.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="black" />
+        </visual>
+        <collision name="MG996f_collision">
+            <origin xyz="-0.04470000000000001 6.661338147750939e-18 0.014999999999999982" rpy="-1.5707963267948968 -0.0 -3.749399456654644e-33" />
+            <geometry>
+                <mesh filename="Hexapod-Hardware/CAD/MG996.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="femur">
+        <inertial>
+            <origin xyz="0.003124784594725227 -0.02288109973213504 0.045527607166960714" rpy="0.0 -0.0 0.0" />
+            <mass value="0.2061355014221324" />
+            <inertia ixx="0.00015591895758032944" iyy="8.656809797940234e-05" izz="0.000100988308472931" ixy="3.823774703431885e-06" iyz="-4.634784730535981e-06" ixz="-1.1513127818724243e-05" />
+        </inertial>
+        <visual name="femur_visual">
+            <origin xyz="1.7763568394002505e-17 -0.04300000000000001 -2.7755575615628914e-19" rpy="1.5707963267948966 -0.6108652381980154 -6.123233995736765e-17" />
+            <geometry>
+                <mesh filename="Hexapod-Hardware/CAD/femur_right.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="black" />
+        </visual>
+        <collision name="femur_collision">
+            <origin xyz="1.7763568394002505e-17 -0.04300000000000001 -2.7755575615628914e-19" rpy="1.5707963267948966 -0.6108652381980154 -6.123233995736765e-17" />
+            <geometry>
+                <mesh filename="Hexapod-Hardware/CAD/femur_right.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="MG996t">
+        <inertial>
+            <origin xyz="0.010071550349059369 0.019266241413562223 2.6883626258467075e-09" rpy="0.0 -0.0 0.0" />
+            <mass value="0.20641808912389753" />
+            <inertia ixx="2.7773631636875758e-05" iyy="3.601102430698423e-05" izz="5.047674093602199e-05" ixy="-7.930775065286921e-07" iyz="-6.653135927923125e-12" ixz="3.032697573970844e-12" />
+        </inertial>
+        <visual name="MG996t_visual">
+            <origin xyz="0.03024999832184893 0.01105 0.009750004907434447" rpy="-1.5707963267948966 -2.1632341619892146e-16 -3.141592653589793" />
+            <geometry>
+                <mesh filename="Hexapod-Hardware/CAD/MG996.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="black" />
+        </visual>
+        <collision name="MG996t_collision">
+            <origin xyz="0.03024999832184893 0.01105 0.009750004907434447" rpy="-1.5707963267948966 -2.1632341619892146e-16 -3.141592653589793" />
+            <geometry>
+                <mesh filename="Hexapod-Hardware/CAD/MG996.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="tibia">
+        <inertial>
+            <origin xyz="0.04649343100105627 -0.010005948932875994 0.01322021406519859" rpy="0.0 -0.0 0.0" />
+            <mass value="0.09285304614043148" />
+            <inertia ixx="6.422753246891199e-06" iyy="0.00010153034858819722" izz="9.868903018824676e-05" ixy="2.6666870421129303e-06" iyz="9.576742803426926e-07" ixz="-8.30271171873133e-06" />
+        </inertial>
+        <visual name="tibia_visual">
+            <origin xyz="0.0442999983218489 -0.007300000000000009 -0.0047500049074344465" rpy="1.5707963267948966 -1.5707963267948963 0" />
+            <geometry>
+                <mesh filename="Hexapod-Hardware/CAD/tibia_right.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="black" />
+        </visual>
+        <collision name="tibia_collision">
+            <origin xyz="0.0442999983218489 -0.007300000000000009 -0.0047500049074344465" rpy="1.5707963267948966 -1.5707963267948963 0" />
+            <geometry>
+                <mesh filename="Hexapod-Hardware/CAD/tibia_right.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="shield">
+        <inertial>
+            <origin xyz="0.007956859434655437 3.2144871102146587e-07 0.03213715191944113" rpy="0.0 -0.0 0.0" />
+            <mass value="0.09400422482344938" />
+            <inertia ixx="0.00011235877990886396" iyy="9.902587291231446e-05" izz="1.7880722808844853e-05" ixy="4.0860511540719057e-10" iyz="1.6353321901664813e-10" ixz="3.853286382860411e-06" />
+        </inertial>
+        <visual name="shield_visual">
+            <origin xyz="-4.907434423273571e-09 -0.01999999999999999 -0.018000000805759912" rpy="-3.141592653589793 -1.5707963267948961 0" />
+            <geometry>
+                <mesh filename="Hexapod-Hardware/CAD/shield.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="orange" />
+        </visual>
+        <collision name="shield_collision">
+            <origin xyz="-4.907434423273571e-09 -0.01999999999999999 -0.018000000805759912" rpy="-3.141592653589793 -1.5707963267948961 0" />
+            <geometry>
+                <mesh filename="Hexapod-Hardware/CAD/shield.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="coxa_joint" type="revolute">
+        <origin xyz="0.03025 0.00975 0.01005" rpy="0.0 -0.0 0.0" />
+        <parent link="base_link" />
+        <child link="coxa" />
+        <axis xyz="0.0 0.0 1.0" />
+        <limit lower="-1.570796" upper="1.570796" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="coxa_MG996f_fixed" type="fixed">
+        <origin xyz="0.048249999999999994 0.007000000000000001 0.0027500000000000016" rpy="-0.0 -1.5707963267948966 0" />
+        <parent link="coxa" />
+        <child link="MG996f" />
+    </joint>
+    <joint name="femur_joint" type="revolute">
+        <origin xyz="-0.014450000000000001 0.010050000000000002 0.005249999999999995" rpy="-0.0 1.5707963267948966 0" />
+        <parent link="MG996f" />
+        <child link="femur" />
+        <axis xyz="0.0 1.0 0.0" />
+        <limit lower="0" upper="2.356194" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="tibia_joint" type="revolute">
+        <origin xyz="0.02958327999999999 0.0009999999999999966 0.06344155" rpy="-3.141592653589793 8.791013934755433e-33 0.0" />
+        <parent link="femur" />
+        <child link="MG996t" />
+        <axis xyz="0.0 -1.0 0.0" />
+        <limit lower="0" upper="1.570796" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="MG996t_tibia_fixed" type="fixed">
+        <origin xyz="-0.014449999999999985 0.011049999999999997 0.005249999999999995" rpy="3.141592653589793 8.791013934755431e-33 0.0" />
+        <parent link="MG996t" />
+        <child link="tibia" />
+    </joint>
+    <joint name="tibia_shield_fixed" type="fixed">
+        <origin xyz="0.09324641 -0.0113 0.02125" rpy="-0.0 -1.5707963267948966 0" />
+        <parent link="tibia" />
+        <child link="shield" />
+    </joint>
+</robot>
