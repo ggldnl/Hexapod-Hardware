@@ -40,153 +40,6 @@
         </collision>
     </link>
 
-    <link name="bottom_plate">
-        <inertial>
-            <origin xyz="0.025731670000010413 0.057065829999981076 0.0014298019046473634" rpy="0.0 -0.0 0.0" />
-            <mass value="0.24216446732098765" />
-            <inertia ixx="0.00030349346439557446" iyy="0.00013414984265444537" izz="0.00043718045010567947" ixy="9.013660928710617e-18" iyz="3.388352912917795e-20" ixz="-8.379443854737364e-19" />
-        </inertial>
-        <visual name="bottom_plate_visual">
-            <origin xyz="0.02573167 0.057065830000000005 0.003" rpy="3.141592653589793 -0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/bottom_plate.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="bottom_plate_collision">
-            <origin xyz="0.02573167 0.057065830000000005 0.003" rpy="3.141592653589793 -0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/bottom_plate.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="electronics_layer_1">
-        <inertial>
-            <origin xyz="0.01818721979956204 -0.060098497447607875 -0.002065410256214173" rpy="0.0 -0.0 0.0" />
-            <mass value="0.19151491126723064" />
-            <inertia ixx="0.0002227828945527706" iyy="7.871616965533577e-05" izz="0.00029993417384857444" ixy="1.2408330286999076e-05" iyz="-1.7585246891886066e-06" ixz="6.984149263536499e-07" />
-        </inertial>
-        <visual name="electronics_layer_1_visual">
-            <origin xyz="0.015 -0.059000000000000004 0.006" rpy="3.141592653589793 -0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/electronics_layer_1.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="electronics_layer_1_collision">
-            <origin xyz="0.015 -0.059000000000000004 0.006" rpy="3.141592653589793 -0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/electronics_layer_1.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="electronics_layer_2">
-        <inertial>
-            <origin xyz="-0.01499999994617706 0.05852387611720576 0.0015060650470138403" rpy="0.0 -0.0 0.0" />
-            <mass value="0.06004234440224502" />
-            <inertia ixx="0.00010678425103817976" iyy="4.0990126853671155e-05" izz="0.0001476840760194438" ixy="-1.2490338004977467e-13" iyz="5.54934180714631e-10" ixz="1.9613389201879168e-17" />
-        </inertial>
-        <visual name="electronics_layer_2_visual">
-            <origin xyz="-0.01500000000000007 0.05899999999999996 -0.028000000000000212" rpy="-1.1243388379417081e-15 -1.110223024625157e-15 0.0" />
-            <geometry>
-                <mesh filename="CAD/electronics_layer_2.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="electronics_layer_2_collision">
-            <origin xyz="-0.01500000000000007 0.05899999999999996 -0.028000000000000212" rpy="-1.1243388379417081e-15 -1.110223024625157e-15 0.0" />
-            <geometry>
-                <mesh filename="CAD/electronics_layer_2.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="spacer_1">
-        <inertial>
-            <origin xyz="-2.3725021947029746e-13 -5.3566040492114555e-14 -0.008000000000000018" rpy="0.0 -0.0 0.0" />
-            <mass value="0.002107078759133329" />
-            <inertia ixx="5.0545966051369865e-08" iyy="5.0545966229038626e-08" izz="1.1189905224052188e-08" ixy="-6.352747104407253e-22" iyz="-1.2705494208814505e-21" ixz="7.411538288475128e-22" />
-        </inertial>
-        <visual name="spacer_1_visual">
-            <origin xyz="0.015 -0.059000000000000004 0.012" rpy="3.141592653589793 -0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/spacer.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="spacer_1_collision">
-            <origin xyz="0.015 -0.059000000000000004 0.012" rpy="3.141592653589793 -0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/spacer.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="spacer_2">
-        <inertial>
-            <origin xyz="2.0299317782246363e-13 -4.11315426163128e-14 -0.008000000000000018" rpy="0.0 -0.0 0.0" />
-            <mass value="0.002107078759133329" />
-            <inertia ixx="5.054596605136817e-08" iyy="5.0545966229038626e-08" izz="1.1189905224052188e-08" ixy="-2.117582368135751e-22" iyz="-1.2705494208814505e-21" ixz="8.470329472543003e-22" />
-        </inertial>
-        <visual name="spacer_2_visual">
-            <origin xyz="0.015000000000440245 -0.05899999999998757 0.012" rpy="3.141592653589793 -0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/spacer.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="spacer_2_collision">
-            <origin xyz="0.015000000000440245 -0.05899999999998757 0.012" rpy="3.141592653589793 -0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/spacer.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="spacer_3">
-        <inertial>
-            <origin xyz="2.0300650049875912e-13 -4.11315426163128e-14 -0.008000000000000018" rpy="0.0 -0.0 0.0" />
-            <mass value="0.002107078759133329" />
-            <inertia ixx="5.054596605136648e-08" iyy="5.0545966229038626e-08" izz="1.1189905224050494e-08" ixy="-6.352747104407253e-22" iyz="-1.2705494208814505e-21" ixz="8.470329472543003e-22" />
-        </inertial>
-        <visual name="spacer_3_visual">
-            <origin xyz="0.015000000000440257 -0.05899999999998757 0.012" rpy="3.141592653589793 -0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/spacer.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="spacer_3_collision">
-            <origin xyz="0.015000000000440257 -0.05899999999998757 0.012" rpy="3.141592653589793 -0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/spacer.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="spacer_4">
-        <inertial>
-            <origin xyz="2.0298873693036514e-13 -4.11315426163128e-14 -0.008000000000000018" rpy="0.0 -0.0 0.0" />
-            <mass value="0.002107078759133329" />
-            <inertia ixx="5.054596605136648e-08" iyy="5.054596622903884e-08" izz="1.1189905224050494e-08" ixy="-2.117582368135751e-22" iyz="-1.2705494208814505e-21" ixz="7.411538288475128e-22" />
-        </inertial>
-        <visual name="spacer_4_visual">
-            <origin xyz="0.01500000000044024 -0.05899999999998757 0.012" rpy="3.141592653589793 -0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/spacer.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="spacer_4_collision">
-            <origin xyz="0.01500000000044024 -0.05899999999998757 0.012" rpy="3.141592653589793 -0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/spacer.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
     <!--Leg 1 links-->
     <link name="leg_1_MG996R_c">
         <inertial>
@@ -1327,49 +1180,6 @@
         </collision>
     </link>
 
-    <!-- Base joints -->
-    <joint name="base_bottom_plate" type="fixed">
-        <origin xyz="-0.02573167 0.057065830000000005 0.003" rpy="3.141592653589793 -0.0 0.0" />
-        <parent link="base" />
-        <child link="bottom_plate" />
-    </joint>
-    
-    <joint name="bottom_plate_electronics_layer_1" type="fixed">
-        <origin xyz="0.010731670000000002 0.11606583000000001 -0.003" rpy="0.0 -0.0 0.0" />
-        <parent link="bottom_plate" />
-        <child link="electronics_layer_1" />
-    </joint>
-    
-    <joint name="electronics_layer_1_spacer_1" type="fixed">
-        <origin xyz="0.0 0.0 -0.006" rpy="0.0 -0.0 0.0" />
-        <parent link="electronics_layer_1" />
-        <child link="spacer_1" />
-    </joint>
-    
-    <joint name="electronics_layer_1_spacer_2" type="fixed">
-        <origin xyz="0.03 0.0 -0.006" rpy="0.0 -0.0 0.0" />
-        <parent link="electronics_layer_1" />
-        <child link="spacer_2" />
-    </joint>
-    
-    <joint name="electronics_layer_1_spacer_3" type="fixed">
-        <origin xyz="0.03 -0.11800000000000001 -0.006" rpy="0.0 -0.0 0.0" />
-        <parent link="electronics_layer_1" />
-        <child link="spacer_3" />
-    </joint>
-    
-    <joint name="electronics_layer_1_spacer_4" type="fixed">
-        <origin xyz="0.0 -0.11800000000000001 -0.006" rpy="0.0 -0.0 0.0" />
-        <parent link="electronics_layer_1" />
-        <child link="spacer_4" />
-    </joint>
-
-    <joint name="spacer_2_electronics_layer_2" type="fixed">
-        <origin xyz="0.0 0.0 -0.016" rpy="3.141592653589793 -0.0 0.0" />
-        <parent link="spacer_2" />
-        <child link="electronics_layer_2" />
-    </joint>
-
     <!-- Leg 1 joints -->
     <joint name="base_leg_1_MG996R_c" type="fixed">
         <origin xyz="-0.03264053 -0.060065150000000005 0.013999999999999999" rpy="3.141592653589793 -0.0 0.0" />
@@ -1579,7 +1389,7 @@
         <parent link="leg_4_MG996R_f" />
         <child link="leg_4_coxa_a" />
     </joint>
-    
+
     <joint name="leg_4_femur_joint" type="revolute">
         <origin xyz="0.03495 -0.01825481999999999 -0.02567943999999998" rpy="3.141592653589793 -1.5707963267948966 0" />
         <parent link="leg_4_MG996R_f" />
