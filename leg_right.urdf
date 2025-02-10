@@ -118,7 +118,7 @@
         <collision name="leg_1_coxa_b_collision">
             <origin xyz="-0.037476660528462616 -0.037476660528457516 0.04149999679656438" rpy="-1.245344534372106e-16 1.5023172683245e-16 -0.7853981633974481" />
             <geometry>
-                <mesh filename="CAD/leg_1_coxa_b.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/coxa_b_right.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
