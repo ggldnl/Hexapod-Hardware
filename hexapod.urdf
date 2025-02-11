@@ -1327,7 +1327,7 @@
         </collision>
     </link>
 
-    <!-- Base joints -->
+    <!-- Body joints -->
     <joint name="base_bottom_plate" type="fixed">
         <origin xyz="-0.02573167 0.057065830000000005 0.003" rpy="3.141592653589793 -0.0 0.0" />
         <parent link="base" />
