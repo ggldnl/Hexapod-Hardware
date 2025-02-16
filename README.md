@@ -19,10 +19,11 @@ Below is a summary of the components required to build the hexapod:
 |                        | Servo2040                               | 1            | An equivalent board can be used instead e.g. 2x Pololu Mini Maestro                             | About 28€ on Pimoroni                             |
 |                        | Single channel relay module             | 1            |                                                                                                 | Usually cost around 1.5€ each                     |
 |                        | Raspberry pi 5                          | 1            | Other versions can be used instead (2/3/4)                                                      | About 100€ on Amazon                              |
-|                        | Raspberry pi camera                     | 1            | I had a v1.3 already                                                                            | About 3€ on Amazon                                |
+|                        | Raspberry pi camera                     | 1 (optional) | I had a v1.3 already                                                                            | About 3€ on Amazon                                |
+|                        | ZMR 8A Dual UBEC V2                     | 1            | UBEC 8A max current with two variable outputs (one 5-7.4V, the other 5-8.4V)                    | About 21€ on Aliexpress                           |
 |                        | 7.4V 2S LiPo Battery                    | 1            | They are often sold in pairs, so I ended up buying two of them for 50€                          | About 25€ on Amazon                               |
 
-Approximate total cost: 270€
+Approximate total cost: 290€
 
 The prices listed in this BOM reflect the costs at the time of purchase and may no longer be accurate. This BOM is provided for reference only and should not be considered a precise cost estimate.
 
