@@ -40,7 +40,7 @@ Make sure to follow the recommended print settings for optimal strength and fitm
 
 1. The `MG996.stl` is used in the URDF, we won't need it to build the actual robot. Check out the [simulation repository](https://github.com/ggldnl/Hexapod-Simulation).
 
-2. I just found this [amazing web-based urdf visualizer](https://gkjohnson.github.io/urdf-loaders/javascript/example/bundle/). You can just drag and drop a urdf file and the `CAD` folder and it will display the robot. This was quite handy during development.  
+2. I just found this [amazing web-based urdf visualizer](https://gkjohnson.github.io/urdf-loaders/javascript/example/bundle/). You can just drag and drop a urdf file and the `CAD` folder and it will display it. This was quite handy during development.  
 
 ## TODO
 
