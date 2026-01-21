@@ -9,21 +9,13 @@
         <color rgba="0.4 0.4 0.4 1" />
     </material>
 
-    <material name="white">
-        <color rgba="1 1 1 1" />
-    </material>
-
-    <material name="orange">
-        <color rgba="0.902 0.345 0 1" />
-    </material>
-
     <!--Body links-->
 
     <link name="base">
         <inertial>
-            <origin xyz="-1.762648324756278e-14 -5.050033455416569e-14 0.00698680031349181" rpy="0.0 0.0 0.0" />
-            <mass value="0.6789580603579961" />
-            <inertia ixx="0.0024074595101577626" iyy="0.002204354035625284" izz="0.004589855549230958" ixy="5.568836058961683e-16" iyz="-1.2787511591555878e-18" ixz="-2.581826811457711e-18" />
+            <origin xyz="-6.645222106183918e-15 0.001534649235880559 0.007014957956835419" rpy="0.0 0.0 0.0" />
+            <mass value="0.5452508805768645" />
+            <inertia ixx="0.0019800694919493906" iyy="0.0015359484736764625" izz="0.0034983875742396545" ixy="-9.13028154590727e-18" iyz="-3.334559036663478e-06" ixz="-1.9616518902955917e-17" />
         </inertial>
         <visual name="base_visual">
             <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
@@ -40,1700 +32,1018 @@
         </collision>
     </link>
 
-    <link name="bottom_plate">
-        <inertial>
-            <origin xyz="0.025731670000010413 0.057065829999981076 0.0014298019046473634" rpy="0.0 -0.0 0.0" />
-            <mass value="0.24216446732098765" />
-            <inertia ixx="0.00030349346439557446" iyy="0.00013414984265444537" izz="0.00043718045010567947" ixy="9.013660928710617e-18" iyz="3.388352912917795e-20" ixz="-8.379443854737364e-19" />
-        </inertial>
-        <visual name="bottom_plate_visual">
-            <origin xyz="0.02573167 0.057065830000000005 0.003" rpy="3.141592653589793 -0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/bottom_plate.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="bottom_plate_collision">
-            <origin xyz="0.02573167 0.057065830000000005 0.003" rpy="3.141592653589793 -0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/bottom_plate.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="electronics_layer_1">
-        <inertial>
-            <origin xyz="0.01818721979956204 -0.060098497447607875 -0.002065410256214173" rpy="0.0 -0.0 0.0" />
-            <mass value="0.19151491126723064" />
-            <inertia ixx="0.0002227828945527706" iyy="7.871616965533577e-05" izz="0.00029993417384857444" ixy="1.2408330286999076e-05" iyz="-1.7585246891886066e-06" ixz="6.984149263536499e-07" />
-        </inertial>
-        <visual name="electronics_layer_1_visual">
-            <origin xyz="0.015 -0.059000000000000004 0.006" rpy="3.141592653589793 -0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/electronics_layer_1.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="electronics_layer_1_collision">
-            <origin xyz="0.015 -0.059000000000000004 0.006" rpy="3.141592653589793 -0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/electronics_layer_1.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="electronics_layer_2">
-        <inertial>
-            <origin xyz="-0.01499999994617706 0.05852387611720576 0.0015060650470138403" rpy="0.0 -0.0 0.0" />
-            <mass value="0.06004234440224502" />
-            <inertia ixx="0.00010678425103817976" iyy="4.0990126853671155e-05" izz="0.0001476840760194438" ixy="-1.2490338004977467e-13" iyz="5.54934180714631e-10" ixz="1.9613389201879168e-17" />
-        </inertial>
-        <visual name="electronics_layer_2_visual">
-            <origin xyz="-0.01500000000000007 0.05899999999999996 -0.028000000000000212" rpy="-1.1243388379417081e-15 -1.110223024625157e-15 0.0" />
-            <geometry>
-                <mesh filename="CAD/electronics_layer_2.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="electronics_layer_2_collision">
-            <origin xyz="-0.01500000000000007 0.05899999999999996 -0.028000000000000212" rpy="-1.1243388379417081e-15 -1.110223024625157e-15 0.0" />
-            <geometry>
-                <mesh filename="CAD/electronics_layer_2.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="spacer_1">
-        <inertial>
-            <origin xyz="-2.3725021947029746e-13 -5.3566040492114555e-14 -0.008000000000000018" rpy="0.0 -0.0 0.0" />
-            <mass value="0.002107078759133329" />
-            <inertia ixx="5.0545966051369865e-08" iyy="5.0545966229038626e-08" izz="1.1189905224052188e-08" ixy="-6.352747104407253e-22" iyz="-1.2705494208814505e-21" ixz="7.411538288475128e-22" />
-        </inertial>
-        <visual name="spacer_1_visual">
-            <origin xyz="0.015 -0.059000000000000004 0.012" rpy="3.141592653589793 -0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/spacer.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="spacer_1_collision">
-            <origin xyz="0.015 -0.059000000000000004 0.012" rpy="3.141592653589793 -0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/spacer.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="spacer_2">
-        <inertial>
-            <origin xyz="2.0299317782246363e-13 -4.11315426163128e-14 -0.008000000000000018" rpy="0.0 -0.0 0.0" />
-            <mass value="0.002107078759133329" />
-            <inertia ixx="5.054596605136817e-08" iyy="5.0545966229038626e-08" izz="1.1189905224052188e-08" ixy="-2.117582368135751e-22" iyz="-1.2705494208814505e-21" ixz="8.470329472543003e-22" />
-        </inertial>
-        <visual name="spacer_2_visual">
-            <origin xyz="0.015000000000440245 -0.05899999999998757 0.012" rpy="3.141592653589793 -0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/spacer.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="spacer_2_collision">
-            <origin xyz="0.015000000000440245 -0.05899999999998757 0.012" rpy="3.141592653589793 -0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/spacer.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="spacer_3">
-        <inertial>
-            <origin xyz="2.0300650049875912e-13 -4.11315426163128e-14 -0.008000000000000018" rpy="0.0 -0.0 0.0" />
-            <mass value="0.002107078759133329" />
-            <inertia ixx="5.054596605136648e-08" iyy="5.0545966229038626e-08" izz="1.1189905224050494e-08" ixy="-6.352747104407253e-22" iyz="-1.2705494208814505e-21" ixz="8.470329472543003e-22" />
-        </inertial>
-        <visual name="spacer_3_visual">
-            <origin xyz="0.015000000000440257 -0.05899999999998757 0.012" rpy="3.141592653589793 -0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/spacer.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="spacer_3_collision">
-            <origin xyz="0.015000000000440257 -0.05899999999998757 0.012" rpy="3.141592653589793 -0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/spacer.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="spacer_4">
-        <inertial>
-            <origin xyz="2.0298873693036514e-13 -4.11315426163128e-14 -0.008000000000000018" rpy="0.0 -0.0 0.0" />
-            <mass value="0.002107078759133329" />
-            <inertia ixx="5.054596605136648e-08" iyy="5.054596622903884e-08" izz="1.1189905224050494e-08" ixy="-2.117582368135751e-22" iyz="-1.2705494208814505e-21" ixz="7.411538288475128e-22" />
-        </inertial>
-        <visual name="spacer_4_visual">
-            <origin xyz="0.01500000000044024 -0.05899999999998757 0.012" rpy="3.141592653589793 -0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/spacer.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="spacer_4_collision">
-            <origin xyz="0.01500000000044024 -0.05899999999998757 0.012" rpy="3.141592653589793 -0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/spacer.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
     <!--Leg 1 links-->
-    <link name="leg_1_MG996R_c">
-        <inertial>
-            <origin xyz="-0.0213566016347122 0.013931984749781528 0.00836989290746161" rpy="0.0 -0.0 0.0" />
-            <mass value="0.207953278714177" />
-            <inertia ixx="3.989639417761133e-05" iyy="3.989640031111844e-05" izz="3.6226092838335206e-05" ixy="1.1428841708080039e-05" iyz="3.349213930771384e-07" ixz="-3.349118845850951e-07" />
-        </inertial>
-        <visual name="leg_1_MG996R_c_visual">
-            <origin xyz="-0.013930002111251416 -0.007283200121891475 2.2204460492503132e-17" rpy="3.141592653589793 1.245344534372108e-16 2.356194490192345" />
-            <geometry>
-                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_1_MG996R_c_collision">
-            <origin xyz="-0.013930002111251416 -0.007283200121891475 2.2204460492503132e-17" rpy="3.141592653589793 1.245344534372108e-16 2.356194490192345" />
-            <geometry>
-                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
 
-    <link name="leg_1_MG996R_f">
+    <link name="leg_1_MG996R_coxa">
         <inertial>
-            <origin xyz="0.024952796767646526 0.009630716290236095 0.0022060948384998546" rpy="0.0 -0.0 0.0" />
-            <mass value="0.207953278714177" />
-            <inertia ixx="2.846755553628441e-05" iyy="4.377565917187119e-05" izz="4.377567261890959e-05" ixy="3.349144703087767e-07" iyz="-7.549573057054858e-06" ixz="3.349188073535178e-07" />
+            <origin xyz="-0.013931981892568142 -0.02135659877749534 0.008369892907608575" rpy="0.0 -0.0 0.0" />
+            <mass value="0.20795327871559424" />
+            <inertia ixx="3.989640031184312e-05" iyy="3.9896394178338176e-05" izz="3.6226092838469864e-05" ixy="-1.1428841708134357e-05" iyz="-3.349118843938418e-07" ixz="-3.349213929004541e-07" />
         </inertial>
-        <visual name="leg_1_MG996R_f_visual">
-            <origin xyz="0.004699996796564361 0.01060660093167094 -0.01060660586827753" rpy="2.3561944901923453 3.410597503508584e-17 1.540743955509788e-32" />
+        <visual name="leg_1_MG996R_coxa_visual">
+            <origin xyz="0.007283202979144226 -0.013929999253991908 8.881784197001374e-18" rpy="-3.141592653589793 -1.503107159385723e-15 -2.35619449019235" />
             <geometry>
                 <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
-        <collision name="leg_1_MG996R_f_collision">
-            <origin xyz="0.004699996796564361 0.01060660093167094 -0.01060660586827753" rpy="2.3561944901923453 3.410597503508584e-17 1.540743955509788e-32" />
+        <collision name="leg_1_MG996R_coxa_collision">
+            <origin xyz="0.007283202979144226 -0.013929999253991908 8.881784197001374e-18" rpy="-3.141592653589793 -1.503107159385723e-15 -2.35619449019235" />
             <geometry>
                 <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
 
-    <link name="leg_1_MG996R_t">
+    <link name="leg_1_coxa">
         <inertial>
-            <origin xyz="0.008979632074602933 -0.02311780679666102 4.09182035809863e-09" rpy="0.0 -0.0 7.002961686799377e-34" />
-            <mass value="0.207953278714177" />
-            <inertia ixx="3.187318053441031e-05" iyy="3.282046784020779e-05" izz="5.1325238952446006e-05" ixy="-3.879268651024205e-06" iyz="6.92276835135608e-12" ixz="-2.5857237346299217e-12" />
+            <origin xyz="-0.021868759892857075 -0.020557643514970057 -0.020572897514840063" rpy="0.0 -0.0 0.0" />
+            <mass value="0.23210805328252043" />
+            <inertia ixx="0.00010185659819878613" iyy="0.00011376262401915834" izz="0.00011113698714724281" ixy="-3.3273760382541567e-06" iyz="-4.0683480606476625e-06" ixz="-4.350483533926249e-06" />
         </inertial>
-        <visual name="leg_1_MG996R_t_visual">
-            <origin xyz="0.0005771479097073318 -0.043357107026899176 -0.009749998110869998" rpy="1.5707963267948968 -2.529221735498422e-16 0.7853981633974484" />
+        <visual name="leg_1_coxa_visual">
+            <origin xyz="-0.14799063143944235 0.01478810526816348 -0.1314188537154779" rpy="-3.141592653589791 0.7853981633974431 -0.7853981633974517" />
+            <geometry>
+                <mesh filename="CAD/coxa.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="gray"/>
+        </visual>
+        <collision name="leg_1_coxa_collision">
+            <origin xyz="-0.14799063143944235 0.01478810526816348 -0.1314188537154779" rpy="-3.141592653589791 0.7853981633974431 -0.7853981633974517" />
+            <geometry>
+                <mesh filename="CAD/coxa.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="leg_1_MG996R_femur">
+        <inertial>
+            <origin xyz="-0.006349563295029999 0.02311780926644385 -0.006349555649617446" rpy="-4.930380657631324e-32 -0.0 0.0" />
+            <mass value="0.20795327871559424" />
+            <inertia ixx="4.159920715841651e-05" iyy="3.2820467840353494e-05" izz="4.15992123298805e-05" ixy="-2.7430522738539723e-06" iyz="-2.7430620641360475e-06" ixz="-9.726029209075528e-06" />
+        </inertial>
+        <visual name="leg_1_MG996R_femur_visual">
+            <origin xyz="0.006486182910840199 0.04335710949682697 -0.007302394791956193" rpy="2.1862760354652675 0.5235987755982903 -2.1862760354652955" />
             <geometry>
                 <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
-        <collision name="leg_1_MG996R_t_collision">
-            <origin xyz="0.0005771479097073318 -0.043357107026899176 -0.009749998110869998" rpy="1.5707963267948968 -2.529221735498422e-16 0.7853981633974484" />
+        <collision name="leg_1_MG996R_femur_collision">
+            <origin xyz="0.006486182910840199 0.04335710949682697 -0.007302394791956193" rpy="2.1862760354652675 0.5235987755982903 -2.1862760354652955" />
             <geometry>
                 <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
 
-    <link name="leg_1_coxa_a">
+    <link name="leg_1_femur">
         <inertial>
-            <origin xyz="0.008150925434592561 0.01830499415619695 0.0006271852210843588" rpy="0.0 -0.0 0.0" />
-            <mass value="0.03329037594662584" />
-            <inertia ixx="4.131218918157248e-06" iyy="4.292509549727152e-06" izz="8.13497513364118e-06" ixy="-3.4675873338201415e-06" iyz="-4.436065358599036e-08" ixz="-4.967608887462187e-08" />
+            <origin xyz="-0.042389884762423814 -0.03228058563361566 0.005250003203434872" rpy="0.0 -0.0 0.0" />
+            <mass value="0.1615808293904576" />
+            <inertia ixx="0.00011199064455003679" iyy="0.00011199064455002681" izz="0.00018820429701192458" ixy="-9.148253177655372e-05" iyz="-1.436567878543294e-18" ixz="-5.421010862427316e-19" />
         </inertial>
-        <visual name="leg_1_coxa_a_visual">
-            <origin xyz="-0.008308500528462624 0.0015909894715424855 -0.001750003203435586" rpy="-1.245344534372106e-16 1.5023172683244996e-16 -0.7853981633974481" />
+        <visual name="leg_1_femur_visual">
+            <origin xyz="-0.06738727417201755 -0.047588282751642945 0.0052500032034344815" rpy="1.5707963267948846 -9.603429163007513e-15 0.785398163397445" />
             <geometry>
-                <mesh filename="CAD/coxa_a_right.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/femur.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
-        <collision name="leg_1_coxa_a_collision">
-            <origin xyz="-0.008308500528462624 0.0015909894715424855 -0.001750003203435586" rpy="-1.245344534372106e-16 1.5023172683244996e-16 -0.7853981633974481" />
+        <collision name="leg_1_femur_collision">
+            <origin xyz="-0.06738727417201755 -0.047588282751642945 0.0052500032034344815" rpy="1.5707963267948846 -9.603429163007513e-15 0.785398163397445" />
             <geometry>
-                <mesh filename="CAD/coxa_a_right.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/femur.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
 
-    <link name="leg_1_coxa_b">
+    <link name="leg_1_MG996R_tibia">
         <inertial>
-            <origin xyz="-0.016082730051457803 -0.015894011955612512 -0.005835649360206568" rpy="0.0 -0.0 0.0" />
-            <mass value="0.04490836615745227" />
-            <inertia ixx="7.570806724760545e-06" iyy="7.815179248384845e-06" izz="1.486969927151291e-05" ixy="-6.737300382606579e-06" iyz="-1.0459627444581849e-07" ixz="-1.0048041289742698e-07" />
+            <origin xyz="0.011368368870416354 -0.023205186483118007 -0.005250001000746491" rpy="0.0 -0.0 -1.599831644569785e-58" />
+            <mass value="0.20795327871559424" />
+            <inertia ixx="3.282046784035177e-05" iyy="3.187318053507471e-05" izz="5.13252389532249e-05" ixy="3.87926865075619e-06" iyz="-2.5857318131268514e-12" ixz="-6.922773931796605e-12" />
         </inertial>
-        <visual name="leg_1_coxa_b_visual">
-            <origin xyz="-0.037476660528462616 -0.037476660528457516 0.04149999679656438" rpy="-1.245344534372106e-16 1.5023172683245e-16 -0.7853981633974481" />
+        <visual name="leg_1_MG996R_tibia_visual">
+            <origin xyz="0.03160766910079932 -0.03160767064795067 -0.015000003203434654" rpy="1.5707963267949088 -9.492406860545008e-15 2.356194490192349" />
             <geometry>
-                <mesh filename="CAD/coxa_b_right.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
-        <collision name="leg_1_coxa_b_collision">
-            <origin xyz="-0.037476660528462616 -0.037476660528457516 0.04149999679656438" rpy="-1.245344534372106e-16 1.5023172683245e-16 -0.7853981633974481" />
+        <collision name="leg_1_MG996R_tibia_collision">
+            <origin xyz="0.03160766910079932 -0.03160767064795067 -0.015000003203434654" rpy="1.5707963267949088 -9.492406860545008e-15 2.356194490192349" />
             <geometry>
-                <mesh filename="CAD/coxa_b_right.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="leg_1_femur_a">
-        <inertial>
-            <origin xyz="-0.007313766969440483 -0.0018738117298011225 0.03907114287949463" rpy="0.0 -0.0 0.0" />
-            <mass value="0.06532641332455354" />
-            <inertia ixx="4.0924780174512575e-05" iyy="4.0827509479549485e-05" izz="8.434001460605163e-06" ixy="-3.990162260728773e-06" iyz="7.2994033516955215e-06" ixz="7.334386903970892e-06" />
-        </inertial>
-        <visual name="leg_1_femur_a_visual">
-            <origin xyz="-0.0007071020514142746 0.0007071066182250796 -3.203435625653839e-09" rpy="1.5707963267948966 -0.6108652381980162 -2.356194490192345" />
-            <geometry>
-                <mesh filename="CAD/femur_a_right.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_1_femur_a_collision">
-            <origin xyz="-0.0007071020514142746 0.0007071066182250796 -3.203435625653839e-09" rpy="1.5707963267948966 -0.6108652381980162 -2.356194490192345" />
-            <geometry>
-                <mesh filename="CAD/femur_a_right.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-    
-    <link name="leg_1_femur_b">
-        <inertial>
-            <origin xyz="0.015606805962859537 0.015152340349115861 -0.0052004379221506185" rpy="0.0 -0.0 -7.002961686799377e-34" />
-            <mass value="0.0800214310563922" />
-            <inertia ixx="9.693159673782297e-06" iyy="9.69315967378208e-06" izz="1.3901924233197978e-05" ixy="-5.667417293105776e-06" iyz="-1.3985747771352728e-07" ixz="1.398574777137448e-07" />
-        </inertial>
-        <visual name="leg_1_femur_b_visual">
-            <origin xyz="-2.051414238479765e-09 3.3817748779085832e-09 0.04770578320343561" rpy="-1.5707963267948968 0.6108652381980162 2.356194490192345" />
-            <geometry>
-                <mesh filename="CAD/femur_b_right.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_1_femur_b_collision">
-            <origin xyz="-2.051414238479765e-09 3.3817748779085832e-09 0.04770578320343561" rpy="-1.5707963267948968 0.6108652381980162 2.356194490192345" />
-            <geometry>
-                <mesh filename="CAD/femur_b_right.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="leg_1_femur_c">
-        <inertial>
-            <origin xyz="-0.0010886446390956995 -0.004918304334164514 -0.006733416303654849" rpy="0.0 -0.0 7.002961686799377e-34" />
-            <mass value="0.048399072148255506" />
-            <inertia ixx="2.2465407655417502e-05" iyy="2.259983189186051e-05" izz="4.141692185716337e-06" ixy="-1.929776213000357e-06" iyz="3.2931885882197726e-06" ixz="3.246172654049007e-06" />
-        </inertial>
-        <visual name="leg_1_femur_c_visual">
-            <origin xyz="-0.030759142051414213 0.03075914661822509 -0.04770578320343558" rpy="1.5707963267948966 -0.6108652381980162 -2.356194490192345" />
-            <geometry>
-                <mesh filename="CAD/femur_c_right.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_1_femur_c_collision">
-            <origin xyz="-0.030759142051414213 0.03075914661822509 -0.04770578320343558" rpy="1.5707963267948966 -0.6108652381980162 -2.356194490192345" />
-            <geometry>
-                <mesh filename="CAD/femur_c_right.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
 
     <link name="leg_1_tibia">
         <inertial>
-            <origin xyz="-0.04085132676876166 0.025253080823863953 -0.009277024870086095" rpy="0.0 -0.0 -1.6038036517675087e-64" />
-            <mass value="0.10828707727885009" />
-            <inertia ixx="5.5437188486367334e-05" iyy="6.147434583849689e-05" izz="0.0001071830159033978" ixy="5.173583962738001e-05" iyz="-2.259988236504463e-06" ixz="1.476543947169463e-06" />
+            <origin xyz="0.0130108984949468 -0.016293305911519555 -0.012514301101988546" rpy="0.0 -0.0 0.0" />
+            <mass value="0.2763071087572843" />
+            <inertia ixx="0.0002267575012691505" iyy="0.0002267638037081899" izz="0.00034998341011063805" ixy="-0.00012254451068291136" iyz="4.534317847601919e-05" ixz="4.9151539951400395e-05" />
         </inertial>
         <visual name="leg_1_tibia_visual">
-            <origin xyz="-0.03719381938681872 0.026870057867797073 0.004749998110869997" rpy="2.356194490192345 1.5707963267948963 0" />
+            <origin xyz="0.02085964899297368 -0.009545941007024581 3.1289283908275677e-09" rpy="-9.553639200502557e-15 1.2878587085651928e-14 2.35619449019234" />
             <geometry>
-                <mesh filename="CAD/tibia_right.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/tibia.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
         <collision name="leg_1_tibia_collision">
-            <origin xyz="-0.03719381938681872 0.026870057867797073 0.004749998110869997" rpy="2.356194490192345 1.5707963267948963 0" />
+            <origin xyz="0.02085964899297368 -0.009545941007024581 3.1289283908275677e-09" rpy="-9.553639200502557e-15 1.2878587085651928e-14 2.35619449019234" />
             <geometry>
-                <mesh filename="CAD/tibia_right.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/tibia.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
 
-    <!-- Leg 2 links -->
-    <link name="leg_2_MG996R_c">
+    <!--Leg 2 links-->
+
+    <link name="leg_2_MG996R_coxa">
         <inertial>
-            <origin xyz="-0.024952799971082146 0.005250002202690392 0.008369892907461582" rpy="0.0 -0.0 0.0" />
-            <mass value="0.207953278714177" />
-            <inertia ixx="2.8467555536284703e-05" iyy="5.132523895244492e-05" izz="3.6226092838336074e-05" ixy="-3.0667533548436243e-12" iyz="6.723519192224986e-12" ixz="-4.736436528994054e-07" />
+            <origin xyz="-0.024952799971140128 0.005250002202687933 0.008369892907608556" rpy="0.0 -0.0 0.0" />
+            <mass value="0.20795327871559424" />
+            <inertia ixx="2.8467555536956196e-05" iyy="5.132523895322533e-05" izz="3.6226092838469756e-05" ixy="-3.066752559692828e-12" iyz="6.723529484646535e-12" ixz="-4.736436526392375e-07" />
         </inertial>
-        <visual name="leg_2_MG996R_c_visual">
-            <origin xyz="-0.004700000000000069 -0.004499999999999934 -4.440892098500626e-18" rpy="3.141592653589793 1.2514850379350087e-16 3.141592653589793" />
+        <visual name="leg_2_MG996R_coxa_visual">
+            <origin xyz="-0.004699999999999935 -0.004499999999999963 3.330669073875369e-18" rpy="-3.1415926535897927 -1.193362030990045e-15 -3.141592653589793" />
             <geometry>
                 <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
-        <collision name="leg_2_MG996R_c_collision">
-            <origin xyz="-0.004700000000000069 -0.004499999999999934 -4.440892098500626e-18" rpy="3.141592653589793 1.2514850379350087e-16 3.141592653589793" />
-            <geometry>
-                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="leg_2_MG996R_f">
-        <inertial>
-            <origin xyz="0.024952796767646605 0.008369892907461447 0.005250002202690141" rpy="0.0 -0.0 0.0" />
-            <mass value="0.207953278714177" />
-            <inertia ixx="2.8467555536284845e-05" iyy="3.622609283833412e-05" izz="5.1325238952444346e-05" ixy="4.7364365289941395e-07" iyz="6.723519520811499e-12" ixz="3.0667537330138564e-12" />
-        </inertial>
-        <visual name="leg_2_MG996R_f_visual">
-            <origin xyz="0.004699996796564441 -1.176836406102666e-16 -0.004500000000000206" rpy="1.570796326794899 3.106065884736969e-17 -3.1060658847369654e-17" />
-            <geometry>
-                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_2_MG996R_f_collision">
-            <origin xyz="0.004699996796564441 -1.176836406102666e-16 -0.004500000000000206" rpy="1.570796326794899 3.106065884736969e-17 -3.1060658847369654e-17" />
+        <collision name="leg_2_MG996R_coxa_collision">
+            <origin xyz="-0.004699999999999935 -0.004499999999999963 3.330669073875369e-18" rpy="-3.1415926535897927 -1.193362030990045e-15 -3.141592653589793" />
             <geometry>
                 <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
 
-    <link name="leg_2_MG996R_t">
+    <link name="leg_2_coxa">
         <inertial>
-            <origin xyz="-0.009997198350766468 -0.022696317092538602 4.091820313689709e-09" rpy="0.0 -0.0 0.0" />
-            <mass value="0.207953278714177" />
-            <inertia ixx="2.846755553628441e-05" iyy="3.622609283833629e-05" izz="5.1325238952446006e-05" ixy="4.7364365289906656e-07" iyz="6.723519185386452e-12" ixz="3.066753448410786e-12" />
+            <origin xyz="-0.030000000000000897 0.0009270992817276102 -0.020572897514840083" rpy="4.318084277547223e-78 -0.0 -6.842277657836118e-49" />
+            <mass value="0.23210805328252054" />
+            <inertia ixx="0.00010448223507070534" iyy="0.0001111369871472185" izz="0.00011113698714723628" ixy="5.953012910176689e-06" iyz="1.9949990636461146e-07" ixz="-5.953012910192502e-06" />
         </inertial>
-        <visual name="leg_2_MG996R_t_visual">
-            <origin xyz="-0.030249998321848538 -0.03106621000000017 -0.00974999811087005" rpy="1.5707963267948968 -5.562433471528925e-16 1.6653345369377316e-16" />
+        <visual name="leg_2_coxa_visual">
+            <origin xyz="-0.09418841197586102 0.11510194855892608 -0.13141885371547798" rpy="-3.1415926535897927 0.7853981633974415 -1.570796326794894" />
+            <geometry>
+                <mesh filename="CAD/coxa.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="gray"/>
+        </visual>
+        <collision name="leg_2_coxa_collision">
+            <origin xyz="-0.09418841197586102 0.11510194855892608 -0.13141885371547798" rpy="-3.1415926535897927 0.7853981633974415 -1.570796326794894" />
+            <geometry>
+                <mesh filename="CAD/coxa.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="leg_2_MG996R_femur">
+        <inertial>
+            <origin xyz="0.007069084110578992 0.022696320295826734 0.007069091755991277" rpy="-4.930380657631324e-32 -0.0 0.0" />
+            <mass value="0.20795327871559424" />
+            <inertia ixx="3.9896400311842064e-05" iyy="3.6226092838469864e-05" izz="3.989639417833713e-05" ixy="3.3492139290067454e-07" iyz="3.349118843937143e-07" ixz="-1.1428841708133571e-05" />
+        </inertial>
+        <visual name="leg_2_MG996R_femur_visual">
+            <origin xyz="0.028284268982291322 0.031066213203435503 0.014495691279494594" rpy="1.5707963267948857 0.7853981633974337 -3.141592653589787" />
             <geometry>
                 <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
-        <collision name="leg_2_MG996R_t_collision">
-            <origin xyz="-0.030249998321848538 -0.03106621000000017 -0.00974999811087005" rpy="1.5707963267948968 -5.562433471528925e-16 1.6653345369377316e-16" />
+        <collision name="leg_2_MG996R_femur_collision">
+            <origin xyz="0.028284268982291322 0.031066213203435503 0.014495691279494594" rpy="1.5707963267948857 0.7853981633974337 -3.141592653589787" />
             <geometry>
                 <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
 
-    <link name="leg_2_coxa_a">
+    <link name="leg_2_femur">
         <inertial>
-            <origin xyz="0.018707157766217345 0.00718001434038852 0.0006271852210843853" rpy="0.0 -0.0 0.0" />
-            <mass value="0.03329037594662584" />
-            <inertia ixx="7.442769001220687e-07" iyy="7.67945156776226e-06" izz="8.134975133641234e-06" ixy="8.064531578484873e-08" iyz="3.7585803375684765e-09" ixz="-6.649401827460747e-08" />
+            <origin xyz="-0.052800000000008965 0.007148349669587089 0.005250003203434775" rpy="0.0 -0.0 0.0" />
+            <mass value="0.1615808293904576" />
+            <inertia ixx="2.0508112773478013e-05" iyy="0.0002034731763265827" izz="0.0001882042970119211" ixy="-6.491660507756958e-18" iyz="-6.924494343803905e-19" ixz="-1.3552527156068807e-18" />
         </inertial>
-        <visual name="leg_2_coxa_a_visual">
-            <origin xyz="-0.0047499999999997475 0.006999999999999875 -0.0017500032034355596" rpy="-1.3218501401405977e-16 1.5665418669671956e-16 -1.5707963267948943" />
+        <visual name="leg_2_femur_visual">
+            <origin xyz="-0.08130000000000034 0.013999996796564563 0.005250003203434375" rpy="1.570796326794883 -9.530885321133178e-15 3.080868893334806e-15" />
             <geometry>
-                <mesh filename="CAD/coxa_a_right.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/femur.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
-        <collision name="leg_2_coxa_a_collision">
-            <origin xyz="-0.0047499999999997475 0.006999999999999875 -0.0017500032034355596" rpy="-1.3218501401405977e-16 1.5665418669671956e-16 -1.5707963267948943" />
+        <collision name="leg_2_femur_collision">
+            <origin xyz="-0.08130000000000034 0.013999996796564563 0.005250003203434375" rpy="1.570796326794883 -9.530885321133178e-15 3.080868893334806e-15" />
             <geometry>
-                <mesh filename="CAD/coxa_a_right.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/femur.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
 
-    <link name="leg_2_coxa_b">
+    <link name="leg_2_MG996R_tibia">
         <inertial>
-            <origin xyz="-0.022610969521651363 0.000133443845301142 -0.005835649360206497" rpy="0.0 -0.0 0.0" />
-            <mass value="0.04490836615745227" />
-            <inertia ixx="9.55692603965828e-07" iyy="1.4430293369179057e-05" izz="1.4869699271513235e-05" ixy="1.221862618118398e-07" iyz="-2.9103536113086024e-09" ixz="-1.4501111628368105e-07" />
+            <origin xyz="0.024447200028859372 -0.00836988970417307 -0.005250001000746411" rpy="0.0 -0.0 -5.656800834009513e-61" />
+            <mass value="0.20795327871559424" />
+            <inertia ixx="2.8467555536956346e-05" iyy="3.622609283846813e-05" izz="5.13252389532249e-05" ixy="4.736436526392443e-07" iyz="-6.723528863584907e-12" ixz="-3.0667519305277446e-12" />
         </inertial>
-        <visual name="leg_2_coxa_b_visual">
-            <origin xyz="-0.05299999999999983 -7.105427357601002e-17 0.04149999679656445" rpy="-1.3218501401405972e-16 1.5665418669671956e-16 -1.5707963267948943" />
+        <visual name="leg_2_MG996R_tibia_visual">
+            <origin xyz="0.04469999999999942 3.2034352492882334e-09 -0.015000003203434567" rpy="1.5707963267949103 -9.653350001047915e-15 3.141592653589791" />
             <geometry>
-                <mesh filename="CAD/coxa_b_right.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
-        <collision name="leg_2_coxa_b_collision">
-            <origin xyz="-0.05299999999999983 -7.105427357601002e-17 0.04149999679656445" rpy="-1.3218501401405972e-16 1.5665418669671956e-16 -1.5707963267948943" />
+        <collision name="leg_2_MG996R_tibia_collision">
+            <origin xyz="0.04469999999999942 3.2034352492882334e-09 -0.015000003203434567" rpy="1.5707963267949103 -9.653350001047915e-15 3.141592653589791" />
             <geometry>
-                <mesh filename="CAD/coxa_b_right.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="leg_2_femur_a">
-        <inertial>
-            <origin xyz="-0.006496602430141571 0.0038466359024208695 0.039071142879494716" rpy="0.0 -0.0 0.0" />
-            <mass value="0.06532641332455354" />
-            <inertia ixx="3.6885982566301823e-05" iyy="4.486630708775948e-05" izz="8.434001460604947e-06" ixy="-4.863534748184343e-08" iyz="-2.473710704388476e-08" ixz="1.0347652324243302e-05" />
-        </inertial>
-        <visual name="leg_2_femur_a_visual">
-            <origin xyz="1.4210854715202004e-16 0.0010000032034353757 -3.203435545717781e-09" rpy="1.5707963267948966 -0.6108652381980165 3.141592653589793" />
-            <geometry>
-                <mesh filename="CAD/femur_a_right.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_2_femur_a_collision">
-            <origin xyz="1.4210854715202004e-16 0.0010000032034353757 -3.203435545717781e-09" rpy="1.5707963267948966 -0.6108652381980165 3.141592653589793" />
-            <geometry>
-                <mesh filename="CAD/femur_a_right.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-    
-    <link name="leg_2_femur_b">
-        <inertial>
-            <origin xyz="0.00032135955913933147 0.021749996796564624 -0.005200437922150671" rpy="0.0 -0.0 0.0" />
-            <mass value="0.0800214310563922" />
-            <inertia ixx="1.536057696688715e-05" iyy="4.025742380675979e-06" izz="1.3901924233198412e-05" ixy="6.844026213814747e-19" iyz="1.3213713977167085e-19" ixz="1.9778834178156915e-07" />
-        </inertial>
-        <visual name="leg_2_femur_b_visual">
-            <origin xyz="1.7763568394002506e-16 -3.203435303689162e-09 0.04770578320343555" rpy="-1.5707963267948966 0.6108652381980165 -3.141592653589793" />
-            <geometry>
-                <mesh filename="CAD/femur_b_right.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_2_femur_b_collision">
-            <origin xyz="1.7763568394002506e-16 -3.203435303689162e-09 0.04770578320343555" rpy="-1.5707963267948966 0.6108652381980165 -3.141592653589793" />
-            <geometry>
-                <mesh filename="CAD/femur_b_right.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="leg_2_femur_c">
-        <inertial>
-            <origin xyz="-0.004247557582456559 -0.0027079742218780512 -0.016733416303654804" rpy="0.0 -0.0 0.0" />
-            <mass value="0.048399072148255506" />
-            <inertia ixx="2.0602843560638297e-05" iyy="2.4462395986639147e-05" izz="4.141692185716554e-06" ixy="6.721211822085377e-08" iyz="3.3245285875999574e-08" ixz="4.624026679036694e-06" />
-        </inertial>
-        <visual name="leg_2_femur_c_visual">
-            <origin xyz="1.9539925233402755e-16 0.043500003203435327 -0.05770578320343554" rpy="1.5707963267948966 -0.6108652381980164 3.1415926535897927" />
-            <geometry>
-                <mesh filename="CAD/femur_c_right.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_2_femur_c_collision">
-            <origin xyz="1.9539925233402755e-16 0.043500003203435327 -0.05770578320343554" rpy="1.5707963267948966 -0.6108652381980164 3.1415926535897927" />
-            <geometry>
-                <mesh filename="CAD/femur_c_right.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
 
     <link name="leg_2_tibia">
         <inertial>
-            <origin xyz="0.0028571288389278495 0.011029623704799596 0.00927702487008597" rpy="0.0 -0.0 4.125340265343691e-64" />
-            <mass value="0.10828707727885009" />
-            <inertia ixx="6.719927535051777e-06" iyy="0.00011019160678981191" izz="0.00010718301590339737" ixy="3.0185786760642376e-06" iyz="-5.539787696705092e-07" ixz="-2.642127245197634e-06" />
+            <origin xyz="-0.002321012180105022 -0.020721202778112985 -0.012514301101988501" rpy="3.503246160812043e-46 -0.0 3.454467422037779e-77" />
+            <mass value="0.2763071087572843" />
+            <inertia ixx="0.00010421614180576068" iyy="0.00034930516317158145" izz="0.0003499834101106415" ixy="3.151219518860619e-09" iyz="-2.69291822445111e-06" ixz="6.68178561863418e-05" />
         </inertial>
         <visual name="leg_2_tibia_visual">
-            <origin xyz="0.0043000016781514815 0.007299999999999815 -0.004749998110870122" rpy="-1.5707963267948966 -1.5707963267948961 0" />
+            <origin xyz="0.007999999999999617 -0.021500000000000453 3.1289284263547045e-09" rpy="-9.714582341005279e-15 1.448841047135834e-14 1.5707963267948988" />
             <geometry>
-                <mesh filename="CAD/tibia_right.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/tibia.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
         <collision name="leg_2_tibia_collision">
-            <origin xyz="0.0043000016781514815 0.007299999999999815 -0.004749998110870122" rpy="-1.5707963267948966 -1.5707963267948961 0" />
+            <origin xyz="0.007999999999999617 -0.021500000000000453 3.1289284263547045e-09" rpy="-9.714582341005279e-15 1.448841047135834e-14 1.5707963267948988" />
             <geometry>
-                <mesh filename="CAD/tibia_right.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/tibia.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
 
-    <!-- Leg 3 links -->
-    <link name="leg_3_MG996R_c">
+    <!--Leg 3 links-->
+
+    <link name="leg_3_MG996R_coxa">
         <inertial>
-            <origin xyz="-0.013931984749787879 -0.02135660163470809 0.008369892907461584" rpy="0.0 -0.0 0.0" />
-            <mass value="0.207953278714177" />
-            <inertia ixx="3.989640031111866e-05" iyy="3.989639417761111e-05" izz="3.6226092838336074e-05" ixy="-1.1428841708080147e-05" iyz="-3.349118845850544e-07" ixz="-3.349213930771926e-07" />
+            <origin xyz="-0.013931978777496457 0.02135660189256684 0.00836989290760856" rpy="0.0 -0.0 0.0" />
+            <mass value="0.20795327871559424" />
+            <inertia ixx="3.989639417833861e-05" iyy="3.9896400311843446e-05" izz="3.6226092838469214e-05" ixy="1.1428841708134574e-05" iyz="3.349213929004541e-07" ixz="-3.349118843938418e-07" />
         </inertial>
-        <visual name="leg_3_MG996R_c_visual">
-            <origin xyz="0.007283200121885134 -0.013930002111247317 -6.661338147750939e-18" rpy="3.1415926535897927 1.586806286402691e-16 -2.356194490192345" />
+        <visual name="leg_3_MG996R_coxa_visual">
+            <origin xyz="-0.0065053792539929624 0.00014141702085445295 2.553512956637829e-17" rpy="-3.1415926535897927 -1.1656064553744155e-15 2.356194490192342" />
             <geometry>
                 <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
-        <collision name="leg_3_MG996R_c_collision">
-            <origin xyz="0.007283200121885134 -0.013930002111247317 -6.661338147750939e-18" rpy="3.1415926535897927 1.586806286402691e-16 -2.356194490192345" />
-            <geometry>
-                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="leg_3_MG996R_f">
-        <inertial>
-            <origin xyz="0.024952796767646567 0.0022060948384957334 -0.009630716290229949" rpy="0.0 -0.0 0.0" />
-            <mass value="0.207953278714177" />
-            <inertia ixx="2.8467555536283544e-05" iyy="4.377567261890894e-05" izz="4.377565917186967e-05" ixy="3.349188073535652e-07" iyz="7.5495730570552914e-06" ixz="-3.3491447030884445e-07" />
-        </inertial>
-        <visual name="leg_3_MG996R_f_visual">
-            <origin xyz="0.004699996796564403 -0.010606605868281669 -0.010606600931664793" rpy="0.7853981633974482 -1.7256332301709629e-31 -2.386633879938858e-16" />
-            <geometry>
-                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_3_MG996R_f_collision">
-            <origin xyz="0.004699996796564403 -0.010606605868281669 -0.010606600931664793" rpy="0.7853981633974482 -1.7256332301709629e-31 -2.386633879938858e-16" />
+        <collision name="leg_3_MG996R_coxa_collision">
+            <origin xyz="-0.0065053792539929624 0.00014141702085445295 2.553512956637829e-17" rpy="-3.1415926535897927 -1.1656064553744155e-15 2.356194490192342" />
             <geometry>
                 <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
 
-    <link name="leg_3_MG996R_t">
+    <link name="leg_3_coxa">
         <inertial>
-            <origin xyz="-0.02311780679666722 -0.00897963207460709 4.09182025151722e-09" rpy="-3.0814879110195774e-33 -0.0 4.9780954463047874e-34" />
-            <mass value="0.207953278714177" />
-            <inertia ixx="3.282046784020779e-05" iyy="3.187318053441116e-05" izz="5.132523895244599e-05" ixy="3.879268651025068e-06" iyz="2.5857233037326132e-12" ixz="6.922768561105084e-12" />
+            <origin xyz="-0.020557643514971594 0.0218687598928563 -0.020572897514840066" rpy="0.0 -0.0 -5.112611784615912e-75" />
+            <mass value="0.23210805328252054" />
+            <inertia ixx="0.00011376262401915959" iyy="0.00010185659819879952" izz="0.00011113698714721243" ixy="3.3273760382613107e-06" iyz="4.350483533925163e-06" ixz="-4.068348060652323e-06" />
         </inertial>
-        <visual name="leg_3_MG996R_t_visual">
-            <origin xyz="-0.04335710702690537 -0.0005771479097114707 -0.009749998110870121" rpy="1.5707963267948977 -4.813217404829715e-16 -0.7853981633974486" />
+        <visual name="leg_3_coxa_visual">
+            <origin xyz="0.014788105268161314 0.1479906314394418 -0.13141885371547804" rpy="-3.141592653589793 0.7853981633974385 -2.3561944901923457" />
+            <geometry>
+                <mesh filename="CAD/coxa.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="gray"/>
+        </visual>
+        <collision name="leg_3_coxa_collision">
+            <origin xyz="0.014788105268161314 0.1479906314394418 -0.13141885371547804" rpy="-3.141592653589793 0.7853981633974385 -2.3561944901923457" />
+            <geometry>
+                <mesh filename="CAD/coxa.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="leg_3_MG996R_femur">
+        <inertial>
+            <origin xyz="0.01634675587577469 0.008979633120855635 0.01634676352118694" rpy="4.9303806576313227e-32 -0.0 9.860761315262645e-32" />
+            <mass value="0.20795327871559424" />
+            <inertia ixx="4.2072860319564225e-05" iyy="3.187318053507514e-05" izz="4.2072846474014214e-05" ixy="2.7430589973838773e-06" iyz="2.7430553406067587e-06" ixz="-9.252385556436575e-06" />
+        </inertial>
+        <visual name="leg_3_MG996R_femur_visual">
+            <origin xyz="0.037552394989253585 0.0005771489560230592 0.023763817286456865" rpy="0.9553166181244941 0.5235987755982886 2.186276035465294" />
             <geometry>
                 <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
-        <collision name="leg_3_MG996R_t_collision">
-            <origin xyz="-0.04335710702690537 -0.0005771479097114707 -0.009749998110870121" rpy="1.5707963267948977 -4.813217404829715e-16 -0.7853981633974486" />
+        <collision name="leg_3_MG996R_femur_collision">
+            <origin xyz="0.037552394989253585 0.0005771489560230592 0.023763817286456865" rpy="0.9553166181244941 0.5235987755982886 2.186276035465294" />
             <geometry>
                 <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
-
-    <link name="leg_3_coxa_a">
+    
+    <link name="leg_3_femur">
         <inertial>
-            <origin xyz="0.01830499415619089 -0.008150925434596666 0.0006271852210843631" rpy="0.0 -0.0 -6.566986231973194e-63" />
-            <mass value="0.03329037594662584" />
-            <inertia ixx="4.292509549727098e-06" iyy="4.131218918157248e-06" izz="8.13497513364118e-06" ixy="3.4675873338200873e-06" iyz="4.967608887466253e-08" ixz="-4.436065358600391e-08" />
+            <origin xyz="-0.0322805856336173 0.04238988476242298 0.005250003203434788" rpy="0.0 -0.0 0.0" />
+            <mass value="0.1615808293904576" />
+            <inertia ixx="0.00011199064455002421" iyy="0.00011199064455003679" izz="0.0001882042970119211" ixy="9.148253177655328e-05" iyz="4.3368086899420047e-19" ixz="-1.4365678785432681e-18" />
         </inertial>
-        <visual name="leg_3_coxa_a_visual">
-            <origin xyz="0.001590989471536428 0.00830850052845852 -0.0017500032034355774" rpy="-2.4306087867598536e-16 7.892504736715235e-16 -2.356194490192345" />
+        <visual name="leg_3_femur_visual">
+            <origin xyz="-0.04758828275164462 0.06738727417201662 0.005250003203434375" rpy="1.5707963267948812 -9.609801175747032e-15 -0.7853981633974488" />
             <geometry>
-                <mesh filename="CAD/coxa_a_right.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/femur.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
-        <collision name="leg_3_coxa_a_collision">
-            <origin xyz="0.001590989471536428 0.00830850052845852 -0.0017500032034355774" rpy="-2.4306087867598536e-16 7.892504736715235e-16 -2.356194490192345" />
+        <collision name="leg_3_femur_collision">
+            <origin xyz="-0.04758828275164462 0.06738727417201662 0.005250003203434375" rpy="1.5707963267948812 -9.609801175747032e-15 -0.7853981633974488" />
             <geometry>
-                <mesh filename="CAD/coxa_a_right.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/femur.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
 
-    <link name="leg_3_coxa_b">
+    <link name="leg_3_MG996R_tibia">
         <inertial>
-            <origin xyz="-0.015894011955618632 0.01608273005145376 -0.005835649360206514" rpy="0.0 -0.0 -3.0385816786431342e-64" />
-            <mass value="0.04490836615745227" />
-            <inertia ixx="7.815179248384956e-06" iyy="7.570806724760494e-06" izz="1.4869699271513133e-05" ixy="6.737300382606636e-06" iyz="1.0048041289748125e-07" ixz="-1.0459627444577788e-07" />
+            <origin xyz="0.02320518648311662 0.011368368870417384 -0.005250001000746447" rpy="0.0 -0.0 2.751346509768002e-86" />
+            <mass value="0.20795327871559424" />
+            <inertia ixx="3.1873180535075575e-05" iyy="3.2820467840353494e-05" izz="5.13252389532249e-05" ixy="-3.879268650757924e-06" iyz="-6.922774040216822e-12" ixz="2.5857316504965255e-12" />
         </inertial>
-        <visual name="leg_3_coxa_b_visual">
-            <origin xyz="-0.03747666052846363 0.037476660528458564 0.04149999679656442" rpy="-2.430608786759849e-16 7.892504736715233e-16 -2.356194490192345" />
+        <visual name="leg_3_MG996R_tibia_visual">
+            <origin xyz="0.03160767064794936 0.031607669100800366 -0.015000003203434626" rpy="1.570796326794912 -9.73226585566182e-15 -2.3561944901923417" />
             <geometry>
-                <mesh filename="CAD/coxa_b_right.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
-        <collision name="leg_3_coxa_b_collision">
-            <origin xyz="-0.03747666052846363 0.037476660528458564 0.04149999679656442" rpy="-2.430608786759849e-16 7.892504736715233e-16 -2.356194490192345" />
+        <collision name="leg_3_MG996R_tibia_collision">
+            <origin xyz="0.03160767064794936 0.031607669100800366 -0.015000003203434626" rpy="1.570796326794912 -9.73226585566182e-15 -2.3561944901923417" />
             <geometry>
-                <mesh filename="CAD/coxa_b_right.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="leg_3_femur_a">
-        <inertial>
-            <origin xyz="-0.0018738117298073664 0.007313766969436255 0.039071142879494695" rpy="0.0 -0.0 -6.566986231973194e-63" />
-            <mass value="0.06532641332455354" />
-            <inertia ixx="4.0827509479549485e-05" iyy="4.0924780174512575e-05" izz="8.434001460605163e-06" ixy="3.9901622607286646e-06" iyz="-7.334386903970838e-06" ixz="7.299403351695576e-06" />
-        </inertial>
-        <visual name="leg_3_femur_a_visual">
-            <origin xyz="0.0007071066182188535 0.0007071020514100468 -3.203435556820011e-09" rpy="1.5707963267948954 -0.6108652381980157 2.356194490192345" />
-            <geometry>
-                <mesh filename="CAD/femur_a_right.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_3_femur_a_collision">
-            <origin xyz="0.0007071066182188535 0.0007071020514100468 -3.203435556820011e-09" rpy="1.5707963267948954 -0.6108652381980157 2.356194490192345" />
-            <geometry>
-                <mesh filename="CAD/femur_a_right.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="leg_3_femur_b">
-        <inertial>
-            <origin xyz="-0.01515234034912214 0.015606805962863747 -0.005200437922150627" rpy="-3.0814879110195774e-33 -0.0 -4.9780954463047874e-34" />
-            <mass value="0.0800214310563922" />
-            <inertia ixx="9.69315967378208e-06" iyy="9.693159673782294e-06" izz="1.3901924233198408e-05" ixy="5.667417293105668e-06" iyz="1.3985747771374653e-07" ixz="1.3985747771342154e-07" />
-        </inertial>
-        <visual name="leg_3_femur_b_visual">
-            <origin xyz="-3.381781095157521e-09 -2.0514100640411924e-09 0.0477057832034356" rpy="-1.5707963267948981 0.6108652381980159 -2.356194490192345" />
-            <geometry>
-                <mesh filename="CAD/femur_b_right.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_3_femur_b_collision">
-            <origin xyz="-3.381781095157521e-09 -2.0514100640411924e-09 0.0477057832034356" rpy="-1.5707963267948981 0.6108652381980159 -2.356194490192345" />
-            <geometry>
-                <mesh filename="CAD/femur_b_right.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="leg_3_femur_c">
-        <inertial>
-            <origin xyz="-0.004918304334170714 0.0010886446390916049 -0.006733416303654902" rpy="0.0 -0.0 1.0492855462980036e-33" />
-            <mass value="0.048399072148255506" />
-            <inertia ixx="2.259983189186062e-05" iyy="2.2465407655417502e-05" izz="4.141692185716335e-06" ixy="1.9297762130003584e-06" iyz="-3.246172654048922e-06" ixz="3.293188588219827e-06" />
-        </inertial>
-        <visual name="leg_3_femur_c_visual">
-            <origin xyz="0.030759146618218953 0.03075914205141009 -0.04770578320343557" rpy="1.5707963267948948 -0.6108652381980161 2.3561944901923457" />
-            <geometry>
-                <mesh filename="CAD/femur_c_right.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_3_femur_c_collision">
-            <origin xyz="0.030759146618218953 0.03075914205141009 -0.04770578320343557" rpy="1.5707963267948948 -0.6108652381980161 2.3561944901923457" />
-            <geometry>
-                <mesh filename="CAD/femur_c_right.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
 
     <link name="leg_3_tibia">
         <inertial>
-            <origin xyz="0.009819416807214943 0.005778831687367969 -0.001222975129914019" rpy="0.0 -0.0 -1.0333099986636088e-92" />
-            <mass value="0.10828707727885009" />
-            <inertia ixx="6.147434583849689e-05" iyy="5.5437188486367334e-05" izz="0.00010718301590339693" ixy="5.173583962737958e-05" iyz="1.4765439471692461e-06" ixz="-2.259988236504246e-06" />
+            <origin xyz="-0.016293305911521134 -0.013010898494947831 -0.012514301101988463" rpy="0.0 -2.2420775429197073e-44 0.0" />
+            <mass value="0.2763071087572843" />
+            <inertia ixx="0.00022676380370819163" iyy="0.00022675750126915217" izz="0.0003499834101106415" ixy="0.00012254451068291307" iyz="-4.915153995140009e-05" ixz="4.534317847601942e-05" />
         </inertial>
         <visual name="leg_3_tibia_visual">
-            <origin xyz="0.008202439763281824 0.002121324305425034 -0.015249998110870121" rpy="-2.3561944901923453 -1.5707963267948961 0" />
+            <origin xyz="-0.00954594100702609 -0.02085964899297462 3.1289284607716185e-09" rpy="-9.793498195619373e-15 1.626476731075843e-14 0.7853981633974472" />
             <geometry>
-                <mesh filename="CAD/tibia_right.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/tibia.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
         <collision name="leg_3_tibia_collision">
-            <origin xyz="0.008202439763281824 0.002121324305425034 -0.015249998110870121" rpy="-2.3561944901923453 -1.5707963267948961 0" />
+            <origin xyz="-0.00954594100702609 -0.02085964899297462 3.1289284607716185e-09" rpy="-9.793498195619373e-15 1.626476731075843e-14 0.7853981633974472" />
             <geometry>
-                <mesh filename="CAD/tibia_right.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/tibia.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
 
-    <!-- Leg 4 links -->
-    <link name="leg_4_MG996R_c">
+    <!--Leg 4 links-->
+
+    <link name="leg_4_MG996R_coxa">
         <inertial>
-            <origin xyz="0.0139319816347132 -0.021356604749782716 0.008369892907461587" rpy="0.0 -0.0 0.0" />
-            <mass value="0.207953278714177" />
-            <inertia ixx="3.9896394177610676e-05" iyy="3.989640031111909e-05" izz="3.622609283833586e-05" ixy="1.1428841708080689e-05" iyz="-3.349213930772468e-07" ixz="3.349118845849731e-07" />
+            <origin xyz="0.021356601892567984 0.013931978777495626 0.008369892907608431" rpy="0.0 -0.0 0.0" />
+            <mass value="0.20795327871559424" />
+            <inertia ixx="3.989640031184334e-05" iyy="3.9896394178338176e-05" izz="3.6226092838468347e-05" ixy="-1.1428841708134357e-05" iyz="3.3491188439392313e-07" ixz="3.349213929005083e-07" />
         </inertial>
-        <visual name="leg_4_MG996R_c_visual">
-            <origin xyz="0.0065053821112524895 -0.0001414198781096676 -8.881784197001253e-18" rpy="3.1415926535897922 3.934719975559736e-16 -0.785398163397451" />
+        <visual name="leg_4_MG996R_coxa_visual">
+            <origin xyz="0.00014141702085558095 0.006505379253992185 -1.0436096431476481e-16" rpy="-3.1415926535897922 -1.4200236336338573e-15 0.7853981633974425" />
             <geometry>
                 <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
-        <collision name="leg_4_MG996R_c_collision">
-            <origin xyz="0.0065053821112524895 -0.0001414198781096676 -8.881784197001253e-18" rpy="3.1415926535897922 3.934719975559736e-16 -0.785398163397451" />
-            <geometry>
-                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="leg_4_MG996R_f">
-        <inertial>
-            <origin xyz="0.024952796767646453 -0.002206091723421242 -0.009630719405304689" rpy="2.736911063134407e-48 -0.0 0.0" />
-            <mass value="0.207953278714177" />
-            <inertia ixx="2.846755553628441e-05" iyy="4.377565917187142e-05" izz="4.377567261890917e-05" ixy="-3.349144703086209e-07" iyz="-7.549573057054861e-06" ixz="-3.3491880735336197e-07" />
-        </inertial>
-        <visual name="leg_4_MG996R_f_visual">
-            <origin xyz="0.004699996796564283 -0.0031819763648561405 0.0031819813014726784" rpy="-0.7853981633974395 -5.329965436152269e-16 -4.450087234578097e-16" />
-            <geometry>
-                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_4_MG996R_f_collision">
-            <origin xyz="0.004699996796564283 -0.0031819763648561405 0.0031819813014726784" rpy="-0.7853981633974395 -5.329965436152269e-16 -4.450087234578097e-16" />
+        <collision name="leg_4_MG996R_coxa_collision">
+            <origin xyz="0.00014141702085558095 0.006505379253992185 -1.0436096431476481e-16" rpy="-3.1415926535897922 -1.4200236336338573e-15 0.7853981633974425" />
             <geometry>
                 <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
 
-    <link name="leg_4_MG996R_t">
+    <link name="leg_4_coxa">
         <inertial>
-            <origin xyz="0.02311780679666713 -0.008979632074606787 -3.135605020077037e-10" rpy="0.0 -0.0 0.0" />
-            <mass value="0.207953278714177" />
-            <inertia ixx="3.282046784020951e-05" iyy="3.187318053441031e-05" izz="5.1325238952446006e-05" ixy="-3.879268651025939e-06" iyz="-2.5857237368583637e-12" ixz="6.92276835090207e-12" />
+            <origin xyz="0.021868759892857463 0.02055764351497066 -0.02057289751484029" rpy="0.0 -0.0 -3.639458360361538e-94" />
+            <mass value="0.23210805328252054" />
+            <inertia ixx="0.00010185659819880385" iyy="0.00011376262401915113" izz="0.00011113698714720812" ixy="-3.3273760382550224e-06" iyz="4.068348060655847e-06" ixz="4.3504835339222905e-06" />
         </inertial>
-        <visual name="leg_4_MG996R_t_visual">
-            <origin xyz="0.0433571070269053 -0.0005771479097110977 0.009750001889129835" rpy="-1.5707963267948954 -1.2413395815914948e-15 -2.356194490192342" />
+        <visual name="leg_4_coxa_visual">
+            <origin xyz="0.14799063143944277 -0.014788105268162469 -0.13141885371547835" rpy="-3.1415926535897922 0.7853981633974374 2.3561944901923426" />
+            <geometry>
+                <mesh filename="CAD/coxa.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="gray"/>
+        </visual>
+        <collision name="leg_4_coxa_collision">
+            <origin xyz="0.14799063143944277 -0.014788105268162469 -0.13141885371547835" rpy="-3.1415926535897922 0.7853981633974374 2.3561944901923426" />
+            <geometry>
+                <mesh filename="CAD/coxa.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    
+    <link name="leg_4_MG996R_femur">
+        <inertial>
+            <origin xyz="0.006349555649617446 -0.023117809266444453 0.006349563295029368" rpy="0.0 -0.0 0.0" />
+            <mass value="0.20795327871559424" />
+            <inertia ixx="4.159921232988117e-05" iyy="3.2820467840353074e-05" izz="4.1599207158417576e-05" ixy="-2.743062064135874e-06" iyz="-2.743052273853535e-06" ixz="-9.726029209075528e-06" />
+        </inertial>
+        <visual name="leg_4_MG996R_femur_visual">
+            <origin xyz="0.007302394791956069 -0.04335710949682765 -0.0064861829108407675" rpy="0.9553166181244949 -0.523598775598305 0.9553166181245125" />
             <geometry>
                 <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
-        <collision name="leg_4_MG996R_t_collision">
-            <origin xyz="0.0433571070269053 -0.0005771479097110977 0.009750001889129835" rpy="-1.5707963267948954 -1.2413395815914948e-15 -2.356194490192342" />
+        <collision name="leg_4_MG996R_femur_collision">
+            <origin xyz="0.007302394791956069 -0.04335710949682765 -0.0064861829108407675" rpy="0.9553166181244949 -0.523598775598305 0.9553166181245125" />
             <geometry>
                 <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
-
-    <link name="leg_4_coxa_a">
+    
+    <link name="leg_4_femur">
         <inertial>
-            <origin xyz="-0.018304994156190926 -0.008150925434596737 0.0006271852210842211" rpy="5.473822126268817e-48 -0.0 1.0804103758398477e-62" />
-            <mass value="0.03329037594662584" />
-            <inertia ixx="4.292509549727261e-06" iyy="4.13121891815725e-06" izz="8.134975133641183e-06" ixy="-3.467587333820305e-06" iyz="4.9676088874608346e-08" ixz="4.436065358600392e-08" />
+            <origin xyz="0.042389884762424224 0.032280585633616445 0.005250003203434553" rpy="0.0 -0.0 -7.232261714561531e-88" />
+            <mass value="0.1615808293904576" />
+            <inertia ixx="0.00011199064455003462" iyy="0.00011199064455002595" izz="0.0001882042970119211" ixy="-9.148253177655198e-05" iyz="1.6534083130403945e-18" ixz="4.878909776185066e-19" />
         </inertial>
-        <visual name="leg_4_coxa_a_visual">
-            <origin xyz="-0.001590989471536517 0.008308500528458503 -0.0017500032034357372" rpy="3.1415926535897927 -1.267482847470117e-15 -0.7853981633974424" />
+        <visual name="leg_4_femur_visual">
+            <origin xyz="0.06738727417201792 0.04758828275164369 0.005250003203434126" rpy="1.5707963267948801 -9.748148617451564e-15 -2.356194490192348" />
             <geometry>
-                <mesh filename="CAD/coxa_a_left.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/femur.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
-        <collision name="leg_4_coxa_a_collision">
-            <origin xyz="-0.001590989471536517 0.008308500528458503 -0.0017500032034357372" rpy="3.1415926535897927 -1.267482847470117e-15 -0.7853981633974424" />
+        <collision name="leg_4_femur_collision">
+            <origin xyz="0.06738727417201792 0.04758828275164369 0.005250003203434126" rpy="1.5707963267948801 -9.748148617451564e-15 -2.356194490192348" />
             <geometry>
-                <mesh filename="CAD/coxa_a_left.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/femur.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
-
-    <link name="leg_4_coxa_b">
+    
+    <link name="leg_4_MG996R_tibia">
         <inertial>
-            <origin xyz="0.015894011955610923 0.016082730051461224 -0.0058356493602066606" rpy="0.0 -0.0 -1.349401336733507e-79" />
-            <mass value="0.044908366157452306" />
-            <inertia ixx="7.815179248057144e-06" iyy="7.57080672445339e-06" izz="1.4869699270877784e-05" ixy="-6.737300381971778e-06" iyz="1.0048041289651896e-07" ixz="1.0459627444679427e-07" />
+            <origin xyz="0.025259762829380784 -0.010028832666983796 -0.005250001000745914" rpy="0.0 -0.0 3.4039998179667605e-86" />
+            <mass value="0.20795327871559424" />
+            <inertia ixx="3.2820467840354375e-05" iyy="3.1873180535075575e-05" izz="5.13252389532249e-05" ixy="3.8792686507570576e-06" iyz="2.585731704706634e-12" ixz="6.922773986006714e-12" />
         </inertial>
-        <visual name="leg_4_coxa_b_visual">
-            <origin xyz="0.03747666052846345 0.037476660528458564 0.0414999967965643" rpy="3.141592653589793 -1.2674828474701173e-15 -0.7853981633974424" />
+        <visual name="leg_4_MG996R_tibia_visual">
+            <origin xyz="0.005020462598997799 -0.001626348502151096 -0.015000003203434104" rpy="1.5707963267949132 -9.870613297366339e-15 -0.7853981633974425" />
             <geometry>
-                <mesh filename="CAD/coxa_b_left.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
-        <collision name="leg_4_coxa_b_collision">
-            <origin xyz="0.03747666052846345 0.037476660528458564 0.0414999967965643" rpy="3.141592653589793 -1.2674828474701173e-15 -0.7853981633974424" />
+        <collision name="leg_4_MG996R_tibia_collision">
+            <origin xyz="0.005020462598997799 -0.001626348502151096 -0.015000003203434104" rpy="1.5707963267949132 -9.870613297366339e-15 -0.7853981633974425" />
             <geometry>
-                <mesh filename="CAD/coxa_b_left.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
-
-    <link name="leg_4_femur_a">
-        <inertial>
-            <origin xyz="0.0018738117298147028 0.007313766969443912 0.039071142879501995" rpy="5.473822126268817e-48 -0.0 1.0804103758398477e-62" />
-            <mass value="0.06532641332455366" />
-            <inertia ixx="4.08275094788376e-05" iyy="4.092478017380569e-05" izz="8.434001460452945e-06" ixy="-3.990162260653205e-06" iyz="-7.334386904503293e-06" ixz="-7.2994033522306854e-06" />
-        </inertial>
-        <visual name="leg_4_femur_a_visual">
-            <origin xyz="-0.0007071066182189601 0.0007071020514102066 -3.203435718912573e-09" rpy="1.5707963267948952 -0.6108652381980154 0.7853981633974507" />
-            <geometry>
-                <mesh filename="CAD/femur_a_left.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_4_femur_a_collision">
-            <origin xyz="-0.0007071066182189601 0.0007071020514102066 -3.203435718912573e-09" rpy="1.5707963267948952 -0.6108652381980154 0.7853981633974507" />
-            <geometry>
-                <mesh filename="CAD/femur_a_left.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="leg_4_femur_b">
-        <inertial>
-            <origin xyz="0.015152340349122202 0.015606805962863445 -0.005200437922150476" rpy="0.0 -0.0 0.0" />
-            <mass value="0.0800214310563922" />
-            <inertia ixx="9.693159673782727e-06" iyy="9.69315967378067e-06" izz="1.3901924233198195e-05" ixy="-5.667417293104799e-06" iyz="1.3985747771331174e-07" ixz="-1.3985747771380042e-07" />
-        </inertial>
-        <visual name="leg_4_femur_b_visual">
-            <origin xyz="3.381781041866816e-09 -2.0514102416768765e-09 0.04770578320343582" rpy="-1.5707963267948983 0.6108652381980155 -0.785398163397451" />
-            <geometry>
-                <mesh filename="CAD/femur_b_left.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_4_femur_b_collision">
-            <origin xyz="3.381781041866816e-09 -2.0514102416768765e-09 0.04770578320343582" rpy="-1.5707963267948983 0.6108652381980155 -0.785398163397451" />
-            <geometry>
-                <mesh filename="CAD/femur_b_left.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="leg_4_femur_c">
-        <inertial>
-            <origin xyz="0.004918304334170997 0.001088644639091907 -0.006733416303654894" rpy="0.0 -0.0 1.7105694144590052e-49" />
-            <mass value="0.04839907214825549" />
-            <inertia ixx="2.259983189186778e-05" iyy="2.246540765542314e-05" izz="4.1416921857185054e-06" ixy="-1.9297762130023104e-06" iyz="-3.2461726540463755e-06" ixz="-3.2931885882167364e-06" />
-        </inertial>
-        <visual name="leg_4_femur_c_visual">
-            <origin xyz="-0.030759146618218897 0.030759142051410216 -0.04770578320343568" rpy="1.5707963267948948 -0.6108652381980154 0.7853981633974509" />
-            <geometry>
-                <mesh filename="CAD/femur_c_left.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_4_femur_c_collision">
-            <origin xyz="-0.030759146618218897 0.030759142051410216 -0.04770578320343568" rpy="1.5707963267948948 -0.6108652381980154 0.7853981633974509" />
-            <geometry>
-                <mesh filename="CAD/femur_c_left.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
+    
     <link name="leg_4_tibia">
         <inertial>
-            <origin xyz="-0.009819416807214924 0.005778831687368147 0.009277024870085917" rpy="0.0 -0.0 0.0" />
-            <mass value="0.10828707727885012" />
-            <inertia ixx="6.14743458385034e-05" iyy="5.543718848637254e-05" izz="0.00010718301590340821" ixy="-5.173583962738565e-05" iyz="1.4765439471690293e-06" ixz="2.259988236504463e-06" />
+            <origin xyz="-0.013010896795149716 0.01629330506162134 -0.012514301101988999" rpy="0.0 -0.0 6.147317420373909e-58" />
+            <mass value="0.2763071087572843" />
+            <inertia ixx="0.00022675750126915223" iyy="0.00022676380370819597" izz="0.00034998341011064846" ixy="-0.00012254451068291483" iyz="-4.5343178476019096e-05" ixz="-4.9151539951400165e-05" />
         </inertial>
         <visual name="leg_4_tibia_visual">
-            <origin xyz="-0.008202439763281806 0.002121324305425212 -0.004749998110870184" rpy="2.356194490192348 -1.570796326794895 0" />
+            <origin xyz="-0.020859647293176523 0.009545940157126296 3.12892792897479e-09" rpy="-9.931845637323421e-15 1.7430501486614835e-14 -0.7853981633974519" />
             <geometry>
-                <mesh filename="CAD/tibia_left.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/tibia.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
         <collision name="leg_4_tibia_collision">
-            <origin xyz="-0.008202439763281806 0.002121324305425212 -0.004749998110870184" rpy="2.356194490192348 -1.570796326794895 0" />
+            <origin xyz="-0.020859647293176523 0.009545940157126296 3.12892792897479e-09" rpy="-9.931845637323421e-15 1.7430501486614835e-14 -0.7853981633974519" />
             <geometry>
-                <mesh filename="CAD/tibia_left.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/tibia.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
+    
+    <!--Leg 5 links-->
 
-    <!-- Leg 5 links -->
-    <link name="leg_5_MG996R_c">
+    <link name="leg_5_MG996R_coxa">
         <inertial>
-            <origin xyz="0.02495279997108206 0.005249997797309771 0.008369892907461604" rpy="0.0 -0.0 0.0" />
-            <mass value="0.207953278714177" />
-            <inertia ixx="2.8467555536284428e-05" iyy="5.132523895244492e-05" izz="3.6226092838336074e-05" ixy="-3.0667541208093948e-12" iyz="-6.723519136278067e-12" ixz="4.736436528994054e-07" />
+            <origin xyz="0.024952799971140163 -0.005250002202687914 0.00836989290760853" rpy="0.0 -0.0 0.0" />
+            <mass value="0.20795327871559424" />
+            <inertia ixx="2.846755553695643e-05" iyy="5.132523895322544e-05" izz="3.622609283846878e-05" ixy="-3.0667525713577936e-12" iyz="-6.723529465673595e-12" ixz="4.736436526392104e-07" />
         </inertial>
-        <visual name="leg_5_MG996R_c_visual">
-            <origin xyz="0.0046999999999999 0.015000000000000114 0.0" rpy="-3.141592653589793 6.040509016842693e-17 0.0" />
+        <visual name="leg_5_MG996R_coxa_visual">
+            <origin xyz="0.004699999999999935 0.0044999999999999945 2.220446049250414e-18" rpy="-3.1415926535897922 -9.093296690514655e-16 8.326672684688699e-17" />
             <geometry>
                 <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
-        <collision name="leg_5_MG996R_c_collision">
-            <origin xyz="0.0046999999999999 0.015000000000000114 0.0" rpy="-3.141592653589793 6.040509016842693e-17 0.0" />
-            <geometry>
-                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-        <link name="leg_5_MG996R_f">
-        <inertial>
-            <origin xyz="0.024952796767646532 -0.008369892907461363 -0.005250002202690496" rpy="0.0 -0.0 0.0" />
-            <mass value="0.207953278714177" />
-            <inertia ixx="2.8467555536284845e-05" iyy="3.622609283833499e-05" izz="5.132523895244451e-05" ixy="-4.736436528993941e-07" iyz="6.7235187076598694e-12" ixz="-3.066753800776492e-12" />
-        </inertial>
-        <visual name="leg_5_MG996R_f_visual">
-            <origin xyz="0.0046999967965643185 1.6209256159527285e-16 0.004499999999999869" rpy="-1.5707963267948934 -6.024789561960091e-17 6.221678429513369e-17" />
-            <geometry>
-                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_5_MG996R_f_collision">
-            <origin xyz="0.0046999967965643185 1.6209256159527285e-16 0.004499999999999869" rpy="-1.5707963267948934 -6.024789561960091e-17 6.221678429513369e-17" />
+        <collision name="leg_5_MG996R_coxa_collision">
+            <origin xyz="0.004699999999999935 0.0044999999999999945 2.220446049250414e-18" rpy="-3.1415926535897922 -9.093296690514655e-16 8.326672684688699e-17" />
             <geometry>
                 <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
 
-    <link name="leg_5_MG996R_t">
+    <link name="leg_5_coxa">
         <inertial>
-            <origin xyz="0.009997198350766717 -0.022696317092538557 -3.13560244435962e-10" rpy="0.0 -0.0 0.0" />
-            <mass value="0.207953278714177" />
-            <inertia ixx="2.8467555536283978e-05" iyy="3.6226092838331954e-05" izz="5.132523895244427e-05" ixy="-4.736436528999267e-07" iyz="-6.723519121011948e-12" ixz="3.0667543157725237e-12" />
+            <origin xyz="0.03000000000000104 -0.0009270992817275214 -0.020572897514840132" rpy="0.0 -0.0 0.0" />
+            <mass value="0.23210805328252054" />
+            <inertia ixx="0.00010448223507071912" iyy="0.00011113698714723327" izz="0.00011113698714720985" ixy="5.953012910174854e-06" iyz="-1.9949990636118653e-07" ixz="5.953012910191229e-06" />
         </inertial>
-        <visual name="leg_5_MG996R_t_visual">
-            <origin xyz="0.03024999832184889 -0.031066210000000136 0.009750001889130094" rpy="-1.5707963267948968 -9.966247464938834e-16 3.141592653589793" />
+        <visual name="leg_5_coxa_visual">
+            <origin xyz="0.09418841197586111 -0.11510194855892598 -0.13141885371547815" rpy="-3.141592653589791 0.7853981633974384 1.5707963267949006" />
+            <geometry>
+                <mesh filename="CAD/coxa.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="gray"/>
+        </visual>
+        <collision name="leg_5_coxa_collision">
+            <origin xyz="0.09418841197586111 -0.11510194855892598 -0.13141885371547815" rpy="-3.141592653589791 0.7853981633974384 1.5707963267949006" />
+            <geometry>
+                <mesh filename="CAD/coxa.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    
+    <link name="leg_5_MG996R_femur">
+        <inertial>
+            <origin xyz="-0.0070690917559914366 -0.02269632029582686 -0.007069084110579098" rpy="-4.930380657631324e-32 -0.0 -4.930380657631324e-32" />
+            <mass value="0.20795327871559424" />
+            <inertia ixx="3.989639417833662e-05" iyy="3.6226092838469864e-05" izz="3.98964003118419e-05" ixy="3.3491188439370073e-07" iyz="3.34921392900621e-07" ixz="-1.142884170813304e-05" />
+        </inertial>
+        <visual name="leg_5_MG996R_femur_visual">
+            <origin xyz="-0.01449569127949495 -0.03106621320343564 -0.028284268982291378" rpy="1.5707963267948784 -0.7853981633974544 5.730837474195829e-15" />
             <geometry>
                 <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
-        <collision name="leg_5_MG996R_t_collision">
-            <origin xyz="0.03024999832184889 -0.031066210000000136 0.009750001889130094" rpy="-1.5707963267948968 -9.966247464938834e-16 3.141592653589793" />
+        <collision name="leg_5_MG996R_femur_collision">
+            <origin xyz="-0.01449569127949495 -0.03106621320343564 -0.028284268982291378" rpy="1.5707963267948784 -0.7853981633974544 5.730837474195829e-15" />
             <geometry>
                 <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
-
-    <link name="leg_5_coxa_a">
+    
+    <link name="leg_5_femur">
         <inertial>
-            <origin xyz="-0.018707157766217328 0.007180014340388445 0.0006271852210843454" rpy="0.0 -0.0 0.0" />
-            <mass value="0.03329037594662584" />
-            <inertia ixx="7.442769001220721e-07" iyy="7.679451567762314e-06" izz="8.134975133641342e-06" ixy="-8.064531578499612e-08" iyz="3.75858033756395e-09" ixz="6.649401827460747e-08" />
+            <origin xyz="0.052800000000009034 -0.007148349669586955 0.005250003203434624" rpy="0.0 -0.0 4.7983281690828655e-61" />
+            <mass value="0.1615808293904576" />
+            <inertia ixx="2.0508112773477925e-05" iyy="0.00020347317632658183" izz="0.0001882042970119211" ixy="-6.491660507756958e-18" iyz="8.089164646278567e-19" ixz="1.5720931501039814e-18" />
         </inertial>
-        <visual name="leg_5_coxa_a_visual">
-            <origin xyz="0.004749999999999819 0.006999999999999804 -0.0017500032034356084" rpy="3.141592653589793 3.4387371404817264e-17 -1.5707963267948934" />
+        <visual name="leg_5_femur_visual">
+            <origin xyz="0.08130000000000039 -0.013999996796564438 0.0052500032034341615" rpy="1.570796326794881 -1.1201229588897236e-14 -3.141592653589791" />
             <geometry>
-                <mesh filename="CAD/coxa_a_left.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/femur.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
-        <collision name="leg_5_coxa_a_collision">
-            <origin xyz="0.004749999999999819 0.006999999999999804 -0.0017500032034356084" rpy="3.141592653589793 3.4387371404817264e-17 -1.5707963267948934" />
+        <collision name="leg_5_femur_collision">
+            <origin xyz="0.08130000000000039 -0.013999996796564438 0.0052500032034341615" rpy="1.570796326794881 -1.1201229588897236e-14 -3.141592653589791" />
             <geometry>
-                <mesh filename="CAD/coxa_a_left.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/femur.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
-
-    <link name="leg_5_coxa_b">
+    
+    <link name="leg_5_MG996R_tibia">
         <inertial>
-            <origin xyz="0.022610969521651255 0.000133443845311788 -0.005835649360206625" rpy="0.0 -0.0 0.0" />
-            <mass value="0.044908366157452306" />
-            <inertia ixx="9.55692604283296e-07" iyy="1.4430293368226043e-05" izz="1.4869699270877838e-05" ixy="-1.2218626180183283e-07" iyz="-2.910353612427321e-09" ixz="1.4501111628370815e-07" />
+            <origin xyz="0.024952799971140287 0.008369889704173064 -0.005250001000746001" rpy="0.0 -0.0 0.0" />
+            <mass value="0.20795327871559424" />
+            <inertia ixx="2.8467555536956237e-05" iyy="3.6226092838469864e-05" izz="5.132523895322316e-05" ixy="4.7364365263960343e-07" iyz="6.723528870784687e-12" ixz="3.066752038947962e-12" />
         </inertial>
-        <visual name="leg_5_coxa_b_visual">
-            <origin xyz="0.0529999999999998 -1.1546319456101628e-16 0.04149999679656442" rpy="-3.141592653589793 3.43873714048172e-17 -1.5707963267948934" />
+        <visual name="leg_5_MG996R_tibia_visual">
+            <origin xyz="0.004700000000000202 -3.203435311460723e-09 -0.015000003203434214" rpy="1.5707963267949123 -1.132369426881202e-14 -1.3877787807814537e-17" />
             <geometry>
-                <mesh filename="CAD/coxa_b_left.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
-        <collision name="leg_5_coxa_b_collision">
-            <origin xyz="0.0529999999999998 -1.1546319456101628e-16 0.04149999679656442" rpy="-3.141592653589793 3.43873714048172e-17 -1.5707963267948934" />
+        <collision name="leg_5_MG996R_tibia_collision">
+            <origin xyz="0.004700000000000202 -3.203435311460723e-09 -0.015000003203434214" rpy="1.5707963267949123 -1.132369426881202e-14 -1.3877787807814537e-17" />
             <geometry>
-                <mesh filename="CAD/coxa_b_left.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
-
-    <link name="leg_5_femur_a">
-        <inertial>
-            <origin xyz="0.006496602430152141 0.0038466359024208565 0.03907114287950222" rpy="0.0 -0.0 0.0" />
-            <mass value="0.06532641332455366" />
-            <inertia ixx="3.688598256566843e-05" iyy="4.486630708697365e-05" izz="8.434001460452941e-06" ixy="4.8635347484093146e-08" iyz="-2.4737107041702803e-08" ixz="-1.034765232499834e-05" />
-        </inertial>
-        <visual name="leg_5_femur_a_visual">
-            <origin xyz="-1.0658141036401502e-16 0.0010000032034353668 -3.203435590126702e-09" rpy="1.5707963267948968 -0.6108652381980164 -2.2392425002089054e-16" />
-            <geometry>
-                <mesh filename="CAD/femur_a_left.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_5_femur_a_collision">
-            <origin xyz="-1.0658141036401502e-16 0.0010000032034353668 -3.203435590126702e-09" rpy="1.5707963267948968 -0.6108652381980164 -2.2392425002089054e-16" />
-            <geometry>
-                <mesh filename="CAD/femur_a_left.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="leg_5_femur_b">
-        <inertial>
-            <origin xyz="-0.00032135955913910054 0.021749996796564634 -0.005200437922150734" rpy="0.0 -0.0 0.0" />
-            <mass value="0.0800214310563922" />
-            <inertia ixx="1.5360576966887043e-05" iyy="4.0257423806755455e-06" izz="1.3901924233198412e-05" ixy="9.289773199076096e-19" iyz="1.3551429210213564e-19" ixz="-1.9778834178156915e-07" />
-        </inertial>
-        <visual name="leg_5_femur_b_visual">
-            <origin xyz="-5.329070518200751e-17 -3.2034353392162987e-09 0.04770578320343563" rpy="-1.5707963267948968 0.6108652381980164 -2.96418646694404e-17" />
-            <geometry>
-                <mesh filename="CAD/femur_b_left.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_5_femur_b_collision">
-            <origin xyz="-5.329070518200751e-17 -3.2034353392162987e-09 0.04770578320343563" rpy="-1.5707963267948968 0.6108652381980164 -2.96418646694404e-17" />
-            <geometry>
-                <mesh filename="CAD/femur_b_left.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="leg_5_femur_c">
-        <inertial>
-            <origin xyz="0.004247557582456967 -0.002707974221878071 -0.016733416303654762" rpy="0.0 -0.0 -1.2154326714572548e-63" />
-            <mass value="0.04839907214825549" />
-            <inertia ixx="2.0602843560643996e-05" iyy="2.446239598664751e-05" izz="4.141692185719156e-06" ixy="-6.721211822218058e-08" iyz="3.324528587597925e-08" ixz="-4.6240266790329005e-06" />
-        </inertial>
-        <visual name="leg_5_femur_c_visual">
-            <origin xyz="-5.329070518200751e-17 0.043500003203435375 -0.057705783203435564" rpy="1.5707963267948966 -0.6108652381980165 -2.2537258856938963e-16" />
-            <geometry>
-                <mesh filename="CAD/femur_c_left.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_5_femur_c_collision">
-            <origin xyz="-5.329070518200751e-17 0.043500003203435375 -0.057705783203435564" rpy="1.5707963267948966 -0.6108652381980165 -2.2537258856938963e-16" />
-            <geometry>
-                <mesh filename="CAD/femur_c_left.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
+    
     <link name="leg_5_tibia">
         <inertial>
-            <origin xyz="0.04674287116107255 -0.011029623704799651 -0.009277024870086201" rpy="0.0 -0.0 7.868944956231646e-108" />
-            <mass value="0.10828707727885012" />
-            <inertia ixx="6.719927535051885e-06" iyy="0.00011019160678982232" izz="0.00010718301590340908" ixy="3.018578676065051e-06" iyz="-5.53978769670516e-07" ixz="-2.642127245197851e-06" />
+            <origin xyz="0.0023210121801044183 0.020721202778113006 -0.012514301101988944" rpy="0.0 -1.7105694144590052e-49 -2.2360048880579473e-94" />
+            <mass value="0.2763071087572843" />
+            <inertia ixx="0.00010421614180576054" iyy="0.0003493051631715832" izz="0.0003499834101106449" ixy="3.151219519158775e-09" iyz="2.6929182244511917e-06" ixz="-6.681785618634146e-05" />
         </inertial>
         <visual name="leg_5_tibia_visual">
-            <origin xyz="0.04529999832184892 -0.007299999999999869 0.0047499981108699175" rpy="-1.5707963267948966 1.5707963267948957 0" />
+            <origin xyz="-0.008000000000000184 0.02150000000000045 3.1289279989188403e-09" rpy="-1.1384926608769353e-14 1.6431300764452345e-14 -1.5707963267948948" />
             <geometry>
-                <mesh filename="CAD/tibia_left.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/tibia.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
         <collision name="leg_5_tibia_collision">
-            <origin xyz="0.04529999832184892 -0.007299999999999869 0.0047499981108699175" rpy="-1.5707963267948966 1.5707963267948957 0" />
+            <origin xyz="-0.008000000000000184 0.02150000000000045 3.1289279989188403e-09" rpy="-1.1384926608769353e-14 1.6431300764452345e-14 -1.5707963267948948" />
             <geometry>
-                <mesh filename="CAD/tibia_left.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <!-- Leg 6 links -->
-    <link name="leg_6_MG996R_c">
-        <inertial>
-            <origin xyz="0.021356604749801736 0.013931981634710731 0.008369892907461604" rpy="0.0 -0.0 0.0" />
-            <mass value="0.207953278714177" />
-            <inertia ixx="3.9896400311118874e-05" iyy="3.989639417761035e-05" izz="3.622609283833629e-05" ixy="-1.1428841708080472e-05" iyz="3.349118845851222e-07" ixz="3.349213930771113e-07" />
-        </inertial>
-        <visual name="leg_6_MG996R_c_visual">
-            <origin xyz="0.0001414198781287057 0.006505382111249958 4.440892098500626e-18" rpy="-3.141592653589793 2.0112649739774984e-16 0.7853981633974471" />
-            <geometry>
-                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_6_MG996R_c_collision">
-            <origin xyz="0.0001414198781287057 0.006505382111249958 4.440892098500626e-18" rpy="-3.141592653589793 2.0112649739774984e-16 0.7853981633974471" />
-            <geometry>
-                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="leg_6_MG996R_f">
-        <inertial>
-            <origin xyz="0.024952796767646505 -0.009630719405307088 0.00220609172344032" rpy="0.0 -0.0 0.0" />
-            <mass value="0.207953278714177" />
-            <inertia ixx="2.846755553628441e-05" iyy="4.377567261890787e-05" izz="4.3775659171870984e-05" ixy="-3.349188073534975e-07" iyz="7.549573057055295e-06" ixz="3.349144703087564e-07" />
-        </inertial>
-        <visual name="leg_6_MG996R_f_visual">
-            <origin xyz="0.004699996796564301 0.0031819813014702623 0.0031819763648752364" rpy="-2.3561944901923395 1.3922145338705843e-18 -1.3922145338712252e-18" />
-            <geometry>
-                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_6_MG996R_f_collision">
-            <origin xyz="0.004699996796564301 0.0031819813014702623 0.0031819763648752364" rpy="-2.3561944901923395 1.3922145338705843e-18 -1.3922145338712252e-18" />
-            <geometry>
-                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="leg_6_MG996R_t">
-        <inertial>
-            <origin xyz="-0.008979632074587993 -0.023117806796664572 -3.1356040430807753e-10" rpy="-1.232595164407831e-32 -1.2325951644078312e-32 -1.1599674393591448e-33" />
-            <mass value="0.207953278714177" />
-            <inertia ixx="3.187318053440943e-05" iyy="3.282046784020951e-05" izz="5.1325238952446874e-05" ixy="3.879268651024635e-06" iyz="-6.92276878432721e-12" ixz="-2.58572416608766e-12" />
-        </inertial>
-        <visual name="leg_6_MG996R_t_visual">
-            <origin xyz="-0.0005771479096923749 -0.04335710702690275 0.009750001889129951" rpy="-1.5707963267948966 -8.698363882287291e-16 2.3561944901923435" />
-            <geometry>
-                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_6_MG996R_t_collision">
-            <origin xyz="-0.0005771479096923749 -0.04335710702690275 0.009750001889129951" rpy="-1.5707963267948966 -8.698363882287291e-16 2.3561944901923435" />
-            <geometry>
-                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="leg_6_coxa_a">
-        <inertial>
-            <origin xyz="-0.008150925434577462 -0.018304994156193324 -0.000627185221084341" rpy="0.0 -0.0 -4.032124600414999e-68" />
-            <mass value="0.03329037594662584" />
-            <inertia ixx="4.131218918157248e-06" iyy="4.292509549727152e-06" izz="8.134975133641397e-06" ixy="-3.4675873338201415e-06" iyz="-4.4360653585976805e-08" ixz="-4.967608887462187e-08" />
-        </inertial>
-        <visual name="leg_6_coxa_a_visual">
-            <origin xyz="0.008308500528477704 -0.001590989471538844 0.0017500032034356038" rpy="2.6334328169288294e-16 1.0633403582450601e-16 2.3561944901923435" />
-            <geometry>
-                <mesh filename="CAD/coxa_a_left.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_6_coxa_a_collision">
-            <origin xyz="0.008308500528477704 -0.001590989471538844 0.0017500032034356038" rpy="2.6334328169288294e-16 1.0633403582450601e-16 2.3561944901923435" />
-            <geometry>
-                <mesh filename="CAD/coxa_a_left.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="leg_6_coxa_b">
-        <inertial>
-            <origin xyz="0.016082730051480344 -0.01589401195560855 -0.0058356493602066475" rpy="0.0 -0.0 0.0" />
-            <mass value="0.044908366157452306" />
-            <inertia ixx="7.570806724452794e-06" iyy="7.81517924805644e-06" izz="1.4869699270878e-05" ixy="6.737300381971345e-06" iyz="-1.0459627444668585e-07" ixz="1.0048041289666804e-07" />
-        </inertial>
-        <visual name="leg_6_coxa_b_visual">
-            <origin xyz="0.03747666052847764 -0.03747666052846109 0.04149999679656441" rpy="-3.141592653589793 -1.0633403582450606e-16 -2.356194490192341" />
-            <geometry>
-                <mesh filename="CAD/coxa_b_left.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_6_coxa_b_collision">
-            <origin xyz="0.03747666052847764 -0.03747666052846109 0.04149999679656441" rpy="-3.141592653589793 -1.0633403582450606e-16 -2.356194490192341" />
-            <geometry>
-                <mesh filename="CAD/coxa_b_left.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="leg_6_femur_a">
-        <inertial>
-            <origin xyz="0.007313766969462936 -0.0018738117298121894 0.03907114287950212" rpy="0.0 -0.0 4.032124600414999e-68" />
-            <mass value="0.06532641332455366" />
-            <inertia ixx="4.092478017380524e-05" iyy="4.082750947883695e-05" izz="8.434001460453158e-06" ixy="3.99016226065277e-06" iyz="7.299403352230955e-06" ixz="-7.334386904503235e-06" />
-        </inertial>
-        <visual name="leg_6_femur_a_visual">
-            <origin xyz="0.0007071020514292847 0.0007071066182214736 -3.20343568116499e-09" rpy="1.5707963267948966 -0.6108652381980165 -0.78539816339745" />
-            <geometry>
-                <mesh filename="CAD/femur_a_left.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_6_femur_a_collision">
-            <origin xyz="0.0007071020514292847 0.0007071066182214736 -3.20343568116499e-09" rpy="1.5707963267948966 -0.6108652381980165 -0.78539816339745" />
-            <geometry>
-                <mesh filename="CAD/femur_a_left.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="leg_6_femur_b">
-        <inertial>
-            <origin xyz="-0.015606805962844509 0.01515234034911952 0.004799562077849391" rpy="-1.232595164407831e-32 1.2325951644078312e-32 1.1599674393591448e-33" />
-            <mass value="0.0800214310563922" />
-            <inertia ixx="9.693159673780342e-06" iyy="9.693159673782077e-06" izz="1.3901924233198412e-05" ixy="5.6674172931058834e-06" iyz="-1.3985747771331253e-07" ixz="-1.398574777135294e-07" />
-        </inertial>
-        <visual name="leg_6_femur_b_visual">
-            <origin xyz="2.051429248695058e-09 3.3817785016765357e-09 0.057705783203435744" rpy="-1.5707963267948966 0.6108652381980164 0.7853981633974499" />
-            <geometry>
-                <mesh filename="CAD/femur_b_left.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_6_femur_b_collision">
-            <origin xyz="2.051429248695058e-09 3.3817785016765357e-09 0.057705783203435744" rpy="-1.5707963267948966 0.6108652381980164 0.7853981633974499" />
-            <geometry>
-                <mesh filename="CAD/femur_b_left.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/tibia.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
     
-    <link name="leg_6_femur_c">
+    <!--Leg 6 links-->
+    
+    <link name="leg_6_MG996R_coxa">
         <inertial>
-            <origin xyz="0.0010886446391108872 -0.0049183043341680666 -0.016733416303654974" rpy="0.0 -0.0 0.0" />
-            <mass value="0.04839907214825549" />
-            <inertia ixx="2.2465407655423682e-05" iyy="2.2599831891867822e-05" izz="4.14169218571959e-06" ixy="1.9297762130017666e-06" iyz="3.2931885882170625e-06" ixz="-3.2461726540463213e-06" />
+            <origin xyz="0.013931978777496652 -0.02135660189256688 0.008369892907608477" rpy="0.0 -0.0 0.0" />
+            <mass value="0.20795327871559424" />
+            <inertia ixx="3.9896394178338826e-05" iyy="3.989640031184366e-05" izz="3.6226092838467696e-05" ixy="1.142884170813479e-05" iyz="-3.34921392900427e-07" ixz="3.349118843938689e-07" />
         </inertial>
-        <visual name="leg_6_femur_c_visual">
-            <origin xyz="0.03075914205142933 0.030759146618221607 -0.05770578320343578" rpy="1.5707963267948966 -0.6108652381980165 -0.7853981633974499" />
+        <visual name="leg_6_MG996R_coxa_visual">
+            <origin xyz="0.006505379253993113 -0.00014141702085441744 -4.996003610813174e-17" rpy="-3.1415926535897922 -9.158348820863758e-16 -0.7853981633974509" />
             <geometry>
-                <mesh filename="CAD/femur_c_left.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
-        <collision name="leg_6_femur_c_collision">
-            <origin xyz="0.03075914205142933 0.030759146618221607 -0.05770578320343578" rpy="1.5707963267948966 -0.6108652381980165 -0.7853981633974499" />
+        <collision name="leg_6_MG996R_coxa_collision">
+            <origin xyz="0.006505379253993113 -0.00014141702085441744 -4.996003610813174e-17" rpy="-3.1415926535897922 -9.158348820863758e-16 -0.7853981633974509" />
             <geometry>
-                <mesh filename="CAD/femur_c_left.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
 
+    <link name="leg_6_coxa">
+        <inertial>
+            <origin xyz="0.02055764351497186 -0.021868759892856193 -0.020572897514840153" rpy="4.3790577010150533e-47 -0.0 3.111507638930571e-61" />
+            <mass value="0.23210805328252054" />
+            <inertia ixx="0.00011376262401917257" iyy="0.00010185659819881814" izz="0.00011113698714718728" ixy="3.327376038250251e-06" iyz="-4.350483533920608e-06" ixz="4.068348060653271e-06" />
+        </inertial>
+        <visual name="leg_6_coxa_visual">
+            <origin xyz="-0.014788105268161118 -0.14799063143944197 -0.13141885371547823" rpy="-3.141592653589791 0.785398163397437 0.785398163397449" />
+            <geometry>
+                <mesh filename="CAD/coxa.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="gray"/>
+        </visual>
+        <collision name="leg_6_coxa_collision">
+            <origin xyz="-0.014788105268161118 -0.14799063143944197 -0.13141885371547823" rpy="-3.141592653589791 0.785398163397437 0.785398163397449" />
+            <geometry>
+                <mesh filename="CAD/coxa.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    
+    <link name="leg_6_MG996R_femur">
+        <inertial>
+            <origin xyz="-0.016346763521187226 -0.008979633120855812 -0.016346755875774895" rpy="0.0 -0.0 0.0" />
+            <mass value="0.20795327871559424" />
+            <inertia ixx="4.207284647401336e-05" iyy="3.1873180535074274e-05" izz="4.207286031956373e-05" ixy="2.7430553406061446e-06" iyz="2.743058997383261e-06" ixz="-9.252385556434607e-06" />
+        </inertial>
+        <visual name="leg_6_MG996R_femur_visual">
+            <origin xyz="-0.02376381728645736 -0.000577148956023219 -0.03755239498925375" rpy="2.1862760354652693 -0.5235987755983055 -0.9553166181245129" />
+            <geometry>
+                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="gray"/>
+        </visual>
+        <collision name="leg_6_MG996R_femur_collision">
+            <origin xyz="-0.02376381728645736 -0.000577148956023219 -0.03755239498925375" rpy="2.1862760354652693 -0.5235987755983055 -0.9553166181245129" />
+            <geometry>
+                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    
     <link name="leg_6_tibia">
         <inertial>
-            <origin xyz="0.005778831687387029 0.009819416807217537 -0.0012229751299139657" rpy="0.0 -0.0 1.255085382316192e-62" />
-            <mass value="0.10828707727885012" />
-            <inertia ixx="5.543718848637254e-05" iyy="6.147434583850256e-05" izz="0.00010718301590340908" ixy="5.173583962738523e-05" iyz="-2.2599882365042464e-06" ixz="1.476543947169463e-06" />
+            <origin xyz="0.016293311336470922 0.013010903069998747 -0.012514301101988977" rpy="0.0 -0.0 6.632569297679744e-58" />
+            <mass value="0.2763071087572843" />
+            <inertia ixx="0.0002267638037081899" iyy="0.0002267575012691556" izz="0.000349983410110645" ixy="0.00012254451068291133" iyz="4.9151539951400165e-05" ixz="-4.53431784760193e-05" />
         </inertial>
         <visual name="leg_6_tibia_visual">
-            <origin xyz="0.0021213243054440944 0.008202439763284417 -0.015249998110870093" rpy="0.7853981633974483 -1.5707963267948957 0" />
+            <origin xyz="0.009545946431975878 0.020859653568025573 3.1289279645019262e-09" rpy="-1.1147498751977139e-14 1.6708856520608726e-14 -2.3561944901923457" />
             <geometry>
-                <mesh filename="CAD/tibia_left.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/tibia.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
         <collision name="leg_6_tibia_collision">
-            <origin xyz="0.0021213243054440944 0.008202439763284417 -0.015249998110870093" rpy="0.7853981633974483 -1.5707963267948957 0" />
+            <origin xyz="0.009545946431975878 0.020859653568025573 3.1289279645019262e-09" rpy="-1.1147498751977139e-14 1.6708856520608726e-14 -2.3561944901923457" />
             <geometry>
-                <mesh filename="CAD/tibia_left.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/tibia.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
+    
+    <link name="leg_6_MG996R_tibia">
+        <inertial>
+            <origin xyz="0.011725888941833294 0.023562706554531784 -0.005250001000745981" rpy="0.0 -0.0 -4.856228185289247e-58" />
+            <mass value="0.20795327871559424" />
+            <inertia ixx="3.187318053507384e-05" iyy="3.282046784035436e-05" izz="5.132523895322316e-05" ixy="-3.879268650757057e-06" iyz="6.922774040216821e-12" ixz="-2.5857316504965255e-12" />
+        </inertial>
+        <visual name="leg_6_MG996R_tibia_visual">
+            <origin xyz="0.003323404777000523 0.0033234063241487635 -0.015000003203434194" rpy="1.5707963267949125 -1.1086266412020033e-14 0.7853981633974512" />
+            <geometry>
+                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="gray"/>
+        </visual>
+        <collision name="leg_6_MG996R_tibia_collision">
+            <origin xyz="0.003323404777000523 0.0033234063241487635 -0.015000003203434194" rpy="1.5707963267949125 -1.1086266412020033e-14 0.7853981633974512" />
+            <geometry>
+                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    
+    <link name="leg_6_femur">
+        <inertial>
+            <origin xyz="0.03228058563361788 -0.04238988476242286 0.005250003203434654" rpy="0.0 -0.0 -1.0664120914407192e-87" />
+            <mass value="0.1615808293904576" />
+            <inertia ixx="0.00011199064455002464" iyy="0.00011199064455003641" izz="0.0001882042970119185" ixy="9.1482531776552e-05" iyz="-5.4210108624275135e-19" ixz="1.707618421664701e-18" />
+        </inertial>
+        <visual name="leg_6_femur_visual">
+            <origin xyz="0.047588282751645235 -0.06738727417201658 0.005250003203434197" rpy="1.5707963267948808 -1.096380173210526e-14 2.356194490192345" />
+            <geometry>
+                <mesh filename="CAD/femur.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="gray"/>
+        </visual>
+        <collision name="leg_6_femur_collision">
+            <origin xyz="0.047588282751645235 -0.06738727417201658 0.005250003203434197" rpy="1.5707963267948808 -1.096380173210526e-14 2.356194490192345" />
+            <geometry>
+                <mesh filename="CAD/femur.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    
+    <!--Leg 1 joints-->
 
-    <!-- Body joints -->
-    <joint name="base_bottom_plate" type="fixed">
-        <origin xyz="-0.02573167 0.057065830000000005 0.003" rpy="3.141592653589793 -0.0 0.0" />
+    <joint name="base_leg_1" type="fixed">
+        <origin xyz="0.03687244 0.05481281999999997 -3.3306690738754402e-18" rpy="1.5777218104420236e-30 3.155443620884054e-30 3.141592653589793" />
         <parent link="base" />
-        <child link="bottom_plate" />
+        <child link="leg_1_MG996R_coxa" />
+    </joint>
+
+    <joint name="leg_1_coxa" type="continuous">
+        <origin xyz="-0.02100107 -0.028425689999999993 0.03106621" rpy="9.860761315262648e-32 -0.0 9.80394874699742e-31" />
+        <parent link="leg_1_MG996R_coxa" />
+        <child link="leg_1_coxa" />
+        <axis xyz="-0.0 -9.860761315262648e-32 -1.0" />
     </joint>
     
-    <joint name="bottom_plate_electronics_layer_1" type="fixed">
-        <origin xyz="0.010731670000000002 0.11606583000000001 -0.003" rpy="0.0 -0.0 0.0" />
-        <parent link="bottom_plate" />
-        <child link="electronics_layer_1" />
+    <joint name="leg_1_femur" type="continuous">
+        <origin xyz="-0.057629200000000005 -0.027223610000000013 -0.0215" rpy="-7.942107605087364e-16 0.7853981633974434 3.1415926535897927" />
+        <parent link="leg_1_coxa" />
+        <child link="leg_1_MG996R_femur" />
+        <axis xyz="0.5000001547244789 -0.7071069999999999 0.5000001547244733" />
     </joint>
     
-    <joint name="electronics_layer_1_spacer_1" type="fixed">
-        <origin xyz="0.0 0.0 -0.006" rpy="0.0 -0.0 0.0" />
-        <parent link="electronics_layer_1" />
-        <child link="spacer_1" />
+    <joint name="leg_leg_1_MG996R_femur" type="fixed">
+        <origin xyz="-0.01904579387203917 0.011749440000000017 -0.02647041507449769" rpy="-5.248374545410791e-16 0.7853981633974433 -3.141592653589793" />
+        <parent link="leg_1_MG996R_femur" />
+        <child link="leg_1_femur" />
     </joint>
     
-    <joint name="electronics_layer_1_spacer_2" type="fixed">
-        <origin xyz="0.03 0.0 -0.006" rpy="0.0 -0.0 0.0" />
-        <parent link="electronics_layer_1" />
-        <child link="spacer_2" />
+    <joint name="leg_leg_1_femur_MG996R" type="fixed">
+        <origin xyz="-0.07467046999999999 -0.07467047000000002 0.0" rpy="-3.141592653589793 7.056345106627914e-30 1.5777218104420236e-30" />
+        <parent link="leg_1_femur" />
+        <child link="leg_1_MG996R_tibia" />
     </joint>
     
-    <joint name="electronics_layer_1_spacer_3" type="fixed">
-        <origin xyz="0.03 -0.11800000000000001 -0.006" rpy="0.0 -0.0 0.0" />
-        <parent link="electronics_layer_1" />
-        <child link="spacer_3" />
-    </joint>
-    
-    <joint name="electronics_layer_1_spacer_4" type="fixed">
-        <origin xyz="0.0 -0.11800000000000001 -0.006" rpy="0.0 -0.0 0.0" />
-        <parent link="electronics_layer_1" />
-        <child link="spacer_4" />
-    </joint>
-
-    <joint name="spacer_2_electronics_layer_2" type="fixed">
-        <origin xyz="0.0 0.0 -0.016" rpy="3.141592653589793 -0.0 0.0" />
-        <parent link="spacer_2" />
-        <child link="electronics_layer_2" />
-    </joint>
-
-    <!-- Leg 1 joints -->
-    <joint name="base_leg_1_MG996R_c" type="fixed">
-        <origin xyz="-0.03264053 -0.060065150000000005 0.013999999999999999" rpy="3.141592653589793 -0.0 0.0" />
-        <parent link="base" />
-        <child link="leg_1_MG996R_c" />
-    </joint>
-
-    <joint name="leg_1_coxa_joint" type="revolute">
-        <origin xyz="-0.028425689999999997 0.021001069999999997 0.031066209999999997" rpy="3.141592653589793 -0.0 3.0033433937731107e-33" />
-        <parent link="leg_1_MG996R_c" />
-        <child link="leg_1_coxa_b" />
-        <axis xyz="0.0 0.0 1.0" />
-        <limit lower="-1.570796" upper="1.570796" effort="1000000" velocity="1000000" />
-    </joint>
-
-    <joint name="leg_1_coxa_b_MG996R_f" type="fixed">
-        <origin xyz="-0.02916816000000001 -0.03906765 -0.00535" rpy="6.626416783217546e-33 -1.5707963267948966 0" />
-        <parent link="leg_1_coxa_b" />
-        <child link="leg_1_MG996R_f" />
-    </joint>
-
-    <joint name="leg_1_MG996R_f_coxa_a" type="fixed">
-        <origin xyz="0.0494 0.0 0.0" rpy="6.704561300464011e-33 1.5707963267948966 0" />
-        <parent link="leg_1_MG996R_f" />
-        <child link="leg_1_coxa_a" />
-    </joint>
-
-    <joint name="leg_1_femur_joint" type="revolute">
-        <origin xyz="0.03495 0.025679440000000008 0.01825481999999999" rpy="6.704561300464011e-33 1.5707963267948966 0" />
-        <parent link="leg_1_MG996R_f" />
-        <child link="leg_1_femur_a" />
-        <axis xyz="0.707107 -0.707107 1.999343393356845e-32" />
-        <limit lower="-0.785398" upper="2.356194" effort="1000000" velocity="1000000" />
-    </joint>
-
-    <joint name="leg_1_femur_a_femur_b" type="fixed">
-        <origin xyz="-0.0007071000000000005 0.000707109999999993 0.04770578" rpy="-3.141592653589793 1.6337250741359954e-17 -5.551115123125783e-17" />
-        <parent link="leg_1_femur_a" />
-        <child link="leg_1_femur_b" />
-    </joint>
-    
-    <joint name="leg_1_femur_b_femur_c" type="fixed">
-        <origin xyz="0.03075914000000001 0.030759150000000002 0.0" rpy="3.141592653589793 -0.0 -7.002961686799377e-34" />
-        <parent link="leg_1_femur_b" />
-        <child link="leg_1_femur_c" />
-    </joint>
-
-    <joint name="leg_1_tibia_joint" type="revolute">
-        <origin xyz="-0.020918530000000005 -0.020918540000000013 0.06344154" rpy="4.0156312877350055e-17 1.6337250741359954e-17 -5.551115123125783e-17" />
-        <parent link="leg_1_femur_a" />
-        <child link="leg_1_MG996R_t" />
-        <axis xyz="-0.707107 0.707107 -1.8398022027031245e-17" />
-        <limit lower="-1.570796" upper="1.570796" effort="1000000" velocity="1000000" />
-    </joint>
-
-    <joint name="leg_1_MG996R_t_tibia" type="fixed">
-        <origin xyz="0.033881879999999996 -0.013446489999999986 -0.005250000000000004" rpy="3.141592653589793 -1.6337250741359945e-17 5.551115123125788e-17" />
-        <parent link="leg_1_MG996R_t" />
+    <joint name="leg_1_tibia" type="continuous">
+        <origin xyz="-0.011749440000000017 -0.03218482000000002 -0.005250000000000001" rpy="3.141592653589793 -2.455971556515381e-28 1.5777218104420236e-30" />
+        <parent link="leg_1_MG996R_tibia" />
         <child link="leg_1_tibia" />
+        <axis xyz="0.707107 -0.707107 -2.4656518234403854e-29" />
     </joint>
 
-    <!-- Leg 2 joints -->
-    <joint name="base_leg_2_MG996R_c" type="fixed">
-        <origin xyz="-0.046200000000000005 0.00525 0.013999999999999999" rpy="3.141592653589793 -0.0 0.0" />
+    <!--Leg 2 joints-->
+
+    <joint name="base_leg_2" type="fixed">
+        <origin xyz="0.03713499999999998 0.005249999999999989 -3.3306690738753613e-18" rpy="1.5777218104420236e-30 3.155443620884054e-30 3.141592653589793" />
         <parent link="base" />
-        <child link="leg_2_MG996R_c" />
-    </joint>
-
-    <joint name="leg_2_coxa_joint" type="revolute">
-        <origin xyz="-0.03495 0.00525 0.031066209999999997" rpy="3.141592653589793 -0.0 2.7658489543714626e-32" />
-        <parent link="leg_2_MG996R_c" />
-        <child link="leg_2_coxa_b" />
-        <axis xyz="0.0 0.0 1.0" />
-        <limit lower="-1.570796" upper="1.570796" effort="1000000" velocity="1000000" />
-    </joint>
-
-    <joint name="leg_2_coxa_b_MG996R_f" type="fixed">
-        <origin xyz="-0.037750000000000006 -0.006999999999999999 -0.00535" rpy="-3.619061808167923e-31 -1.5707963267948966 0" />
-        <parent link="leg_2_coxa_b" />
-        <child link="leg_2_MG996R_f" />
-    </joint>
-
-    <joint name="leg_2_MG996R_f_coxa_a" type="fixed">
-        <origin xyz="0.0494 0.0 0.01049999999999999" rpy="-3.8956467036050695e-31 1.5707963267948966 0" />
-        <parent link="leg_2_MG996R_f" />
-        <child link="leg_2_coxa_a" />
+        <child link="leg_2_MG996R_coxa" />
     </joint>
     
-    <joint name="leg_2_femur_joint" type="revolute">
-        <origin xyz="0.03495 0.031066209999999997 0.005249999999999986" rpy="-3.8956467036050695e-31 1.5707963267948966 0" />
-        <parent link="leg_2_MG996R_f" />
-        <child link="leg_2_femur_a" />
-        <axis xyz="0.0 -1.0 -3.8956467036050695e-31" />
-        <limit lower="-0.785398" upper="2.356194" effort="1000000" velocity="1000000" />
+    <joint name="leg_2_coxa" type="continuous">
+        <origin xyz="-0.03495 0.00525 0.03106621" rpy="0.0 1.9721522630525295e-31 5.593936126472314e-33" />
+        <parent link="leg_2_MG996R_coxa" />
+        <child link="leg_2_coxa" />
+        <axis xyz="1.9721522630525295e-31 0.0 -0.9999999999999999" />
     </joint>
-
-    <joint name="leg_2_femur_a_femur_b" type="fixed">
-        <origin xyz="0.0 0.0010000000000000009 0.04770578" rpy="-3.141592653589793 -4.930380657631324e-32 -1.920702115641966e-62" />
-        <parent link="leg_2_femur_a" />
-        <child link="leg_2_femur_b" />
+    
+    <joint name="leg_2_femur" type="continuous">
+        <origin xyz="-0.06000000000000001 0.0215 -0.021500000000000005" rpy="-7.422322462533451e-16 0.7853981633974433 3.1415926535897927" />
+        <parent link="leg_2_coxa" />
+        <child link="leg_2_MG996R_femur" />
+        <axis xyz="3.711161231266726e-16 -1.0 -3.711161231266763e-16" />
     </joint>
-
-    <joint name="leg_2_femur_b_femur_c" type="fixed">
-        <origin xyz="0.0 0.0435 -0.01" rpy="3.141592653589793 -4.930380657631324e-32 1.0938894043115288e-62" />
-        <parent link="leg_2_femur_b" />
-        <child link="leg_2_femur_c" />
+    
+    <joint name="leg_leg_2_MG996R_femur" type="fixed">
+        <origin xyz="-0.006505382386916309 0.03106621 -0.013930003589374955" rpy="-5.248374545410663e-16 0.7853981633974433 3.141592653589793" />
+        <parent link="leg_2_MG996R_femur" />
+        <child link="leg_2_femur" />
     </joint>
-
-    <joint name="leg_2_tibia_joint" type="revolute">
-        <origin xyz="-0.029583280000000017 0.0 0.06344154" rpy="4.105753625025497e-33 -4.930380657631324e-32 -1.920702115641966e-62" />
-        <parent link="leg_2_femur_a" />
-        <child link="leg_2_MG996R_t" />
-        <axis xyz="0.0 1.0 -2.2186712959340957e-31" />
-        <limit lower="-1.570796" upper="1.570796" effort="1000000" velocity="1000000" />
+    
+    <joint name="leg_leg_2_femur_MG996R" type="fixed">
+        <origin xyz="-0.10559999999999999 0.0 0.0" rpy="-3.141592653589793 -1.135287644644703e-30 -1.5777218104420236e-30" />
+        <parent link="leg_2_femur" />
+        <child link="leg_2_MG996R_tibia" />
     </joint>
-
-    <joint name="leg_2_MG996R_t_tibia" type="fixed">
-        <origin xyz="-0.03495000000000001 -0.031066209999999997 -0.005250000000000004" rpy="6.162975822039155e-33 8.277254298276836e-32 9.860761315262648e-32" />
-        <parent link="leg_2_MG996R_t" />
+    
+    <joint name="leg_2_tibia" type="continuous">
+        <origin xyz="0.014450000000000003 -0.03106621 -0.005250000000000001" rpy="-3.141592653589793 -1.977608157853436e-31 -1.5777218104420236e-30" />
+        <parent link="leg_2_MG996R_tibia" />
         <child link="leg_2_tibia" />
+        <axis xyz="0.0 -0.9999999999999999 -1.5777218104420236e-30" />
     </joint>
 
-    <!-- Leg 3 joints -->
-    <joint name="base_leg_3_MG996R_c" type="fixed">
-        <origin xyz="-0.04006515 0.05264053 0.013999999999999999" rpy="3.141592653589793 -0.0 0.0" />
+    <!--Leg 3 joints-->
+    
+    <joint name="base_leg_3" type="fixed">
+        <origin xyz="0.03687243999999997 -0.054812819999999984 -3.3306690738752677e-18" rpy="1.5777218104420236e-30 3.155443620884054e-30 3.141592653589793" />
         <parent link="base" />
-        <child link="leg_3_MG996R_c" />
+        <child link="leg_3_MG996R_coxa" />
     </joint>
 
-    <joint name="leg_3_coxa_joint" type="revolute">
-        <origin xyz="-0.021001069999999997 -0.028425690000000003 0.031066209999999997" rpy="-3.141592653589793 -2.4651903288156613e-32 1.3389511120490542e-32" />
-        <parent link="leg_3_MG996R_c" />
-        <child link="leg_3_coxa_b" />
-        <axis xyz="-2.465190328815662e-32 9.860761315262648e-32 1.0000000000000002" />
-        <limit lower="-1.570796" upper="1.570796" effort="1000000" velocity="1000000" />
-    </joint>
-
-    <joint name="leg_3_coxa_b_MG996R_f" type="fixed">
-        <origin xyz="-0.03906765 0.02916816000000001 -0.00535" rpy="1.4658381573891182e-31 -1.5707963267948966 0" />
-        <parent link="leg_3_coxa_b" />
-        <child link="leg_3_MG996R_f" />
-    </joint>
-
-    <joint name="leg_3_MG996R_f_coxa_a" type="fixed">
-        <origin xyz="0.0494 0.0 0.0" rpy="1.0854240133026478e-31 1.5707963267948966 0" />
-        <parent link="leg_3_MG996R_f" />
-        <child link="leg_3_coxa_a" />
-    </joint>
-
-    <joint name="leg_3_femur_joint" type="revolute">
-        <origin xyz="0.03495 0.01825481999999999 -0.025679439999999998" rpy="1.0854240133026478e-31 1.5707963267948966 0" />
-        <parent link="leg_3_MG996R_f" />
-        <child link="leg_3_femur_a" />
-        <axis xyz="-0.707107 -0.707107 9.418262515581811e-32" />
-        <limit lower="-0.785398" upper="2.356194" effort="1000000" velocity="1000000" />
-    </joint>
-
-    <joint name="leg_3_femur_a_femur_b" type="fixed">
-        <origin xyz="0.0007071100000000019 0.0007071000000000005 0.04770578" rpy="-3.141592653589793 1.5085330968733485e-17 -5.551115123125785e-17" />
-        <parent link="leg_3_femur_a" />
-        <child link="leg_3_femur_b" />
-    </joint>
-
-    <joint name="leg_3_femur_b_femur_c" type="fixed">
-        <origin xyz="-0.030759150000000013 0.03075914000000001 -8.881784197001253e-18" rpy="3.141592653589793 4.173065908753796e-19 -1.6653345369377353e-16" />
-        <parent link="leg_3_femur_b" />
-        <child link="leg_3_femur_c" />
-    </joint>
-
-    <joint name="leg_3_tibia_joint" type="revolute">
-        <origin xyz="-0.020918540000000006 0.020918530000000005 0.06344154" rpy="1.801271842119308e-17 1.5085330968733485e-17 -5.551115123125785e-17" />
-        <parent link="leg_3_femur_a" />
-        <child link="leg_3_MG996R_t" />
-        <axis xyz="0.707107 0.7071069999999999 -4.656802568901692e-17" />
-        <limit lower="-1.570796" upper="1.570796" effort="1000000" velocity="1000000" />
-    </joint>
-
-    <joint name="leg_3_MG996R_t_tibia" type="fixed">
-        <origin xyz="-0.04668051 0.0027462499999999857 0.005250000000000004" rpy="-1.8012718421193043e-17 -1.5085330968733362e-17 5.551115123125774e-17" />
-        <parent link="leg_3_MG996R_t" />
-        <child link="leg_3_tibia" />
-    </joint>
-
-    <!-- Leg 4 joints -->
-    <joint name="base_leg_4_MG996R_c" type="fixed">
-        <origin xyz="0.04006515 0.05264053 0.013999999999999999" rpy="3.141592653589793 -0.0 0.0" />
-        <parent link="base" />
-        <child link="leg_4_MG996R_c" />
-    </joint>
-
-    <joint name="leg_4_coxa_joint" type="revolute">
-        <origin xyz="0.021001069999999997 -0.028425690000000003 0.031066209999999997" rpy="3.141592653589793 -4.930380657631324e-32 2.4249584075869093e-48" />
-        <parent link="leg_4_MG996R_c" />
-        <child link="leg_4_coxa_b" />
-        <axis xyz="-4.930380657631324e-32 0.0 1.0" />
-        <limit lower="-1.570796" upper="1.570796" effort="1000000" velocity="1000000" />
-    </joint>
-
-    <joint name="leg_4_coxa_b_MG996R_f" type="fixed">
-        <origin xyz="0.03906765 0.02916816000000001 -0.00535" rpy="-3.141592653589793 -1.5707963267948966 0" />
-        <parent link="leg_4_coxa_b" />
-        <child link="leg_4_MG996R_f" />
-    </joint>
-
-    <joint name="leg_4_MG996R_f_coxa_a" type="fixed">
-        <origin xyz="0.0494 -1.7763568394002505e-17 1.7763568394002505e-17" rpy="3.141592653589793 -1.5707963267948966 0" />
-        <parent link="leg_4_MG996R_f" />
-        <child link="leg_4_coxa_a" />
+    <joint name="leg_3_coxa" type="continuous">
+        <origin xyz="-0.02100107 0.028425689999999993 0.03106621" rpy="0.0 -1.9721522630525295e-31 -3.390661277973094e-45" />
+        <parent link="leg_3_MG996R_coxa" />
+        <child link="leg_3_coxa" />
+        <axis xyz="-1.9721522630525295e-31 0.0 -0.9999999999999999" />
     </joint>
     
-    <joint name="leg_4_femur_joint" type="revolute">
-        <origin xyz="0.03495 -0.01825481999999999 -0.02567943999999998" rpy="3.141592653589793 -1.5707963267948966 0" />
-        <parent link="leg_4_MG996R_f" />
-        <child link="leg_4_femur_a" />
-        <axis xyz="0.707107 -0.7071070000000002 -4.803503751454446e-31" />
-        <limit lower="-2.356194" upper="0.785398" effort="1000000" velocity="1000000" />
+    <joint name="leg_3_femur" type="continuous">
+        <origin xyz="-0.027223610000000002 0.05762920000000001 -0.02150000000000001" rpy="-7.080538306756965e-16 0.7853981633974434 3.1415926535897927" />
+        <parent link="leg_3_coxa" />
+        <child link="leg_3_MG996R_femur" />
+        <axis xyz="-0.5000001547244785 -0.707107 -0.5000001547244738" />
+    </joint>
+    
+    <joint name="leg_leg_3_MG996R_femur" type="fixed">
+        <origin xyz="0.012020419300373853 0.032184819999999996 0.004595798097915056" rpy="-4.693263033098109e-16 0.7853981633974433 -3.141592653589793" />
+        <parent link="leg_3_MG996R_femur" />
+        <child link="leg_3_femur" />
+    </joint>
+    
+    <joint name="leg_leg_3_femur_MG996R" type="fixed">
+        <origin xyz="-0.07467047000000002 0.07467047000000002 0.0" rpy="3.141592653589793 9.509787901705745e-30 -1.5777218104420236e-30" />
+        <parent link="leg_3_femur" />
+        <child link="leg_3_MG996R_tibia" />
+    </joint>
+    
+    <joint name="leg_3_tibia" type="continuous">
+        <origin xyz="0.03218482000000002 -0.01174944 -0.00525" rpy="-3.141592653589793 -3.1507118818835715e-28 -1.577721810442024e-30" />
+        <parent link="leg_3_MG996R_tibia" />
+        <child link="leg_3_tibia" />
+        <axis xyz="-0.707107 -0.7071069999999999 3.247757628198293e-29" />
+    </joint>
+    
+    <!--Leg 4 joints-->
+
+    <joint name="base_leg_4" type="fixed">
+        <origin xyz="-0.02944782 -0.06223743999999996 -3.330669073875465e-18" rpy="1.5777218104420236e-30 3.155443620884054e-30 3.141592653589793" />
+        <parent link="base" />
+        <child link="leg_4_MG996R_coxa" />
     </joint>
 
-    <joint name="leg_4_femur_a_femur_b" type="fixed">
-        <origin xyz="-0.0007071100000000019 0.0007070999999999828 0.04770577999999999" rpy="3.141592653589793 -3.225719489184397e-17 9.860761315262642e-32" />
-        <parent link="leg_4_femur_a" />
-        <child link="leg_4_femur_b" />
+    <joint name="leg_4_coxa" type="continuous">
+        <origin xyz="0.028425690000000003 0.021001069999999997 0.03106621" rpy="-1.9721522630525295e-31 -1.9721522630525295e-31 -1.4971863295389187e-31" />
+        <parent link="leg_4_MG996R_coxa" />
+        <child link="leg_4_coxa" />
+        <axis xyz="-1.9721522630525295e-31 1.9721522630525295e-31 -1.0" />
     </joint>
-
-    <joint name="leg_4_femur_b_femur_c" type="fixed">
-        <origin xyz="0.030759150000000002 0.03075914000000001 8.881784197001253e-18" rpy="-3.141592653589793 -1.5502637559609293e-17 7.224469708134766e-36" />
-        <parent link="leg_4_femur_b" />
-        <child link="leg_4_femur_c" />
+    
+    <joint name="leg_4_femur" type="continuous">
+        <origin xyz="0.057629200000000005 0.027223610000000013 -0.0215" rpy="-6.469461358014946e-16 0.7853981633974433 3.1415926535897927" />
+        <parent link="leg_4_coxa" />
+        <child link="leg_4_MG996R_femur" />
+        <axis xyz="-0.500000154724479 0.707107 -0.5000001547244732" />
     </joint>
-
-    <joint name="leg_4_tibia_joint" type="revolute">
-        <origin xyz="0.020918540000000006 0.020918529999999987 0.06344153999999999" rpy="-1.742027637138999e-17 -3.225719489184397e-17 9.860761315262642e-32" />
-        <parent link="leg_4_femur_a" />
-        <child link="leg_4_MG996R_t" />
-        <axis xyz="0.7071069999999999 -0.707107 2.3796817056033812e-17" />
-        <limit lower="-1.570796" upper="1.570796" effort="1000000" velocity="1000000" />
+    
+    <joint name="leg_leg_4_MG996R_femur" type="fixed">
+        <origin xyz="0.026470415074497888 -0.01174944 0.019045793872038887" rpy="-4.693263033098162e-16 0.7853981633974433 3.141592653589793" />
+        <parent link="leg_4_MG996R_femur" />
+        <child link="leg_4_femur" />
     </joint>
-
-    <joint name="leg_4_MG996R_t_tibia" type="fixed">
-        <origin xyz="0.04668051000000002 0.0027462499999999857 -0.0052500000000000125" rpy="1.742027637139001e-17 3.225719489184374e-17 -1.5032353460464818e-35" />
-        <parent link="leg_4_MG996R_t" />
+    
+    <joint name="leg_leg_4_femur_MG996R" type="fixed">
+        <origin xyz="0.04030507999999999 0.040305080000000014 0.0" rpy="-3.141592653589793 1.4056744540022418e-29 -3.1554436208840472e-30" />
+        <parent link="leg_4_femur" />
+        <child link="leg_4_MG996R_tibia" />
+    </joint>
+    
+    <joint name="leg_4_tibia" type="continuous">
+        <origin xyz="0.048377570000000016 -0.001049199999999999 -0.005250000000000001" rpy="3.141592653589793 -3.392272815550781e-28 -4.592132580746781e-86" />
+        <parent link="leg_4_MG996R_tibia" />
         <child link="leg_4_tibia" />
+        <axis xyz="-0.707107 0.707107 4.337944936001927e-29" />
     </joint>
+    
+    <!--Leg 5 joints-->
 
-    <!-- Leg 5 joints -->
-    <joint name="base_leg_5_MG996R_c" type="fixed">
-        <origin xyz="0.046200000000000005 0.00525 0.013999999999999999" rpy="3.141592653589793 -0.0 0.0" />
+    <joint name="base_leg_5" type="fixed">
+        <origin xyz="-0.03713499999999998 -0.005249999999999989 -3.3306690738755793e-18" rpy="1.5777218104420236e-30 3.155443620884054e-30 3.141592653589793" />
         <parent link="base" />
-        <child link="leg_5_MG996R_c" />
+        <child link="leg_5_MG996R_coxa" />
     </joint>
 
-    <joint name="leg_5_coxa_joint" type="revolute">
-        <origin xyz="0.03495 0.00525 0.031066209999999997" rpy="3.141592653589793 -0.0 0.0" />
-        <parent link="leg_5_MG996R_c" />
-        <child link="leg_5_coxa_b" />
-        <axis xyz="0.0 0.0 1.0" />
-        <limit lower="-1.570796" upper="1.570796" effort="1000000" velocity="1000000" />
+    <joint name="leg_5_coxa" type="continuous">
+        <origin xyz="0.03495 -0.00525 0.03106621" rpy="-9.860761315262648e-32 -0.0 1.0138806576528696e-32" />
+        <parent link="leg_5_MG996R_coxa" />
+        <child link="leg_5_coxa" />
+        <axis xyz="0.0 9.860761315262648e-32 -1.0" />
     </joint>
-
-    <joint name="leg_5_coxa_b_MG996R_f" type="fixed">
-        <origin xyz="0.048249999999999994 -0.006999999999999999 -0.00535" rpy="3.141592653589793 -1.5707963267948966 0" />
-        <parent link="leg_5_coxa_b" />
-        <child link="leg_5_MG996R_f" />
+    
+    <joint name="leg_5_femur" type="continuous">
+        <origin xyz="0.06000000000000001 -0.0215 -0.0215" rpy="-7.422322462533452e-16 0.7853981633974433 3.1415926535897927" />
+        <parent link="leg_5_coxa" />
+        <child link="leg_5_MG996R_femur" />
+        <axis xyz="-3.711161231266728e-16 1.0 3.711161231266763e-16" />
     </joint>
-
-    <joint name="leg_5_MG996R_f_coxa_a" type="fixed">
-        <origin xyz="0.0494 0.0 0.0" rpy="-3.141592653589793 -1.5707963267948966 0" />
-        <parent link="leg_5_MG996R_f" />
-        <child link="leg_5_coxa_a" />
+    
+    <joint name="leg_leg_5_MG996R_femur" type="fixed">
+        <origin xyz="0.013930003589375026 -0.031066209999999997 0.006505382386916168" rpy="-5.248374545410629e-16 0.7853981633974433 3.141592653589793" />
+        <parent link="leg_5_MG996R_femur" />
+        <child link="leg_5_femur" />
     </joint>
-
-    <joint name="leg_5_femur_joint" type="revolute">
-        <origin xyz="0.03495 -0.031066209999999997 -0.005250000000000004" rpy="-3.141592653589793 -1.5707963267948966 0" />
-        <parent link="leg_5_MG996R_f" />
-        <child link="leg_5_femur_a" />
-        <axis xyz="0.0 -1.0 2.0717667630298715e-33" />
-        <limit lower="-2.356194" upper="0.785398" effort="1000000" velocity="1000000" />
+    
+    <joint name="leg_leg_5_femur_MG996R" type="fixed">
+        <origin xyz="0.056999999999999995 0.0 0.0" rpy="3.141592653589793 2.505999984693438e-31 1.5777218104420236e-30" />
+        <parent link="leg_5_femur" />
+        <child link="leg_5_MG996R_tibia" />
     </joint>
-
-    <joint name="leg_5_femur_a_femur_b" type="fixed">
-        <origin xyz="0.0 0.0010000000000000009 0.04770578" rpy="3.141592653589793 -9.589690804707752e-49 5.551115123125783e-17" />
-        <parent link="leg_5_femur_a" />
-        <child link="leg_5_femur_b" />
-    </joint>
-
-    <joint name="leg_5_femur_b_femur_c" type="fixed">
-        <origin xyz="0.0 0.0435 -0.01" rpy="-3.141592653589793 -4.9303806576313227e-32 1.2325951644078307e-32" />
-        <parent link="leg_5_femur_b" />
-        <child link="leg_5_femur_c" />
-    </joint>
-
-    <joint name="leg_5_tibia_joint" type="revolute">
-        <origin xyz="0.029583280000000017 0.0 0.06344154" rpy="-3.2028555402441196e-32 -9.589690804707752e-49 5.551115123125783e-17" />
-        <parent link="leg_5_femur_a" />
-        <child link="leg_5_MG996R_t" />
-        <axis xyz="-5.551115123125783e-17 -1.0 -3.4512664603419266e-31" />
-        <limit lower="-1.570796" upper="1.570796" effort="1000000" velocity="1000000" />
-    </joint>
-
-    <joint name="leg_5_MG996R_t_tibia" type="fixed">
-        <origin xyz="-0.014450000000000003 -0.031066209999999997 -0.005250000000000004" rpy="-3.141592653589793 -8.484424295716667e-47 -5.551115123125763e-17" />
-        <parent link="leg_5_MG996R_t" />
+    
+    <joint name="leg_5_tibia" type="continuous">
+        <origin xyz="0.03495000000000001 0.03106621 -0.005250000000000001" rpy="-3.141592653589793 9.729700613564994e-32 1.5777218104420236e-30" />
+        <parent link="leg_5_MG996R_tibia" />
         <child link="leg_5_tibia" />
+        <axis xyz="-1.5777218104420236e-30 0.9999999999999999 0.0" />
     </joint>
 
-    <!-- Leg 6 joints -->
-    <joint name="base_leg_6_MG996R_c" type="fixed">
-        <origin xyz="0.03264053 -0.060065150000000005 0.013999999999999999" rpy="3.141592653589793 -0.0 0.0" />
+    <!--Leg 6 joints-->
+
+    <joint name="base_leg_6" type="fixed">
+        <origin xyz="-0.03687243999999997 0.054812819999999984 -3.330669073875673e-18" rpy="1.5777218104420236e-30 3.155443620884054e-30 3.141592653589793" />
         <parent link="base" />
-        <child link="leg_6_MG996R_c" />
+        <child link="leg_6_MG996R_coxa" />
+    </joint>
+    
+    <joint name="leg_6_coxa" type="continuous">
+        <origin xyz="0.02100107 -0.028425689999999993 0.03106621" rpy="1.97215226305253e-31 -0.0 1.6819919341129893e-45" />
+        <parent link="leg_6_MG996R_coxa" />
+        <child link="leg_6_coxa" />
+        <axis xyz="0.0 -1.9721522630525295e-31 -0.9999999999999999" />
     </joint>
 
-    <joint name="leg_6_coxa_joint" type="revolute">
-        <origin xyz="0.028425689999999997 0.021001069999999997 0.031066209999999997" rpy="-3.141592653589793 -0.0 1.251344390463166e-32" />
-        <parent link="leg_6_MG996R_c" />
-        <child link="leg_6_coxa_b" />
-        <axis xyz="0.0 6.162975822039155e-33 1.0" />
-        <limit lower="-1.570796" upper="1.570796" effort="1000000" velocity="1000000" />
+    <joint name="leg_6_femur" type="continuous">
+        <origin xyz="0.027223610000000002 -0.05762920000000003 -0.021500000000000005" rpy="-6.349165004021658e-16 0.7853981633974433 3.1415926535897927" />
+        <parent link="leg_6_coxa" />
+        <child link="leg_6_MG996R_femur" />
+        <axis xyz="0.5000001547244782 0.707107 0.5000001547244738" />
     </joint>
-
-    <joint name="leg_6_coxa_b_MG996R_f" type="fixed">
-        <origin xyz="0.02916816000000001 -0.03906765 -0.00535" rpy="3.141592653589793 -1.5707963267948966 0" />
-        <parent link="leg_6_coxa_b" />
-        <child link="leg_6_MG996R_f" />
+    
+    <joint name="leg_leg_6_MG996R_femur" type="fixed">
+        <origin xyz="-0.004595798097915136 -0.032184819999999996 -0.012020419300373826" rpy="-4.693263033098209e-16 0.7853981633974433 -3.141592653589793" />
+        <parent link="leg_6_MG996R_femur" />
+        <child link="leg_6_femur" />
     </joint>
-
-    <joint name="leg_6_MG996R_f_coxa_a" type="fixed">
-        <origin xyz="0.0494 -1.7763568394002505e-17 0.0" rpy="-2.4442543409198012e-32 -1.5707963267948966 0" />
-        <parent link="leg_6_MG996R_f" />
-        <child link="leg_6_coxa_a" />
+    
+    <joint name="leg_leg_6_femur_MG996R" type="fixed">
+        <origin xyz="0.04030507999999999 -0.04030507999999998 0.0" rpy="3.141592653589793 1.1441314436637283e-29 -1.5777218104420233e-30" />
+        <parent link="leg_6_femur" />
+        <child link="leg_6_MG996R_tibia" />
     </joint>
-
-    <joint name="leg_6_femur_joint" type="revolute">
-        <origin xyz="0.03495 -0.025679440000000008 0.01825481999999999" rpy="3.141592653589793 -1.5707963267948966 0" />
-        <parent link="leg_6_MG996R_f" />
-        <child link="leg_6_femur_a" />
-        <axis xyz="-0.707107 -0.707107 1.4803983593078296e-34" />
-        <limit lower="-2.356194" upper="0.785398" effort="1000000" velocity="1000000" />
-    </joint>
-
-    <joint name="leg_6_femur_a_femur_b" type="fixed">
-        <origin xyz="0.0007071000000000005 0.000707109999999993 0.057705780000000005" rpy="3.141592653589793 -5.59284578221332e-17 -5.551115123125784e-17" />
-        <parent link="leg_6_femur_a" />
-        <child link="leg_6_femur_b" />
-    </joint>
-
-    <joint name="leg_6_femur_b_femur_c" type="fixed">
-        <origin xyz="-0.03075914 0.030759150000000002 0.0" rpy="-3.141592653589793 1.59199441504844e-17 -5.551115123125784e-17" />
-        <parent link="leg_6_femur_b" />
-        <child link="leg_6_femur_c" />
-    </joint>
-
-    <joint name="leg_6_tibia_joint" type="revolute">
-        <origin xyz="0.020918530000000005 -0.020918540000000013 0.06344154" rpy="-6.289234938331015e-17 -5.59284578221332e-17 -5.551115123125784e-17" />
-        <parent link="leg_6_femur_a" />
-        <child link="leg_6_MG996R_t" />
-        <axis xyz="-0.7071069999999999 -0.7071069999999999 -2.4934463508646154e-17" />
-        <limit lower="-1.570796" upper="1.570796" effort="1000000" velocity="1000000" />
-    </joint>
-
-    <joint name="leg_6_MG996R_t_tibia" type="fixed">
-        <origin xyz="0.0027462499999999857 -0.04668051 0.005250000000000004" rpy="6.289234938331016e-17 5.592845782213298e-17 5.551115123125774e-17" />
-        <parent link="leg_6_MG996R_t" />
+    
+    <joint name="leg_6_tibia" type="continuous">
+        <origin xyz="0.0027462500000000035 0.04668052000000001 -0.005250000000000001" rpy="-3.141592653589793 -3.640945256296552e-28 -1.577721810442024e-30" />
+        <parent link="leg_6_MG996R_tibia" />
         <child link="leg_6_tibia" />
+        <axis xyz="0.707107 0.7071069999999999 -4.4724723353636215e-29" />
     </joint>
 
 </robot>
