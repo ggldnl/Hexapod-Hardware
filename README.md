@@ -122,6 +122,7 @@ Make sure to follow the recommended print settings for optimal strength and fitm
 
 1. All the legs use the same basic components: femur, tibia and 3 x motor_bracket.
 2. The `MG996.stl` is used in the URDF, we won't need it to build the actual robot so you don't have to print it.
+3. Print `adapter_plate_a.stl` and `adapter_plate_b.stl` only if you don't want to use the custom PCB.
 
 ## TODO
 
