@@ -884,23 +884,23 @@
 
     <!-- Leg 6 links -->
 
-    <link name="leg_6_coxa">
+    <link name="leg_6_coxa_motor">
         <inertial>
             <origin xyz="0.02135660694490988 -0.013931984294741575 0.010769896522850004" rpy="0.0 -0.0 5.58101059878747e-104" />
             <mass value="0.20795327871559424" />
             <inertia ixx="3.989639417833861e-05" iyy="3.989640031184377e-05" izz="3.622609283846813e-05" ixy="1.1428841708136309e-05" iyz="-3.3492139290018305e-07" ixz="3.349118843937876e-07" />
         </inertial>
-        <visual name="leg_6_coxa_visual">
+        <visual name="leg_6_coxa_motor_visual">
             <origin xyz="0.013930007421406598 0.007283200576970828 0.002400003615241486" rpy="-3.1415926535897922 -8.763198459767528e-16 -0.7853981633974579" />
             <geometry>
-                <mesh filename="CAD/coxa.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
-        <collision name="leg_6_coxa_collision">
+        <collision name="leg_6_coxa_motor_collision">
             <origin xyz="0.013930007421406598 0.007283200576970828 0.002400003615241486" rpy="-3.1415926535897922 -8.763198459767528e-16 -0.7853981633974579" />
             <geometry>
-                <mesh filename="CAD/coxa.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -1322,12 +1322,12 @@
     <joint name="base_body_leg_6_coxa_motor" type="fixed">
         <origin xyz="-0.02944781183258657 0.0622374375978254 -3.6152416083012894e-09" rpy="-6.556553535888259e-16 -1.883898413669496e-21 -3.14159265358979" />
         <parent link="base" />
-        <child link="leg_6_coxa" />
+        <child link="leg_6_coxa_motor" />
     </joint>
 
     <joint name="leg_6_coxa_leg_6_coxa" type="continuous">
         <origin xyz="0.028425699999999995 -0.021001070000000014 0.03346622" rpy="-1.97215226305253e-31 -1.9721485014706069e-31 -1.1845102963535013e-32" />
-        <parent link="leg_6_coxa" />
+        <parent link="leg_6_coxa_motor" />
         <child link="leg_6_coxa_bracket" />
         <axis xyz="-1.9721522630525295e-31 1.9721522630525295e-31 -0.9999999999999999" />
     </joint>
