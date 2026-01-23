@@ -893,14 +893,14 @@
         <visual name="leg_6_coxa_visual">
             <origin xyz="0.013930007421406598 0.007283200576970828 0.002400003615241486" rpy="-3.1415926535897922 -8.763198459767528e-16 -0.7853981633974579" />
             <geometry>
-                <mesh filename="CAD/leg_6_coxa.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/coxa.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
         <collision name="leg_6_coxa_collision">
             <origin xyz="0.013930007421406598 0.007283200576970828 0.002400003615241486" rpy="-3.1415926535897922 -8.763198459767528e-16 -0.7853981633974579" />
             <geometry>
-                <mesh filename="CAD/leg_6_coxa.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/coxa.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
