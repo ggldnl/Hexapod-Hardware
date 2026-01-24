@@ -383,35 +383,13 @@
         <visual name="leg_3_coxa_motor_visual">
             <origin xyz="-0.013930001086579236 -0.0072831953813195585 3.615241670473779e-09" rpy="-3.1415926535897927 -2.055364604572737e-15 2.3561944901923364" />
             <geometry>
-                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="meshes/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
-            <material name="gray"/>
         </visual>
         <collision name="leg_3_coxa_motor_collision">
             <origin xyz="-0.013930001086579236 -0.0072831953813195585 3.615241670473779e-09" rpy="-3.1415926535897927 -2.055364604572737e-15 2.3561944901923364" />
             <geometry>
-                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="leg_3_femur_bracket">
-        <inertial>
-            <origin xyz="-0.011703844099171174 0.0070951198959367905 -0.005000003181320674" rpy="0.0 -0.0 -1.0947644252537575e-47" />
-            <mass value="0.12359002664125897" />
-            <inertia ixx="4.357393945131696e-05" iyy="3.5667330161475805e-05" izz="7.066702834659583e-05" ixy="-1.7429120153153278e-05" iyz="-8.23993651088983e-18" ixz="3.7947076036992646e-19" />
-        </inertial>
-        <visual name="leg_3_femur_bracket_visual">
-            <origin xyz="-0.003535530661245403 -0.0035355335735147977 -0.005000003181322956" rpy="1.5707963267948952 -4.765163846967347e-16 -2.3561944901923524" />
-            <geometry>
-                <mesh filename="CAD/motor_bracket.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_3_femur_bracket_collision">
-            <origin xyz="-0.003535530661245403 -0.0035355335735147977 -0.005000003181322956" rpy="1.5707963267948952 -4.765163846967347e-16 -2.3561944901923524" />
-            <geometry>
-                <mesh filename="CAD/motor_bracket.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="meshes/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -425,119 +403,133 @@
         <visual name="leg_3_coxa_bracket_visual">
             <origin xyz="-0.024041630661245473 0.02404162642648501 -0.02150000318132296" rpy="0.7853981633974538 1.5707963267948952 0" />
             <geometry>
-                <mesh filename="CAD/motor_bracket.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="meshes/motor_bracket.stl" scale="0.001 0.001 0.001" />
             </geometry>
-            <material name="gray"/>
         </visual>
         <collision name="leg_3_coxa_bracket_collision">
             <origin xyz="-0.024041630661245473 0.02404162642648501 -0.02150000318132296" rpy="0.7853981633974538 1.5707963267948952 0" />
             <geometry>
-                <mesh filename="CAD/motor_bracket.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="meshes/motor_bracket.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
 
-    <link name="leg_3_tibia_bracket">
+    <link name="leg_3_femur_bracket">
         <inertial>
-            <origin xyz="-0.028613768429486458 0.000670524226253022 -3.1813250700452046e-09" rpy="0.0 -0.0 0.0" />
+            <origin xyz="-0.011703844099171174 0.0070951198959367905 -0.005000003181320674" rpy="0.0 -0.0 -1.0947644252537575e-47" />
             <mass value="0.12359002664125897" />
-            <inertia ixx="3.566733016147419e-05" iyy="4.357393945132215e-05" izz="7.06670283466132e-05" ixy="-1.742912015315241e-05" iyz="-1.1211750150868871e-34" ixz="8.239936510889834e-18" />
+            <inertia ixx="4.357393945131696e-05" iyy="3.5667330161475805e-05" izz="7.066702834659583e-05" ixy="-1.7429120153153278e-05" iyz="-8.23993651088983e-18" ixz="3.7947076036992646e-19" />
         </inertial>
-        <visual name="leg_3_tibia_bracket_visual">
-            <origin xyz="-0.039244421898937926 0.008838837664178954 -3.181322787426666e-09" rpy="-1.570796326794898 -1.3646993525299708e-15 -2.3561944901923524" />
+        <visual name="leg_3_femur_bracket_visual">
+            <origin xyz="-0.003535530661245403 -0.0035355335735147977 -0.005000003181322956" rpy="1.5707963267948952 -4.765163846967347e-16 -2.3561944901923524" />
             <geometry>
-                <mesh filename="CAD/motor_bracket.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="meshes/motor_bracket.stl" scale="0.001 0.001 0.001" />
             </geometry>
-            <material name="gray"/>
         </visual>
-        <collision name="leg_3_tibia_bracket_collision">
-            <origin xyz="-0.039244421898937926 0.008838837664178954 -3.181322787426666e-09" rpy="-1.570796326794898 -1.3646993525299708e-15 -2.3561944901923524" />
+        <collision name="leg_3_femur_bracket_collision">
+            <origin xyz="-0.003535530661245403 -0.0035355335735147977 -0.005000003181322956" rpy="1.5707963267948952 -4.765163846967347e-16 -2.3561944901923524" />
             <geometry>
-                <mesh filename="CAD/motor_bracket.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="leg_3_tibia_motor">
-        <inertial>
-            <origin xyz="0.023205190401039088 0.01136837702309883 0.0052500053840107965" rpy="0.0 -0.0 0.0" />
-            <mass value="0.20795327871559424" />
-            <inertia ixx="3.187318053506777e-05" iyy="3.282046784035263e-05" izz="5.13252389532301e-05" ixy="-3.879268650754455e-06" iyz="-6.92277485336845e-12" ixz="2.5857315420763083e-12" />
-        </inertial>
-        <visual name="leg_3_tibia_motor_visual">
-            <origin xyz="0.031607674565871643 0.03160767725348194 -0.004499996818677072" rpy="1.5707963267948974 1.1518593155549182e-15 -2.3561944901923377" />
-            <geometry>
-                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_3_tibia_motor_collision">
-            <origin xyz="0.031607674565871643 0.03160767725348194 -0.004499996818677072" rpy="1.5707963267948974 1.1518593155549182e-15 -2.3561944901923377" />
-            <geometry>
-                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="leg_3_femur">
-        <inertial>
-            <origin xyz="0.02849999999999127 5.873887344669946e-17 0.006851647126977525" rpy="0.0 0.0 0.0" />
-            <mass value="0.1615808293904576" />
-            <inertia ixx="2.050811277347525e-05" iyy="0.00018820429701192344" izz="0.0002034731763265898" ixy="-2.0630601754124804e-19" iyz="2.702084070624445e-19" ixz="5.117773067310483e-18" />
-        </inertial>
-        <visual name="leg_3_femur_visual">
-            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/femur.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="leg_3_femur_collision">
-            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
-            <geometry>
-                <mesh filename="CAD/femur.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="meshes/motor_bracket.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
 
     <link name="leg_3_femur_motor">
         <inertial>
-            <origin xyz="-9.786349153273477e-10 -0.008979631273537124 0.023117805348523087" rpy="1.6928331202032428e-77 -0.0 0.0" />
+            <origin xyz="-9.78634888681995e-10 -0.008979631273537266 0.023117805348523052" rpy="1.6928331202032428e-77 -0.0 0.0" />
             <mass value="0.20795327871559424" />
-            <inertia ixx="5.132523895322316e-05" iyy="3.187318053507384e-05" izz="3.282046784035958e-05" ixy="2.585731975757174e-12" iyz="-3.879268650757925e-06" ixz="-6.922774636528018e-12" />
+            <inertia ixx="5.132523895322316e-05" iyy="3.187318053507514e-05" izz="3.282046784035958e-05" ixy="2.585731108395436e-12" iyz="-3.8792686507570576e-06" ixz="-6.922774419687584e-12" />
         </inertial>
         <visual name="leg_3_femur_motor_visual">
-            <origin xyz="-0.009750003181322783 -0.0005771471087042812 0.0433571055789062" rpy="-8.773059790789432e-15 0.7853981633974437 -1.5707963267948983" />
+            <origin xyz="-0.009750003181322757 -0.0005771471087044234 0.04335710557890616" rpy="-8.099977690383925e-15 0.7853981633974426 -1.5707963267948983" />
             <geometry>
-                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="meshes/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
-            <material name="gray"/>
         </visual>
         <collision name="leg_3_femur_motor_collision">
-            <origin xyz="-0.009750003181322783 -0.0005771471087042812 0.0433571055789062" rpy="-8.773059790789432e-15 0.7853981633974437 -1.5707963267948983" />
+            <origin xyz="-0.009750003181322757 -0.0005771471087044234 0.04335710557890616" rpy="-8.099977690383925e-15 0.7853981633974426 -1.5707963267948983" />
             <geometry>
-                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="meshes/MG996R.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="leg_3_femur">
+        <inertial>
+            <origin xyz="-0.032280591715694786 0.042389886609741294 -0.0052500031813228175" rpy="0.0 -0.0 0.0" />
+            <mass value="0.1615808293904576" />
+            <inertia ixx="0.00011199064455003072" iyy="0.00011199064455003635" izz="0.00018820429701192631" ixy="9.148253177655545e-05" iyz="-8.673617379884043e-19" ixz="-4.336808689942024e-19" />
+        </inertial>
+        <visual name="leg_3_femur_visual">
+            <origin xyz="-0.047588288833721924 0.06738727601933504 -0.005250003181322827" rpy="1.5707963267948957 1.2743194473365455e-15 -0.7853981633974539" />
+            <geometry>
+                <mesh filename="meshes/femur.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg_3_femur_collision">
+            <origin xyz="-0.047588288833721924 0.06738727601933504 -0.005250003181322827" rpy="1.5707963267948957 1.2743194473365455e-15 -0.7853981633974539" />
+            <geometry>
+                <mesh filename="meshes/femur.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="leg_3_tibia_motor">
+        <inertial>
+            <origin xyz="0.023205190401038907 0.011368377023098973 0.0052500053840108495" rpy="0.0 -0.0 -7.937715758048352e-91" />
+            <mass value="0.20795327871559424" />
+            <inertia ixx="3.187318053506777e-05" iyy="3.282046784035264e-05" izz="5.132523895322316e-05" ixy="-3.879268650757925e-06" iyz="-6.922774853368452e-12" ixz="2.5857315420763083e-12" />
+        </inertial>
+        <visual name="leg_3_tibia_motor_visual">
+            <origin xyz="0.03160767456587143 0.03160767725348215 -0.004499996818677028" rpy="1.5707963267948974 1.1518547674218088e-15 -2.356194490192336" />
+            <geometry>
+                <mesh filename="meshes/MG996R.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg_3_tibia_motor_collision">
+            <origin xyz="0.03160767456587143 0.03160767725348215 -0.004499996818677028" rpy="1.5707963267948974 1.1518547674218088e-15 -2.356194490192336" />
+            <geometry>
+                <mesh filename="meshes/MG996R.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="leg_3_tibia_bracket">
+        <inertial>
+            <origin xyz="-0.028613768429486725 0.0006705242262532351 -3.1813251677448306e-09" rpy="0.0 -0.0 -7.709430349713761e-61" />
+            <mass value="0.12359002664125897" />
+            <inertia ixx="3.566733016147419e-05" iyy="4.3573939451321746e-05" izz="7.066702834660973e-05" ixy="-1.7429120153152417e-05" iyz="-8.67361737988404e-19" ixz="8.239936510889834e-18" />
+        </inertial>
+        <visual name="leg_3_tibia_bracket_visual">
+            <origin xyz="-0.03924442189893817 0.008838837664179167 -3.181322885126292e-09" rpy="-1.570796326794898 -1.3646948043968587e-15 -2.3561944901923524" />
+            <geometry>
+                <mesh filename="meshes/motor_bracket.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg_3_tibia_bracket_collision">
+            <origin xyz="-0.03924442189893817 0.008838837664179167 -3.181322885126292e-09" rpy="-1.570796326794898 -1.3646948043968587e-15 -2.3561944901923524" />
+            <geometry>
+                <mesh filename="meshes/motor_bracket.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
 
     <link name="leg_3_tibia">
         <inertial>
-            <origin xyz="0.03392047086546041 -0.026849395100218134 -0.026619683570709922" rpy="0.0 -0.0 0.0" />
+            <origin xyz="0.03392047086546041 -0.026849395100217707 -0.026619683570710064" rpy="0.0 -0.0 -2.035159653882539e-91" />
             <mass value="0.1636969553862354" />
-            <inertia ixx="0.0001595933944541425" iyy="0.00015959339445408352" izz="0.00028606685455616343" ixy="0.00013904782947694524" iyz="-2.1187066422088084e-05" ixz="2.118706642205881e-05" />
+            <inertia ixx="0.00015959339445414944" iyy="0.00015959339445408395" izz="0.00028606685455616343" ixy="0.00013904782947694698" iyz="-2.1187066422087217e-05" ixz="2.1187066422059028e-05" />
         </inertial>
         <visual name="leg_3_tibia_visual">
-            <origin xyz="0.03040559578615035 -0.023334520020910007 -0.005000003255828762" rpy="4.382948464420095e-15 1.487164032444701e-15 0.7853981633974414" />
+            <origin xyz="0.030405595786150333 -0.02333452002090965 -0.005000003255828887" rpy="4.382943916286988e-15 1.4871594843115889e-15 0.7853981633974426" />
             <geometry>
-                <mesh filename="CAD/tibia.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="meshes/tibia.stl" scale="0.001 0.001 0.001" />
             </geometry>
-            <material name="gray"/>
         </visual>
         <collision name="leg_3_tibia_collision">
-            <origin xyz="0.03040559578615035 -0.023334520020910007 -0.005000003255828762" rpy="4.382948464420095e-15 1.487164032444701e-15 0.7853981633974414" />
+            <origin xyz="0.030405595786150333 -0.02333452002090965 -0.005000003255828887" rpy="4.382943916286988e-15 1.4871594843115889e-15 0.7853981633974426" />
             <geometry>
-                <mesh filename="CAD/tibia.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="meshes/tibia.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -890,14 +882,14 @@
             <mass value="0.20795327871559424" />
             <inertia ixx="3.989639417833861e-05" iyy="3.989640031184377e-05" izz="3.622609283846813e-05" ixy="1.1428841708136309e-05" iyz="-3.3492139290018305e-07" ixz="3.349118843937876e-07" />
         </inertial>
-        <visual name="leg_6_coxa_motor_visual">
+        <visual name="leg_6_coxa_visual">
             <origin xyz="0.013930007421406598 0.007283200576970828 0.002400003615241486" rpy="-3.1415926535897922 -8.763198459767528e-16 -0.7853981633974579" />
             <geometry>
                 <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
-        <collision name="leg_6_coxa_motor_collision">
+        <collision name="leg_6_coxa_collision">
             <origin xyz="0.013930007421406598 0.007283200576970828 0.002400003615241486" rpy="-3.1415926535897922 -8.763198459767528e-16 -0.7853981633974579" />
             <geometry>
                 <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
@@ -1178,35 +1170,34 @@
         <parent link="leg_3_coxa_bracket" />
         <child link="leg_3_femur_bracket" />
     </joint>
-
-    <joint name="leg_3_femur_bracket_leg_3_femur" type="continuous">
+        <joint name="leg_3_femur_bracket_leg_3_femur" type="continuous">
         <origin xyz="-0.012374369999999999 0.035708890000000014 -0.004999999999999991" rpy="4.440892098500626e-16 -1.5707963267948966 0" />
         <parent link="leg_3_femur_bracket" />
         <child link="leg_3_femur_motor" />
         <axis xyz="-5.485808580416637e-31 0.7071069999999997 -0.7071070000000004" />
     </joint>
 
-    <joint name="leg_3_femur_leg_3_femur_motor_femur" type="fixed">
-        <origin xyz="0.08130000157835046 0.005250003181322987 0.013999998099572046" rpy="1.570796326794896 0.7853981633974517 2.194934138149569e-15" />
-        <parent link="leg_3_femur" />
-        <child link="leg_3_femur_motor" />
+    <joint name="leg_3_femur_motor_leg_3_femur_motor_femur" type="fixed">
+        <origin xyz="0.005249999999999995 -0.03218482000000002 0.011749430000000017" rpy="-3.944304526105096e-31 1.5707963267948961 0" />
+        <parent link="leg_3_femur_motor" />
+        <child link="leg_3_femur" />
     </joint>
 
     <joint name="leg_3_femur_leg_3_femur_tibia_motor" type="fixed">
-        <origin xyz="-0.02430000394655856 0.005250003181322853 0.013999998099572508" rpy="1.570796326794896 0.7853981633974517 2.194934138149569e-15" />
+        <origin xyz="-0.07467048 0.07467048000000005 0.0" rpy="3.141592653589793 2.9749109199195536e-31 -3.944304526105059e-31" />
         <parent link="leg_3_femur" />
         <child link="leg_3_tibia_motor" />
     </joint>
 
     <joint name="leg_3_tibia_motor_leg_3_tibia" type="continuous">
-        <origin xyz="0.032184819999999996 -0.01174942999999999 0.005249999999999995" rpy="3.141592653589793 4.0080150659657764e-30 0.0" />
+        <origin xyz="0.032184819999999996 -0.01174942999999999 0.005249999999999995" rpy="3.141592653589793 2.5209203703305588e-30 -1.9721522630525295e-31" />
         <parent link="leg_3_tibia_motor" />
         <child link="leg_3_tibia_bracket" />
-        <axis xyz="-0.707107 -0.7071069999999999 -5.036747943978376e-30" />
+        <axis xyz="-0.707107 -0.7071070000000002 -4.9975677246065126e-30" />
     </joint>
 
     <joint name="leg_3_tibia_bracket_leg_3_tibia_bracket_tibia" type="fixed">
-        <origin xyz="-0.04277996 0.0053032999999999934 0.005" rpy="1.9721522630525295e-31 5.9314479861815994e-30 1.1697718569126413e-60" />
+        <origin xyz="-0.04277996 0.0053032999999999934 0.005" rpy="5.916456789157587e-31 5.143330097529235e-30 2.433999741754704e-61" />
         <parent link="leg_3_tibia_bracket" />
         <child link="leg_3_tibia" />
     </joint>
@@ -1325,7 +1316,7 @@
         <child link="leg_6_coxa_motor" />
     </joint>
 
-    <joint name="leg_6_coxa_leg_6_coxa" type="continuous">
+    <joint name="leg_6_coxa_leg_6_coxa_motor" type="continuous">
         <origin xyz="0.028425699999999995 -0.021001070000000014 0.03346622" rpy="-1.97215226305253e-31 -1.9721485014706069e-31 -1.1845102963535013e-32" />
         <parent link="leg_6_coxa_motor" />
         <child link="leg_6_coxa_bracket" />
