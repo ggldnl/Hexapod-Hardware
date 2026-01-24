@@ -1316,7 +1316,7 @@
         <child link="leg_6_coxa_motor" />
     </joint>
 
-    <joint name="leg_6_coxa_leg_6_coxa_motor" type="continuous">
+    <joint name="leg_6_coxa" type="continuous">
         <origin xyz="0.028425699999999995 -0.021001070000000014 0.03346622" rpy="-1.97215226305253e-31 -1.9721485014706069e-31 -1.1845102963535013e-32" />
         <parent link="leg_6_coxa_motor" />
         <child link="leg_6_coxa_bracket" />
