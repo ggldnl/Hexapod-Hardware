@@ -32,6 +32,46 @@
         </collision>
     </link>
 
+    <link name="battery">
+        <inertial>
+            <origin xyz="-1.8325863893053906e-09 -0.004999997597825576 0.01329999638475834" rpy="0.0 -0.0 -5.58101059878747e-104" />
+            <mass value="1.3563652746505896" />
+            <inertia ixx="0.002239337431532748" iyy="0.0003273969538556236" izz="0.0024104901673859536" ixy="5.2041704279304205e-18" iyz="-6.938893903907228e-18" ixz="4.336808689942018e-19" />
+        </inertial>
+        <visual name="battery_visual">
+            <origin xyz="-0.02375000183258659 0.06450000240217435 0.026599996384758393" rpy="-3.1415926535897927 -1.930594682129491e-30 2.9445264256122582e-15" />
+            <geometry>
+                <mesh filename="CAD/battery.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="battery_collision">
+            <origin xyz="-0.02375000183258659 0.06450000240217435 0.026599996384758393" rpy="-3.1415926535897927 -1.930594682129491e-30 2.9445264256122582e-15" />
+            <geometry>
+                <mesh filename="CAD/battery.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="electronics">
+        <inertial>
+            <origin xyz="-0.030146053354359298 -0.06098867438893997 -0.0063973147128245245" rpy="0.0 -0.0 -5.58101059878747e-104" />
+            <mass value="0.32180259543495077" />
+            <inertia ixx="0.0005875021010828194" iyy="0.00013651410384449346" izz="0.0007054281025625185" ixy="-1.3451888328567217e-06" iyz="5.979775651412597e-06" ixz="5.032200736652969e-07" />
+        </inertial>
+        <visual name="electronics_visual">
+            <origin xyz="-0.021182381135906106 -0.08064231603379807 0.0027749485656200614" rpy="3.1415926535897927 3.767796833026535e-21 -3.14159265358979" />
+            <geometry>
+                <mesh filename="CAD/electronics.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="electronics_collision">
+            <origin xyz="-0.021182381135906106 -0.08064231603379807 0.0027749485656200614" rpy="3.1415926535897927 3.767796833026535e-21 -3.14159265358979" />
+            <geometry>
+                <mesh filename="CAD/electronics.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
     <!-- Leg 1 links -->
 
     <link name="leg_1_coxa_motor">
@@ -1043,6 +1083,19 @@
             </geometry>
         </collision>
     </link>
+
+    <!-- Body joints-->
+
+    <joint name="base_electronics" type="fixed">
+        <origin xyz="-0.03263500183258655 0.057999997597825405 0.013999996384758396" rpy="3.1415926535897927 -1.883898413669496e-21 -3.14159265358979" />
+        <parent link="base" />
+        <child link="electronics" />
+    </joint>
+    <joint name="base_battery" type="fixed">
+        <origin xyz="-1.8325863981871748e-09 -2.4021744593483163e-09 -3.6152416438284263e-09" rpy="3.1415926535897927 -1.883898413669496e-21 -3.14159265358979" />
+        <parent link="base" />
+        <child link="battery" />
+    </joint>
 
     <!--Leg 1 joints-->
 
