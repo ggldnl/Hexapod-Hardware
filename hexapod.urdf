@@ -13,19 +13,19 @@
 
     <link name="base">
         <inertial>
-            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159"/>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
             <mass value="0.5452508805768645" />
             <inertia ixx="0.0019800694919493945" iyy="0.001535948473676464" izz="0.0034983875742396527" ixy="-9.046225649322144e-18" iyz="-3.334559036662671e-06" ixz="-1.9722249615972874e-17" />
         </inertial>
         <visual name="base_visual">
-            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159"/>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
             <geometry>
                 <mesh filename="CAD/base.stl" scale="0.001 0.001 0.001" />
             </geometry>
             <material name="gray"/>
         </visual>
         <collision name="base_collision">
-            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159" />
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
             <geometry>
                 <mesh filename="CAD/base.stl" scale="0.001 0.001 0.001" />
             </geometry>
@@ -1416,4 +1416,5 @@
 
 
 </robot>
+
 
