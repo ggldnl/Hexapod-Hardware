@@ -122,7 +122,7 @@ Make sure to follow the recommended print settings for optimal strength and fitm
 
 1. All the legs use the same basic components: `femur.stl`, `tibia.stl` and 3 x `motor_bracket.stl`.
 2. `MG996.stl`, `battery.stl` and `electronics.stl` are used in the URDF and don't need to be printed.
-3. Print `adapter_plate_a.stl` and `adapter_plate_b.stl` only if you don't want to use the custom PCB.
+3. Print the `adapter_plate.stl` only if you don't want to use the custom PCB.
 
 ## TODO
 
