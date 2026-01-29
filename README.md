@@ -8,85 +8,22 @@ For a complete overview of the project, refer to the [main Hexapod repository](h
 
 Below is a summary of the components required to build the hexapod:
 
-<table style="width:100%; border-collapse: collapse;">
-  <tr>
-    <th style="text-align:left;">Category</th>
-    <th style="text-align:left;">Component</th>
-    <th style="text-align:left;">Quantity</th>
-    <th style="text-align:left;">Notes</th>
-    <th style="text-align:left;">Cost per part</th>
-  </tr>
-  <tr>
-    <td>Mechanical Components</td>
-    <td>3D-printed parts</td>
-    <td></td>
-    <td>6 x <code>tibia</code>, 6 x <code>femur</code>, 18 x <code>motor_bracket</code></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>M3 Screw kit</td>
-    <td>1</td>
-    <td>Refer to the instructions to know precisely how many screws and nuts you will need.</td>
-    <td>About 12€ for an assorted 800pzs kit on Amazon</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>F686ZZ Bearings</td>
-    <td>18</td>
-    <td>You will need one for the back of each motor</td>
-    <td>About 10€ for 20pzs on Amazon</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>M3 Heat set inserts kit</td>
-    <td>1</td>
-    <td>Refer to the instructions to know precisely how many of them you will need.</td>
-    <td>About 10€ for 150pzs on Amazon</td>
-  </tr>
-  <tr>
-    <td>Electronics</td>
-    <td>MG996/MG996R Servo</td>
-    <td>18</td>
-    <td>MG996R are cheaper but less powerful than MG996, they will do nevertheless</td>
-    <td>About 70€ on Aliexpress</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Servo2040</td>
-    <td>1</td>
-    <td>An equivalent board can be used instead e.g. 2x Pololu Mini Maestro</td>
-    <td>About 28€ on the Pimoroni website</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Raspberry Pi 5</td>
-    <td>1</td>
-    <td>Other versions can be used instead (2/3/4)</td>
-    <td>About 100€ on Amazon</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Raspberry Pi camera</td>
-    <td>1</td>
-    <td></td>
-    <td>About 3€ on Amazon</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>7.4V 2S LiPo Battery</td>
-    <td>1</td>
-    <td>They are often sold in pairs, so I ended up buying two of them for 50€</td>
-    <td>About 25€ on Amazon</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>8A UBEC</td>
-    <td>2</td>
-    <td>You will need two of them, one for the servos and one for the electronics</td>
-    <td>About 20€ on Aliexpress</td>
-  </tr>
-</table>
+<div align="center">
+
+| Category | Component | Quantity | Notes | Cost per part |
+|----------|-----------|----------|-------|---------------|
+| Mechanical Components | 3D-printed parts | | 6 x `tibia`, 6 x `femur`, 18 x `motor_bracket`, ... (refer to the assembly instructions) | |
+| | M3 Screw kit | 1 | Refer to the instructions to know precisely how many screws and nuts you will need. | About 12€ for an assorted 800pzs kit on Amazon |
+| | F686ZZ Bearings | 18 | You will need one for the back of each motor | About 10€ for 20pzs on Amazon |
+| | M3 Heat set inserts kit | 1 | Refer to the instructions to know precisely how many of them you will need. | About 10€ for 150pzs on Amazon |
+| Electronics | MG996/MG996R Servo | 18 | MG996R are cheaper but less powerful than MG996, they will do nevertheless | About 70€ on Aliexpress |
+| | Servo2040 | 1 | An equivalent board can be used instead e.g. 2x Pololu Mini Maestro | About 28€ on the Pimoroni website |
+| | Raspberry Pi 5 | 1 | Other versions can be used instead (2/3/4) | About 100€ on Amazon |
+| | Raspberry Pi camera | 1 | | About 3€ on Amazon |
+| | 7.4V 2S LiPo Battery | 1 | They are often sold in pairs, so I ended up buying two of them for 50€ | About 25€ on Amazon |
+| | 8A UBEC | 2 | You will need two of them, one for the servos and one for the electronics | About 20€ on Aliexpress |
+
+</div>
 
 Approximate total cost: around 280€.
 
