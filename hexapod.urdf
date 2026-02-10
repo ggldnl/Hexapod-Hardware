@@ -423,13 +423,13 @@
         <visual name="leg_3_coxa_motor_visual">
             <origin xyz="-0.013930001086579236 -0.0072831953813195585 3.615241670473779e-09" rpy="-3.1415926535897927 -2.055364604572737e-15 2.3561944901923364" />
             <geometry>
-                <mesh filename="meshes/MG996R.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="leg_3_coxa_motor_collision">
             <origin xyz="-0.013930001086579236 -0.0072831953813195585 3.615241670473779e-09" rpy="-3.1415926535897927 -2.055364604572737e-15 2.3561944901923364" />
             <geometry>
-                <mesh filename="meshes/MG996R.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -443,13 +443,13 @@
         <visual name="leg_3_coxa_bracket_visual">
             <origin xyz="-0.024041630661245473 0.02404162642648501 -0.02150000318132296" rpy="0.7853981633974538 1.5707963267948952 0" />
             <geometry>
-                <mesh filename="meshes/motor_bracket.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/motor_bracket.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="leg_3_coxa_bracket_collision">
             <origin xyz="-0.024041630661245473 0.02404162642648501 -0.02150000318132296" rpy="0.7853981633974538 1.5707963267948952 0" />
             <geometry>
-                <mesh filename="meshes/motor_bracket.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/motor_bracket.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -463,13 +463,13 @@
         <visual name="leg_3_femur_bracket_visual">
             <origin xyz="-0.003535530661245403 -0.0035355335735147977 -0.005000003181322956" rpy="1.5707963267948952 -4.765163846967347e-16 -2.3561944901923524" />
             <geometry>
-                <mesh filename="meshes/motor_bracket.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/motor_bracket.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="leg_3_femur_bracket_collision">
             <origin xyz="-0.003535530661245403 -0.0035355335735147977 -0.005000003181322956" rpy="1.5707963267948952 -4.765163846967347e-16 -2.3561944901923524" />
             <geometry>
-                <mesh filename="meshes/motor_bracket.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/motor_bracket.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -483,13 +483,13 @@
         <visual name="leg_3_femur_motor_visual">
             <origin xyz="-0.009750003181322757 -0.0005771471087044234 0.04335710557890616" rpy="-8.099977690383925e-15 0.7853981633974426 -1.5707963267948983" />
             <geometry>
-                <mesh filename="meshes/MG996R.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="leg_3_femur_motor_collision">
             <origin xyz="-0.009750003181322757 -0.0005771471087044234 0.04335710557890616" rpy="-8.099977690383925e-15 0.7853981633974426 -1.5707963267948983" />
             <geometry>
-                <mesh filename="meshes/MG996R.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -503,13 +503,13 @@
         <visual name="leg_3_femur_visual">
             <origin xyz="-0.047588288833721924 0.06738727601933504 -0.005250003181322827" rpy="1.5707963267948957 1.2743194473365455e-15 -0.7853981633974539" />
             <geometry>
-                <mesh filename="meshes/femur.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/femur.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="leg_3_femur_collision">
             <origin xyz="-0.047588288833721924 0.06738727601933504 -0.005250003181322827" rpy="1.5707963267948957 1.2743194473365455e-15 -0.7853981633974539" />
             <geometry>
-                <mesh filename="meshes/femur.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/femur.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -523,13 +523,13 @@
         <visual name="leg_3_tibia_motor_visual">
             <origin xyz="0.03160767456587143 0.03160767725348215 -0.004499996818677028" rpy="1.5707963267948974 1.1518547674218088e-15 -2.356194490192336" />
             <geometry>
-                <mesh filename="meshes/MG996R.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="leg_3_tibia_motor_collision">
             <origin xyz="0.03160767456587143 0.03160767725348215 -0.004499996818677028" rpy="1.5707963267948974 1.1518547674218088e-15 -2.356194490192336" />
             <geometry>
-                <mesh filename="meshes/MG996R.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/MG996R.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -543,13 +543,13 @@
         <visual name="leg_3_tibia_bracket_visual">
             <origin xyz="-0.03924442189893817 0.008838837664179167 -3.181322885126292e-09" rpy="-1.570796326794898 -1.3646948043968587e-15 -2.3561944901923524" />
             <geometry>
-                <mesh filename="meshes/motor_bracket.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/motor_bracket.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="leg_3_tibia_bracket_collision">
             <origin xyz="-0.03924442189893817 0.008838837664179167 -3.181322885126292e-09" rpy="-1.570796326794898 -1.3646948043968587e-15 -2.3561944901923524" />
             <geometry>
-                <mesh filename="meshes/motor_bracket.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/motor_bracket.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -563,13 +563,13 @@
         <visual name="leg_3_tibia_visual">
             <origin xyz="0.030405595786150333 -0.02333452002090965 -0.005000003255828887" rpy="4.382943916286988e-15 1.4871594843115889e-15 0.7853981633974426" />
             <geometry>
-                <mesh filename="meshes/tibia.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/tibia.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="leg_3_tibia_collision">
             <origin xyz="0.030405595786150333 -0.02333452002090965 -0.005000003255828887" rpy="4.382943916286988e-15 1.4871594843115889e-15 0.7853981633974426" />
             <geometry>
-                <mesh filename="meshes/tibia.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/tibia.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
