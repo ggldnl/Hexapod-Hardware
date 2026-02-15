@@ -12,7 +12,7 @@ Below is a summary of the components required to build the hexapod:
 
 | Category | Component | Quantity | Notes | Cost per part |
 |----------|-----------|----------|-------|---------------|
-| Mechanical Components | 3D-printed parts | | 6 x `tibia`, 6 x `femur`, 18 x `motor_bracket`, ... (refer to the assembly instructions) | |
+| Mechanical Components | 3D-printed parts | | 6 x `tibia`, 6 x `femur`, ... (refer to the assembly instructions) | |
 | | M3 Screw kit | 1 | Refer to the instructions to know precisely how many screws and nuts you will need. | About 12€ for an assorted 800pzs kit on Amazon |
 | | F686ZZ Bearings | 18 | You will need one for the back of each motor | About 10€ for 20pzs on Amazon |
 | | M3 Heat set inserts kit | 1 | Refer to the instructions to know precisely how many of them you will need. | About 10€ for 150pzs on Amazon |
@@ -57,12 +57,14 @@ Make sure to follow the recommended print settings for optimal strength and fitm
 
 ## 📝 Notes
 
-1. All the legs use the same basic components: `femur.stl`, `tibia.stl` and 3 x `motor_bracket.stl`.
+1. All the legs use the same basic components: `femur.stl`, `tibia.stl`, 3 x `bracket_A.stl` and 3 x `bracket_B.stl`.
 2. `MG996.stl`, `battery.stl` and `electronics.stl` are used in the URDF and don't need to be printed.
-3. Print the `adapter_plate.stl` only if you don't want to use the custom PCB.
+3. Print the `mouting_plate.stl` only if you don't want to use the custom PCB.
 
 ## TODO
 
+- [ ] Provide unified `electronics.stl` and `electronics_PCB.stl`
+- [ ] Maybe a shield (?) to put above the electronics
 - [ ] Update the assembly instructions PDF (check the TODOs in the README - there are many)
 - [ ] Update the MakerWorld link with the correct URL.
 
