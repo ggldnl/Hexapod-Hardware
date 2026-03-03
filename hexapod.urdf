@@ -39,6 +39,7 @@
             <geometry>
                 <mesh filename="CAD/hardware/battery.stl" scale="0.001 0.001 0.001" />
             </geometry>
+            <material name="gray"/>
         </visual>
         <collision name="battery_collision">
             <origin xyz="-0.02375000183258667 0.06750000240217446 0.026599996384758438" rpy="-3.1415926535897927 -2.114191754806318e-18 3.0669911055269938e-15" />
@@ -59,6 +60,7 @@
             <geometry>
                 <mesh filename="CAD/hardware/electronics.stl" scale="0.001 0.001 0.001" />
             </geometry>
+            <material name="gray"/>
         </visual>
         <collision name="electronics_collision">
             <origin xyz="-0.021182381135906106 -0.08064231603379807 0.0027749485656200614" rpy="3.1415926535897927 3.767796833026535e-21 -3.14159265358979" />
@@ -79,6 +81,7 @@
             <geometry>
                 <mesh filename="CAD/printed_parts/camera_mount.stl" scale="0.001 0.001 0.001" />
             </geometry>
+            <material name="gray"/>
         </visual>
         <collision name="camera_mount_collision">
             <origin xyz="-0.02830000176567003 0.010500002390200472 -3.6152414129020373e-09" rpy="-6.834109292044545e-16 2.0960151372337027e-30 -3.14159265358979" />
@@ -99,6 +102,7 @@
             <geometry>
                 <mesh filename="CAD/hardware/camera.stl" scale="0.001 0.001 0.001" />
             </geometry>
+            <material name="gray"/>
         </visual>
         <collision name="camera_collision">
             <origin xyz="-0.01050000176567008 -3.6152414395473897e-09 -0.0005517011679017614" rpy="-1.570796326794896 5.629335381678917e-15 -1.2246467991473148e-16" />
@@ -119,6 +123,7 @@
             <geometry>
                 <mesh filename="CAD/printed_parts/battery_mount.stl" scale="0.001 0.001 0.001" />
             </geometry>
+            <material name="gray"/>
         </visual>
         <collision name="battery_mount_collision">
             <origin xyz="1.832586402628067e-09 0.06599999759782552 0.001999996384758358" rpy="-3.1415926535897927 -2.010889409849979e-30 -3.14159265358979" />
