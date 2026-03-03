@@ -27,81 +27,135 @@
             </geometry>
         </collision>
     </link>
-    <link name="base_cover">
-        <inertial>
-            <origin xyz="0.030635004061402942 0.05126297721134841 -0.0008001845156470179" rpy="0.0 -0.0 0.0" />
-            <mass value="0.018994847098647162" />
-            <inertia ixx="2.2940391506653537e-05" iyy="7.3396261104543045e-06" izz="3.0238507454307017e-05" ixy="2.8124993856809636e-20" iyz="-2.7973561537982384e-09" ixz="8.848247614903168e-22" />
-        </inertial>
-        <visual name="base_cover_visual">
-            <origin xyz="0.030635004061402335 0.05200000323275548 -0.002" rpy="0.0 -0.0 3.141592653589793" />
-            <geometry>
-                <mesh filename="CAD/base_cover.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="base_cover_collision">
-            <origin xyz="0.030635004061402335 0.05200000323275548 -0.002" rpy="0.0 -0.0 3.141592653589793" />
-            <geometry>
-                <mesh filename="CAD/base_cover.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
+
     <link name="battery">
         <inertial>
-            <origin xyz="4.061402343290277e-09 -0.004000003232755452 0.013299999999999996" rpy="0.0 -0.0 0.0" />
-            <mass value="0.19006392383638834" />
-            <inertia ixx="0.00031379250632943294" iyy="4.5877280158112334e-05" izz="0.0003377756922451688" ixy="-2.586759211575828e-20" iyz="-3.9979955110402976e-19" ixz="2.5808035111654463e-19" />
+            <origin xyz="-1.8325864203916354e-09 -0.0019999975978255338 0.013299996384758385" rpy="0.0 -0.0 0.0" />
+            <mass value="0.18315250842415606" />
+            <inertia ixx="0.0003023818697356403" iyy="4.420901542509059e-05" izz="0.00032549293979989256" ixy="6.505213034913027e-19" iyz="1.4294665282337235e-64" ixz="1.0842021724855044e-19" />
         </inertial>
         <visual name="battery_visual">
-            <origin xyz="-0.023749995938597668 0.06549999676724455 0.026599999999999967" rpy="3.1415926535897927 -1.6653345369377343e-16 -6.695352868347747e-17" />
+            <origin xyz="-0.02375000183258667 0.06750000240217446 0.026599996384758438" rpy="-3.1415926535897927 -2.114191754806318e-18 3.0669911055269938e-15" />
             <geometry>
                 <mesh filename="CAD/battery.stl" scale="0.001 0.001 0.001" />
             </geometry>
-            <material name="gray"/>
         </visual>
         <collision name="battery_collision">
-            <origin xyz="-0.023749995938597668 0.06549999676724455 0.026599999999999967" rpy="3.1415926535897927 -1.6653345369377343e-16 -6.695352868347747e-17" />
+            <origin xyz="-0.02375000183258667 0.06750000240217446 0.026599996384758438" rpy="-3.1415926535897927 -2.114191754806318e-18 3.0669911055269938e-15" />
             <geometry>
                 <mesh filename="CAD/battery.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
-    <link name="mounting_plate">
+    
+    <link name="electronics">
         <inertial>
-            <origin xyz="-0.03291399940042262 -0.05932272752394369 -0.0010651495731488715" rpy="0.0 -0.0 0.0" />
-            <mass value="0.018349928101856598" />
-            <inertia ixx="2.4460418273207888e-05" iyy="1.4008760034433459e-05" izz="3.8443273521518956e-05" ixy="1.6788466865974587e-07" iyz="-1.9067093496822743e-08" ixz="-2.1864035181144862e-09" />
+            <origin xyz="-0.03014211279323742 -0.060922952696511316 -0.006406493150595711" rpy="0.0 -0.0 -5.58101059878747e-104" />
+            <mass value="0.07571894822352634" />
+            <inertia ixx="0.00013824494632538528" iyy="3.213818919945306e-05" izz="0.00016601059951429093" ixy="-3.0461346756322297e-07" iyz="1.3803512076473188e-06" ixz="1.168607536195681e-07" />
         </inertial>
-        <visual name="mounting_plate_visual">
-            <origin xyz="-0.03263499593859754 -0.05800000323275541 -4.440892098500626e-18" rpy="3.141592653589793 -0.0 -3.141592653589793" />
+        <visual name="electronics_visual">
+            <origin xyz="-0.021182381135906106 -0.08064231603379807 0.0027749485656200614" rpy="3.1415926535897927 3.767796833026535e-21 -3.14159265358979" />
             <geometry>
-                <mesh filename="CAD/mounting_plate.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/electronics.stl" scale="0.001 0.001 0.001" />
             </geometry>
-            <material name="gray"/>
         </visual>
-        <collision name="mounting_plate_collision">
-            <origin xyz="-0.03263499593859754 -0.05800000323275541 -4.440892098500626e-18" rpy="3.141592653589793 -0.0 -3.141592653589793" />
+        <collision name="electronics_collision">
+            <origin xyz="-0.021182381135906106 -0.08064231603379807 0.0027749485656200614" rpy="3.1415926535897927 3.767796833026535e-21 -3.14159265358979" />
             <geometry>
-                <mesh filename="CAD/mounting_plate.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="CAD/electronics.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    
+    <link name="camera_mount">
+        <inertial>
+            <origin xyz="-0.028300001765671996 0.0077517089568808475 0.005448096548014112" rpy="0.0 -0.0 0.0" />
+            <mass value="0.001081689709436805" />
+            <inertia ixx="3.929745593690692e-08" iyy="2.626712261882362e-07" izz="2.395268179804298e-07" ixy="-7.877406409464993e-20" iyz="-6.295154747655912e-09" ixz="-7.157428404298838e-20" />
+        </inertial>
+        <visual name="camera_mount_visual">
+            <origin xyz="-0.02830000176567003 0.010500002390200472 -3.6152414129020373e-09" rpy="-6.834109292044545e-16 2.0960151372337027e-30 -3.14159265358979" />
+            <geometry>
+                <mesh filename="CAD/camera_mount.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="camera_mount_collision">
+            <origin xyz="-0.02830000176567003 0.010500002390200472 -3.6152414129020373e-09" rpy="-6.834109292044545e-16 2.0960151372337027e-30 -3.14159265358979" />
+            <geometry>
+                <mesh filename="CAD/camera_mount.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    
+    <link name="camera">
+        <inertial>
+            <origin xyz="-0.010494166453358086 0.0004391583966188861 0.00011294981587177233" rpy="0.0 -0.0 0.0" />
+            <mass value="0.0017238411866737254" />
+            <inertia ixx="7.975054957592368e-08" iyy="6.980999853202204e-08" izz="1.395786291300566e-07" ixy="1.3866013516640382e-11" iyz="4.134041727341917e-09" ixz="3.159147164483488e-11" />
+        </inertial>
+        <visual name="camera_visual">
+            <origin xyz="-0.01050000176567008 -3.6152414395473897e-09 -0.0005517011679017614" rpy="-1.570796326794896 5.629335381678917e-15 -1.2246467991473148e-16" />
+            <geometry>
+                <mesh filename="CAD/camera.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="camera_collision">
+            <origin xyz="-0.01050000176567008 -3.6152414395473897e-09 -0.0005517011679017614" rpy="-1.570796326794896 5.629335381678917e-15 -1.2246467991473148e-16" />
+            <geometry>
+                <mesh filename="CAD/camera.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
 
-    <joint name="base_base_cover" type="fixed">
-        <origin xyz="0.03063500406140232 0.05200000323275548 0.0" rpy="0.0 -0.0 -3.141592653589793" />
+    <link name="battery_mount">
+        <inertial>
+            <origin xyz="0.00021369715366641008 0.06600122552697489 0.00035714174971326787" rpy="0.0 -0.0 -5.58101059878747e-104" />
+            <mass value="0.1649336841152355" />
+            <inertia ixx="0.00022064543894380513" iyy="7.424027178190844e-05" izz="0.00029335699365642606" ixy="-5.037757506943727e-09" iyz="1.0849659278638901e-09" ixz="1.8881557008833044e-07" />
+        </inertial>
+        <visual name="battery_mount_visual">
+            <origin xyz="1.832586402628067e-09 0.06599999759782552 0.001999996384758358" rpy="-3.1415926535897927 -2.010889409849979e-30 -3.14159265358979" />
+            <geometry>
+                <mesh filename="CAD/battery_mount.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="battery_mount_collision">
+            <origin xyz="1.832586402628067e-09 0.06599999759782552 0.001999996384758358" rpy="-3.1415926535897927 -2.010889409849979e-30 -3.14159265358979" />
+            <geometry>
+                <mesh filename="CAD/battery_mount.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="base_electronics" type="fixed">
+        <origin xyz="-0.03263500183258655 0.057999997597825405 0.013999996384758396" rpy="3.1415926535897927 -1.883898413669496e-21 -3.14159265358979" />
         <parent link="base" />
-        <child link="base_cover" />
+        <child link="electronics" />
     </joint>
-    <joint name="base_cover_battery" type="fixed">
-        <origin xyz="0.030635 0.052000000000000005 -0.002" rpy="3.141592653589793 -0.0 0.0" />
-        <parent link="base_cover" />
+
+    <joint name="electronics_camera_mount" type="fixed">
+        <origin xyz="-0.004340000000000002 0.003940000000000019 -0.012240000000000003" rpy="1.483687499912472e-67 -3.76158192263132e-37 -3.9442911284505303e-31" />
+        <parent link="electronics" />
+        <child link="camera_mount" />
+    </joint>
+
+    <joint name="camera_mount_camera" type="fixed">
+        <origin xyz="-0.017824999999999997 0.006999999999999993 0.009474999999999997" rpy="1.5707963267948966 -0.0 -2.574953536144704e-36" />
+        <parent link="camera_mount" />
+        <child link="camera" />
+    </joint>
+
+    <joint name="base_battery_mount" type="fixed">
+        <origin xyz="-1.8325866024682113e-09 0.06599999759782552 -3.6152415994195054e-09" rpy="-3.1415926535897927 1.883898413669496e-21 3.066991105526992e-15" />
+        <parent link="base" />
+        <child link="battery_mount" />
+    </joint>
+
+    <joint name="battery_mount_battery" type="fixed">
+        <origin xyz="0.0 0.06600000000000002 0.0020000000000000018" rpy="1.4836778140138092e-67 -3.76158192263132e-37 3.141592653589793" />
+        <parent link="battery_mount" />
         <child link="battery" />
-    </joint>
-    <joint name="base_mounting_plate" type="fixed">
-        <origin xyz="-0.032634995938597595 0.058000003232755476 0.013999999999999999" rpy="3.141592653589793 -0.0 -3.141592653589793" />
-        <parent link="base" />
-        <child link="mounting_plate" />
     </joint>
 
     <!-- Leg 1 -->
