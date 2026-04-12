@@ -18,10 +18,10 @@ Below is a summary of the components required to build the hexapod:
 | | M3 Heat set inserts kit | 1 | Refer to the instructions to know precisely how many of them you will need. | About 10€ for 150pzs on Amazon |
 | Electronics | MG996/MG996R Servo | 18 | MG996R are cheaper but less powerful than MG996, they will do nevertheless | About 70€ on Aliexpress |
 | | Servo2040 | 1 | An equivalent board can be used instead e.g. 2x Pololu Mini Maestro | About 28€ on the Pimoroni website |
-| | Raspberry Pi 5 | 1 | Other versions can be used instead (2/3/4) | About 100€ on Amazon |
+| | Raspberry Pi 5 | 1 | Other versions can be used | About 100€ on Amazon |
 | | Raspberry Pi camera | 1 | | About 3€ on Amazon |
 | | 7.4V 2S LiPo Battery | 1 | They are often sold in pairs, so I ended up buying two of them for 50€ | About 25€ on Amazon |
-| | 8A UBEC | 2 | You will need two of them, one for the servos and one for the electronics | About 20€ on Aliexpress |
+| | 8A UBEC | 2 | You will need two of them, one for the servos and one for the electronics. I used [these ones](https://it.aliexpress.com/item/1005007467083035.html?spm=a2g0o.order_list.order_list_main.58.21ef3696TOL15v&gatewayAdapt=glo2ita): they have two channels with selectable input voltage (could be useful in the future) and a power button | About 20€ each on Aliexpress |
 
 </div>
 
@@ -31,19 +31,20 @@ The prices listed in this BOM reflect the costs at the time of purchase and may 
 
 All above components are mandatory. There are two supported assembly paths, depending on whether you choose to use a [custom PCB I designed](https://github.com/ggldnl/Hexapod-PCB) or not. Either way, you can refer to the [assembly instructions](TODO).
 
-### Use the custom PCB
+### With custom PCB
 
 Using the custom PCB slightly increases cost (about 80€ more) but simplifies the build, keeps the body slim, acts as a rigid base plate and saves you from having to deal with manual wiring. Refer to the [Hexapod PCB repository](https://github.com/ggldnl/Hexapod-PCB) for more information.
 
 The PCB is totally optional and you can skip it if you want to save a few bucks, but I highly recommend it.
 
-### Don't use the custom PCB
+### Without custom PCB
 
-If the PCB is not used, the electronics can still be assembled, but with additional compromises and parts.
+If the PCB is not used, the electronics can still be assembled, but with some compromises and additional parts. You will need to:
 
-- You will need to print the adapter plate to mount the Servo2040 and Raspberry Pi. The result will be bulkier and with wires all over the place.
-- You will need to buy M2 heat-set inserts and M2 screws (Servo2040 mounting holes are 2.7 mm and do not accept M3 screws).
-- You will need to sacrifice the current protection circuit on the PCB. You can use a relay to do the same job, but it doesn't fit the adapter plate.
+- print the adapter plate to mount the Servo2040 and Raspberry Pi. The result will be bulkier and with wires all over the place
+- buy some wire extenders as the rear legs are too far from the Servo2040 for the servo wires
+- buy M2 heat-set inserts and M2 screws (Servo2040 mounting holes are 2.7 mm)
+- sacrifice the current protection circuit on the PCB. You can use a relay to do the same job, but it doesn't fit the adapter plate
 
 ## 🔨 Assembly Instructions
 
@@ -58,15 +59,7 @@ Make sure to follow the recommended print settings for optimal strength and fitm
 ## 📝 Notes
 
 1. All the legs use the same basic components: `femur.stl`, `tibia.stl`, 3 x `bracket_A.stl` and 3 x `bracket_B.stl`.
-2. `MG996.stl`, `battery.stl` and `electronics.stl` are used in the URDF and don't need to be printed.
-3. Print the `mouting_plate.stl` only if you don't want to use the custom PCB.
-
-## TODO
-
-- [ ] Provide unified `electronics.stl` and `electronics_PCB.stl`
-- [ ] Maybe a shield (?) to put above the electronics
-- [ ] Update the assembly instructions PDF (check the TODOs in the README - there are many)
-- [ ] Update the MakerWorld link with the correct URL.
+2. `MG996.stl`, `battery.stl` and `electronics.stl` are used in the URDF for simulation, you don't need to print them.
 
 ## 🤝 Contribution
 

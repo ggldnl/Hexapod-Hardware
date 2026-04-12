@@ -70,48 +70,6 @@
         </collision>
     </link>
     
-    <link name="camera_mount">
-        <inertial>
-            <origin xyz="-0.028300001765671996 0.0077517089568808475 0.005448096548014112" rpy="0.0 -0.0 0.0" />
-            <mass value="0.001081689709436805" />
-            <inertia ixx="3.929745593690692e-08" iyy="2.626712261882362e-07" izz="2.395268179804298e-07" ixy="-7.877406409464993e-20" iyz="-6.295154747655912e-09" ixz="-7.157428404298838e-20" />
-        </inertial>
-        <visual name="camera_mount_visual">
-            <origin xyz="-0.02830000176567003 0.010500002390200472 -3.6152414129020373e-09" rpy="-6.834109292044545e-16 2.0960151372337027e-30 -3.14159265358979" />
-            <geometry>
-                <mesh filename="CAD/printed_parts/camera_mount.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="camera_mount_collision">
-            <origin xyz="-0.02830000176567003 0.010500002390200472 -3.6152414129020373e-09" rpy="-6.834109292044545e-16 2.0960151372337027e-30 -3.14159265358979" />
-            <geometry>
-                <mesh filename="CAD/printed_parts/camera_mount.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-    
-    <link name="camera">
-        <inertial>
-            <origin xyz="-0.010494166453358086 0.0004391583966188861 0.00011294981587177233" rpy="0.0 -0.0 0.0" />
-            <mass value="0.0017238411866737254" />
-            <inertia ixx="7.975054957592368e-08" iyy="6.980999853202204e-08" izz="1.395786291300566e-07" ixy="1.3866013516640382e-11" iyz="4.134041727341917e-09" ixz="3.159147164483488e-11" />
-        </inertial>
-        <visual name="camera_visual">
-            <origin xyz="-0.01050000176567008 -3.6152414395473897e-09 -0.0005517011679017614" rpy="-1.570796326794896 5.629335381678917e-15 -1.2246467991473148e-16" />
-            <geometry>
-                <mesh filename="CAD/hardware/camera.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-            <material name="gray"/>
-        </visual>
-        <collision name="camera_collision">
-            <origin xyz="-0.01050000176567008 -3.6152414395473897e-09 -0.0005517011679017614" rpy="-1.570796326794896 5.629335381678917e-15 -1.2246467991473148e-16" />
-            <geometry>
-                <mesh filename="CAD/hardware/camera.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
-
     <link name="battery_mount">
         <inertial>
             <origin xyz="0.00021369715366641008 0.06600122552697489 0.00035714174971326787" rpy="0.0 -0.0 -5.58101059878747e-104" />
@@ -137,18 +95,6 @@
         <origin xyz="-0.03263500183258655 0.057999997597825405 0.013999996384758396" rpy="3.1415926535897927 -1.883898413669496e-21 -3.14159265358979" />
         <parent link="base" />
         <child link="electronics" />
-    </joint>
-
-    <joint name="electronics_camera_mount" type="fixed">
-        <origin xyz="-0.004340000000000002 0.003940000000000019 -0.012240000000000003" rpy="1.483687499912472e-67 -3.76158192263132e-37 -3.9442911284505303e-31" />
-        <parent link="electronics" />
-        <child link="camera_mount" />
-    </joint>
-
-    <joint name="camera_mount_camera" type="fixed">
-        <origin xyz="-0.017824999999999997 0.006999999999999993 0.009474999999999997" rpy="1.5707963267948966 -0.0 -2.574953536144704e-36" />
-        <parent link="camera_mount" />
-        <child link="camera" />
     </joint>
 
     <joint name="base_battery_mount" type="fixed">
