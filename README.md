@@ -54,7 +54,7 @@ Assembly instructions are available [here](TODO).
 
 ## 🖨️ 3D Printing Profile
 
-Print profiles and STL files for the robot parts are [hosted on MakerWorld](TODO).
+Print profiles and STL files for the robot parts are [hosted on MakerWorld](https://makerworld.com/en/models/2655972-hexapod).
 
 Make sure to follow the recommended print settings for optimal strength and fitment.
 
