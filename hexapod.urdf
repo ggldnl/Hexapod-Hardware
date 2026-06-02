@@ -2,7 +2,11 @@
 <robot name="Hexapod">
 
     <material name="gray">
-        <color rgba="0.4 0.4 0.4 1" />
+        <color rgba="0.1 0.1 0.1 1" />
+    </material>
+
+    <material name="orange">
+        <color rgba="0.816 0.420 0.200 1"/>
     </material>
 
     <!-- Body -->
@@ -91,6 +95,48 @@
         </collision>
     </link>
 
+    <link name="top_stiffeners">
+        <inertial>
+            <origin xyz="-0.03355588058631941 -0.05570358348592372 -0.0023873886142182243" rpy="0.0 -0.0 0.0" />
+            <mass value="0.01808559434559243" />
+            <inertia ixx="2.6354797149640268e-05" iyy="2.627423304433963e-05" izz="5.24747954424574e-05" ixy="-5.702247959121396e-07" iyz="1.0745333037489856e-07" ixz="-2.5437369680213706e-08" />
+        </inertial>
+        <visual name="top_stiffeners_visual">
+            <origin xyz="-0.03263500183258638 -0.057999997597825516 -3.6152416527102107e-09" rpy="-3.1415926535897927 -1.8411214306179177e-30 2.9445264256122586e-15" />
+            <geometry>
+                <mesh filename="CAD/printed_parts/top_stiffeners.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="orange"/>
+        </visual>
+        <collision name="top_stiffeners_collision">
+            <origin xyz="-0.03263500183258638 -0.057999997597825516 -3.6152416527102107e-09" rpy="-3.1415926535897927 -1.8411214306179177e-30 2.9445264256122586e-15" />
+            <geometry>
+                <mesh filename="CAD/printed_parts/top_stiffeners.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="bottom_stiffeners">
+        <inertial>
+            <origin xyz="-0.030635001832586425 -0.0519999971308711 0.0042514629347305015" rpy="0.0 -0.0 0.0" />
+            <mass value="0.04994655381225562" />
+            <inertia ixx="7.935618174835166e-05" iyy="5.527225692548976e-05" izz="0.00013375733470493995" ixy="1.7750088656568873e-49" iyz="1.9735081624450146e-14" ixz="2.6019721533521526e-59" />
+        </inertial>
+        <visual name="bottom_stiffeners_visual">
+            <origin xyz="-0.030635001832586387 -0.05199999759782553 -3.6152416438284263e-09" rpy="6.556553535888256e-16 -2.0108889296354894e-30 3.0669911055269938e-15" />
+            <geometry>
+                <mesh filename="CAD/printed_parts/bottom_stiffeners.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="orange"/>
+        </visual>
+        <collision name="bottom_stiffeners_collision">
+            <origin xyz="-0.030635001832586387 -0.05199999759782553 -3.6152416438284263e-09" rpy="6.556553535888256e-16 -2.0108889296354894e-30 3.0669911055269938e-15" />
+            <geometry>
+                <mesh filename="CAD/printed_parts/bottom_stiffeners.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
     <joint name="base_electronics" type="fixed">
         <origin xyz="-0.03263500183258655 0.057999997597825405 0.013999996384758396" rpy="3.1415926535897927 -1.883898413669496e-21 -3.14159265358979" />
         <parent link="base" />
@@ -107,6 +153,18 @@
         <origin xyz="0.0 0.06600000000000002 0.0020000000000000018" rpy="1.4836778140138092e-67 -3.76158192263132e-37 3.141592653589793" />
         <parent link="battery_mount" />
         <child link="battery" />
+    </joint>
+
+    <joint name="electronics_top_stiffeners" type="fixed">
+        <origin xyz="0.0 0.0 -0.0012000000000000012" rpy="2.7755575615628914e-17 -3.76158192263132e-37 -3.9442911284505303e-31" />
+        <parent link="electronics" />
+        <child link="top_stiffeners" />
+    </joint>
+
+    <joint name="battery_mount_bottom_stiffeners" type="fixed">
+        <origin xyz="-0.030634999999999996 0.013999999999999986 0.0020000000000000018" rpy="1.4836778140138092e-67 -3.76158192263132e-37 3.141592653589793" />
+        <parent link="battery_mount" />
+        <child link="bottom_stiffeners" />
     </joint>
 
     <!-- Leg 1 -->
