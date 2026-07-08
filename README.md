@@ -8,6 +8,12 @@ This repository contains the 3D-printed parts, BOM and assembly guide to replica
 
 For a complete overview of the project, refer to the [main Hexapod repository](https://github.com/ggldnl/Hexapod). Additionally, you may want to check out the repositories containing the [Controller](https://github.com/ggldnl/Hexapod-Controller) and [Servo2040 firmware](https://github.com/ggldnl/Hexapod-Firmware).
 
+## 🖼️ Render
+
+A fusion 360 render can be found [here](https://a360.co/3SQCzxe).
+
+[![Fusion 360 render](media/render.png)](https://a360.co/3SQCzxe)
+
 ## 📋 Bill of Materials
 
 Below is a summary of the components required to build the hexapod:
@@ -17,14 +23,14 @@ Below is a summary of the components required to build the hexapod:
 | Category | Component | Quantity | Notes | Cost per part |
 |----------|-----------|----------|-------|---------------|
 | Mechanical Components | 3D-printed parts | | 6 x `tibia`, 6 x `femur`, ... (refer to the assembly instructions) | |
-| | M3 Screw kit | 1 | Refer to the instructions to know precisely how many screws and nuts you will need. | About 12€ for an assorted 800pzs kit on Amazon |
+| | M3 Screw kit | 1 | Refer to the instructions to know precisely how many screws and nuts you will need | About 12€ for an assorted 800pzs kit on Amazon |
 | | F686ZZ Bearings | 18 | You will need one for the back of each motor | About 10€ for 20pzs on Amazon |
-| | M3 Heat set inserts kit | 1 | Refer to the instructions to know precisely how many of them you will need. | About 10€ for 150pzs on Amazon |
+| | M3 Heat set inserts kit | 1 | Refer to the instructions to know precisely how many of them you will need | About 10€ for 150pzs on Amazon |
 | Electronics | MG996/MG996R Servo | 18 | MG996R are cheaper but less powerful than MG996, they will do nevertheless | About 70€ on Aliexpress |
 | | Servo2040 | 1 | An equivalent board can be used instead e.g. 2x Pololu Mini Maestro | About 28€ on the Pimoroni website |
 | | Raspberry Pi 5 | 1 | Other versions can be used | About 100€ on Amazon |
 | | 7.4V 2S LiPo Battery | 1 | They are often sold in pairs, so I ended up buying two of them for 50€ | About 25€ on Amazon |
-| | 8A UBEC | 2 | You will need two of them, one for the servos and one for the electronics. I used [these ones](https://it.aliexpress.com/item/1005007467083035.html?spm=a2g0o.order_list.order_list_main.58.21ef3696TOL15v&gatewayAdapt=glo2ita): they have two channels with selectable input voltage and a power button. The `battery_mount` has two slots to hold this kind of UBECs. | About 20€ each on Aliexpress |
+| | 8A UBEC | 2 | You will need two of them, one for the servos and one for the electronics. I used [these ones](https://it.aliexpress.com/item/1005007467083035.html?spm=a2g0o.order_list.order_list_main.58.21ef3696TOL15v&gatewayAdapt=glo2ita): they have two channels with selectable input voltage and a power button. The `battery_mount` has two slots to hold this kind of UBECs | About 20€ each on Aliexpress |
 
 </div>
 
