@@ -65,7 +65,7 @@ Don't forget to boost the project!
 
 ## 🔨 Assembly Instructions
 
-Click each thumbnail to go to the respective video.
+Each step below includes a short video.
 
 1. Servos require a minor modification: replace the bottom section of the plastic housing with the custom 3D-printed part designed to hold an F686ZZ bearing, `servo_mod.stl`. This modification is fully reversible. I also added a small piece of kapton tape between the bearing and the circuit for good measure. You can reuse the same screws to secure the 3D-printed part in place. 
 
@@ -82,19 +82,19 @@ Click each thumbnail to go to the respective video.
 
 2. Add heat set inserts to the 3D-printed parts.
 
-    [![Add heat set inserts](media/thumbnails/heat_set_inserts.png)](https://raw.githubusercontent.com/ggldnl/Hexapod-Hardware/main/media/videos/heat_set_inserts.mp4)
+    <video src="https://github.com/user-attachments/assets/28bd8e4a-1799-4997-b2f9-e33ee6baf6c2" controls width="400" poster="media/thumbnails/heat_set_inserts.png"></video>
 
 3. Now the legs. You will have to build 6 of them.
 
-    [![Build the legs](media/thumbnails/leg_assembly.png)](https://raw.githubusercontent.com/ggldnl/Hexapod-Hardware/main/media/videos/leg_assembly.mp4)
+    <video src="https://github.com/user-attachments/assets/4d38c585-e98c-4d85-b01b-8805ff69cde2" controls width="400" poster="media/thumbnails/leg_assembly.png"></video>
 
 4. Connect all the legs to the base.
 
-    [![Connect the legs to the base](media/thumbnails/legs_to_base.png)](https://raw.githubusercontent.com/ggldnl/Hexapod-Hardware/main/media/videos/legs_to_base.mp4)
+    <video src="https://github.com/user-attachments/assets/9de94f34-e0e5-406a-abed-b347b963191f" controls width="400" poster="media/thumbnails/legs_to_base.png"></video>
 
 5. Add the electronics.
 
-    [![Add the electronics](media/thumbnails/electronics_to_base.png)](https://raw.githubusercontent.com/ggldnl/Hexapod-Hardware/main/media/videos/electronics_to_base.mp4)
+    <video src="https://github.com/user-attachments/assets/cb7144f3-3642-4fcb-a965-4d474e935cdf" controls width="400" poster="media/thumbnails/electronics_to_base.png"></video>
 
 ## 📝 Notes
 
