@@ -82,19 +82,19 @@ Click each thumbnail to go to the respective video.
 
 2. Add heat set inserts to the 3D-printed parts.
 
-    [![Add heat set inserts](media/thumbnails/heat_set_inserts.png)](media/videos/heat_set_inserts.mp4)
+    [![Add heat set inserts](media/thumbnails/heat_set_inserts.png)](https://raw.githubusercontent.com/ggldnl/Hexapod-Hardware/main/media/videos/heat_set_inserts.mp4)
 
 3. Now the legs. You will have to build 6 of them.
 
-    [![Build the legs](media/thumbnails/leg_assembly.png)](media/videos/leg_assembly.mp4)
+    [![Build the legs](media/thumbnails/leg_assembly.png)](https://raw.githubusercontent.com/ggldnl/Hexapod-Hardware/main/media/videos/leg_assembly.mp4)
 
 4. Connect all the legs to the base.
 
-    [![Connect the legs to the base](media/thumbnails/legs_to_base.png)](media/videos/legs_to_base.mp4)
+    [![Connect the legs to the base](media/thumbnails/legs_to_base.png)](https://raw.githubusercontent.com/ggldnl/Hexapod-Hardware/main/media/videos/legs_to_base.mp4)
 
 5. Add the electronics.
 
-    [![Add the electronics](media/thumbnails/electronics_to_base.png)](media/videos/electronics_to_base.mp4)
+    [![Add the electronics](media/thumbnails/electronics_to_base.png)](https://raw.githubusercontent.com/ggldnl/Hexapod-Hardware/main/media/videos/electronics_to_base.mp4)
 
 ## 📝 Notes
 
