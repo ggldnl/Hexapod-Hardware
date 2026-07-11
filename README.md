@@ -80,19 +80,19 @@ Don't forget to boost the project!
 
 2. Add heat set inserts to the 3D-printed parts.
 
-    <video src="media/videos/heat_set_inserts.mp4" controls></video>
+    <video src="https://github.com/user-attachments/assets/90f663c9-ee57-4aa0-bb85-4ed958c5e590" controls></video>
 
 3. Now the legs. You will have to build 6 of them.
 
-    <video src="media/videos/leg_assembly.mp4" controls></video>
+    <video src="https://github.com/user-attachments/assets/c53c245b-7c6b-4324-a057-43d7d0aadb38" controls></video>
 
 4. Connect all the legs to the base.
 
-    <video src="media/videos/legs_to_base.mp4" controls></video>
+    <video src="https://github.com/user-attachments/assets/ee546095-0393-4aef-8ae6-4aba158b5953" controls></video>
 
 5. Add the electronics.
 
-    <video src="media/videos/electronics_to_base.mp4" controls></video>
+    <video src="https://github.com/user-attachments/assets/10d3c611-9e8d-4eb7-9e7c-9da37e8c9e67" controls></video>
 
 ## 📝 Notes
 
