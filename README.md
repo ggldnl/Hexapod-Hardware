@@ -65,6 +65,8 @@ Don't forget to boost the project!
 
 ## 🔨 Assembly Instructions
 
+Click each thumbnail to go to the respective video.
+
 1. Servos require a minor modification: replace the bottom section of the plastic housing with the custom 3D-printed part designed to hold an F686ZZ bearing, `servo_mod.stl`. This modification is fully reversible. I also added a small piece of kapton tape between the bearing and the circuit for good measure. You can reuse the same screws to secure the 3D-printed part in place. 
 
     <table>
@@ -80,19 +82,19 @@ Don't forget to boost the project!
 
 2. Add heat set inserts to the 3D-printed parts.
 
-    <video src="https://github.com/user-attachments/assets/90f663c9-ee57-4aa0-bb85-4ed958c5e590" controls></video>
+    [![Add heat set inserts](media/thumbnails/heat_set_inserts.png)](media/videos/heat_set_inserts.mp4)
 
 3. Now the legs. You will have to build 6 of them.
 
-    <video src="https://github.com/user-attachments/assets/c53c245b-7c6b-4324-a057-43d7d0aadb38" controls></video>
+    [![Build the legs](media/thumbnails/leg_assembly.png)](media/videos/leg_assembly.mp4)
 
 4. Connect all the legs to the base.
 
-    <video src="https://github.com/user-attachments/assets/ee546095-0393-4aef-8ae6-4aba158b5953" controls></video>
+    [![Connect the legs to the base](media/thumbnails/legs_to_base.png)](media/videos/legs_to_base.mp4)
 
 5. Add the electronics.
 
-    <video src="https://github.com/user-attachments/assets/10d3c611-9e8d-4eb7-9e7c-9da37e8c9e67" controls></video>
+    [![Add the electronics](media/thumbnails/electronics_to_base.png)](media/videos/electronics_to_base.mp4)
 
 ## 📝 Notes
 
