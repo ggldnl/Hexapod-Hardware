@@ -54,7 +54,7 @@ All above components are mandatory. There are two supported assembly paths, depe
     - buy wire extenders as the rear legs are too far from the Servo2040;
     - buy M2 heat-set inserts and M2 screws (Servo2040 mounting holes are 2.7 mm);
 
-    Once you have the necessary, add the M2 heat set inserts to the smaller holes in the `electronics_mount.stl`, secure the two boards and connect them according to [this guide](https://github.com/ggldnl/Hexapod-PCB)
+    Once you have the necessary, add the M2 heat set inserts to the smaller holes in the `electronics_mount.stl`, secure the two boards and connect them according to [this guide](https://github.com/ggldnl/Hexapod-Firmware)
 
 ## 🖨️ 3D Printing Profile
 
