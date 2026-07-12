@@ -92,9 +92,13 @@ Each step below includes a short video.
 
     <video src="https://github.com/user-attachments/assets/e5f85936-af69-40fa-94dd-71543b65fb09"></video>
 
-5. Add the electronics. Top and bottom stiffeners are NOT optional: they prevent the base from flexing. Ensure they actually touch the servos.
+5. Add the electronics. Top and bottom stiffeners are NOT optional: they prevent the base from flexing. Ensure they actually touch the servos. Higher infill could also help.
 
     <video src="https://github.com/user-attachments/assets/8699bbb7-0d47-4d19-a4cc-e40c626c33b0"></video>
+
+6. Power the robot.
+- Use one UBEC to power the Raspberry Pi/Servo2040. If you use the custom PCB, it exposes a connector for that. Ensure the UBEC outputs 5V, otherwise you will fry the boards. If you don't use the custom PCB, you can use the exposed pins on the Pi; the Servo2040 will get power from the UART connection. 
+- Use the other UBEC to power the servos through the terminal block on the Servo2040. Servos can be powered at 6V (check their datasheet just in case).
 
 ## 📝 Notes
 
