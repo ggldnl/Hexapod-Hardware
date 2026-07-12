@@ -80,7 +80,7 @@ Each step below includes a short video.
         </tr>
     </table>
 
-2. Add heat set inserts to the 3D-printed parts.
+2. Add heat set inserts to the 3D-printed parts. In some places I modeled 4 holes for the heat set inserts (servo hubs and brackets), but then only used 2. I didn't encounter any problems.
 
     <video src="https://github.com/user-attachments/assets/342bcc59-8d65-4aa1-9488-e9e4fd77accb"></video>
 
@@ -92,7 +92,7 @@ Each step below includes a short video.
 
     <video src="https://github.com/user-attachments/assets/e5f85936-af69-40fa-94dd-71543b65fb09"></video>
 
-5. Add the electronics.
+5. Add the electronics. Top and bottom stiffeners are NOT optional: they prevent the base from flexing. Ensure they actually touch the servos.
 
     <video src="https://github.com/user-attachments/assets/8699bbb7-0d47-4d19-a4cc-e40c626c33b0"></video>
 
