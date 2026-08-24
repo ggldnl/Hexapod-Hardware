@@ -10,9 +10,9 @@ For a complete overview of the project, refer to the [main Hexapod repository](h
 
 ## 🖼️ Render
 
-A fusion 360 render can be found [here](https://a360.co/3SQCzxe).
+A fusion 360 render can be found [here](https://a360.co/4gtNbdI).
 
-[![Fusion 360 render](media/images/render.png)](https://a360.co/3SQCzxe)
+[![Fusion 360 render](media/images/render.png)](https://a360.co/4gtNbdI)
 
 ## 📋 Bill of Materials
 
